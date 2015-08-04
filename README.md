@@ -11,6 +11,7 @@ TQSIM is free software; you can redistribute it and/or modify it under the terms
 To install TQSim on a linux system, do the following steps:
 
   1. Satisfy external dependencies: buildessential, gcc, pkg-config, glib-2.0, libglib2.0-dev, libsdl1.2-dev, zlib1g-dev, libxml2-dev, libpthreadstubs0-dev. In case you can use Advanced Packaging Tool (APT), do the following: 
+  
    ```
   sudo apt-get install buildessential, gcc, pkg-config, glib-2.0, libglib2.0-dev, libsdl1.2-dev, zlib1g-dev, libxml2-dev, libpthreadstubs0-dev
   ```
