@@ -1,5 +1,6 @@
 # TQSIM (Timed QEMU-based Simulator)
-We present TQSIM, an open source, fast, and cycle-approximate simulation tool built on QEMU to support simulation of generic modern superscalar out-of-order processors. TQSIM is developed by Codesign and Parallel Processing Laboratory(CAPLab), Seoul national univerisy, and sponsored by Samsung Advanced Institute of Technology (SAIT).
+We present TQSIM, an open source, fast, and cycle-approximate simulation tool built on QEMU to support simulation of generic modern superscalar out-of-order processors. TQSIM is developed by Codesign and Parallel Processing Laboratory(CAPLab), Seoul national university, and sponsored by Samsung Advanced Institute of Technology (SAIT).
+
 You can find more details about TQSIM in future literatures from CAPLab, SNU. (refer to http://iris.snu.ac.kr/xe/papers)
 
 # Licence
@@ -9,7 +10,10 @@ TQSIM is free software; you can redistribute it and/or modify it under the terms
 
 To install TQSim on a linux system, do the following steps:
 
-  1. Satisfy external dependencies: buildessential, gcc, pkg-config, glib-2.0, libglib2.0-dev, libsdl1.2-dev, zlib1g-dev, libxml2-dev, libpthreadstubs0-dev
+  1. Satisfy external dependencies: buildessential, gcc, pkg-config, glib-2.0, libglib2.0-dev, libsdl1.2-dev, zlib1g-dev, libxml2-dev, libpthreadstubs0-dev. In case you can use Advanced Packaging Tool (APT), do the following: 
+   ```
+  sudo apt-get install buildessential, gcc, pkg-config, glib-2.0, libglib2.0-dev, libsdl1.2-dev, zlib1g-dev, libxml2-dev, libpthreadstubs0-dev
+  ```
   2. Modify tqsim_configure for your environment. In case you want to install the package in another place than the specified user directory ($HOME/tqsim), change it to the desired place.
   3. Compile the package: 
   ```
