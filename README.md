@@ -10,29 +10,30 @@ TQSIM is free software; you can redistribute it and/or modify it under the terms
 
 To install TQSim on a linux system, do the following steps:
 
-  1. Satisfy external dependencies: *buildessential, gcc, pkg-config, glib-2.0, libglib2.0-dev, libsdl1.2-dev, zlib1g-dev, libxml2-dev, libpthreadstubs0-dev*. In case you can use Advanced Packaging Tool (APT), do the following: 
+  1. Satisfy external dependencies: *build-essential, gcc, pkg-config, glib-2.0, libglib2.0-dev, libsdl1.2-dev, zlib1g-dev, libxml2-dev, libpthread-stubs0-dev*. In case you can use Advanced Packaging Tool (APT), do the following: 
   
    ```
-  sudo apt-get install buildessential, gcc, pkg-config, glib-2.0, libglib2.0-dev, libsdl1.2-dev, zlib1g-dev, libxml2-dev, libpthreadstubs0-dev
+  sudo apt-get install build-essential gcc pkg-config glib-2.0 libglib2.0-dev libsdl1.2-dev zlib1g-dev libxml2-dev lib-pthreadstubs0-dev
   ```
-  2. Modify *tqsim_configure* to be suitable for your environment. In case you want to install the package in another place than the specified user directory ($HOME/tqsim), change it to the desired place (*TQSIM_BIN* for short).
-  3. Configure the package:
+  2. Change the current directory to the main directory of the source tree (We will just call it *TQSIM_SRC* for short), then move in (TQSIM_SRC)/src.
+  3. Modify *tqsim_configure* to be suitable for your environment. In case you want to install the package in another place than the specified user directory ($HOME/tqsim), change it to the desired place (*TQSIM_BIN* for short).
+  4. Configure the package:
    
   ```
   ./tqsim_configure
   ```
-  4. Compile the package: 
+  5. Compile the package: 
   
   ```
   make
   ```
-  5. Install the package: 
+  6. Install the package: 
   
   ```
   make install
   ```
 
-In order to execute TQSim, it is required to provide the detailed specification of the target core architecture. You can find a sample configuration file *armv7.cfg* at the main directory of the source tree (We will just call it *TQSIM_SRC* for short). Set the *ARCH_CONFIG_FILE* environment variable with an export command: 
+In order to execute TQSim, it is required to provide the detailed specification of the target core architecture. You can find a sample configuration file *armv7.cfg* at *TQSIM_SRC*. Set the *ARCH_CONFIG_FILE* environment variable with an export command: 
 
 ```
 export ARCH_CONFIG_FILE=(CUSTOM_DIRECTORY)/armv7.cfg
