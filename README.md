@@ -1,6 +1,5 @@
 # TQSIM (Timed QEMU-based Simulator)
-TQSIM is a fast and generic cycle-approximate simualtor supporting modern superscalar out-of-order processors.
-TQSIM is developed by CAPLab, SNU, and sponsored by Samsung SAIT.
+We present TQSIM, an open source, fast, and cycle-approximate simulation tool built on QEMU to support simulation of generic modern superscalar out-of-order processors. TQSIM is developed by CAPLab, SNU, and sponsored by Samsung SAIT.
 You can find more details about TQSIM in future literatures from CAPLab, SNU. (http://iris.snu.ac.kr/xe/papers)
 
 # Licence
@@ -11,7 +10,7 @@ TQSIM is free software; you can redistribute it and/or modify it under the terms
 To install TQSim on a linux system, do the following steps:
 
   1. Satisfy external dependencies: buildessential, gcc, pkg-config, glib-2.0, libglib2.0-dev, libsdl1.2-dev, zlib1g-dev, libxml2-dev, libpthreadstubs0-dev
-  2. Modify tqemu_configure for your environment. In case you want to install the package in another place than the specified user directory ($HOME/tqemu), change it to the desired place.
+  2. Modify tqsim_configure for your environment. In case you want to install the package in another place than the specified user directory ($HOME/tqsim), change it to the desired place.
   3. Compile the package: 
   ```
   make
@@ -21,7 +20,7 @@ To install TQSim on a linux system, do the following steps:
   make install
   ```
 
-In order to execute TQSim, it is required to provide the detailed specification of the target core architecture. You can find a sample configuration file *armv7.cfg* at the main directory of the source tree (We will just call it *QEMU_SRC* for short). Set the *ARCH_CONFIG_FILE* environment variable with an export command: 
+In order to execute TQSim, it is required to provide the detailed specification of the target core architecture. You can find a sample configuration file *armv7.cfg* at the main directory of the source tree (We will just call it *TQSIM_SRC* for short). Set the *ARCH_CONFIG_FILE* environment variable with an export command: 
 
 ```
 export ARCH_CONFIG_FILE=(CUSTOM_DIRECTORY)/armv7.cfg
@@ -29,9 +28,9 @@ export ARCH_CONFIG_FILE=(CUSTOM_DIRECTORY)/armv7.cfg
 
 To launch a test run, do the followings.
 
-1. change the current directory to (QEMU_SRC)/example:
+1. change the current directory to (TQSIM_SRC)/example:
 ```
-cd (QEMU_SRC)/example
+cd (TQSIM_SRC)/example
 ```
 2. type the command "qemu-arm hello_world" 
 
