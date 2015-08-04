@@ -1,0 +1,2 @@
+./configure --target-list="arm-linux-user" --prefix=$HOME/tqsim  --enable-debug --enable-guest-base --disable-hsim
+
