@@ -37,7 +37,7 @@ cd (TQSIM_SRC)/example
 
 # Note
 
-Note that all target binaries are compiled through arm-linux-gnueabi-gcc compiler with "-static" option
+Current we only support simulation of arm binaries compiled through arm-linux-gnueabi-gcc compiler with "-static" option
 
 # Appendix: Libraries We Use
 The following sets forth attribution notices for third party software that may be contained in portions of TQSIM product. We thank the open source community for all of their contributions.
