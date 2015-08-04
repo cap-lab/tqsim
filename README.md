@@ -1,32 +1,31 @@
 # TQSIM (Timed QEMU-based Simulator)
 Timed QEMU (TQEMU) is a fast and generic cycle-approximate simualtor supporting modern superscalar out-of-order processors.
-
-TQEMU is developed by CAPLab, SNU, sponsored by Samsung SAIT.
-
+TQEMU is developed by CAPLab, SNU, and sponsored by Samsung SAIT.
 You can find more details about Timed QEMU in future literatures from CAPLab, SNU.
 
 # Licence
 Timed QEMU (TQEMU) is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 3.
 
-# Setup
-External dependencies: buildessential, gcc, pkg-config, glib-2.0, libglib2.0-dev, libsdl1.2-dev, zlib1g-dev, libxml2-dev, libpthreadstubs0-dev
+# Installation
 
-Modify tqemu_configure for your environment.
-make
-make install
+To install TQSim on a linux system, do the following steps:
 
-생성된 qemu의 실행파일은 설치 디렉토리의 bin 이하에서 찾을 수 있는 qemu-arm이다. 이를 path에 걸어주어 다른 directory에서도 실행할 수 있게 해야 한다. 
+  1. Satisfy external dependencies: buildessential, gcc, pkg-config, glib-2.0, libglib2.0-dev, libsdl1.2-dev, zlib1g-dev, libxml2-dev, libpthreadstubs0-dev
+  2. Modify tqemu_configure for your environment. In case you want to install the package in another place than the specified user directory ($HOME/tqemu), change it to the desired place.
+  3. Compile the package: make
+  4. Install the package: make install
 
-이어 TQEMU를 실행하기 위해서는 아키텍처 명세가 필요하다. ARCH\_CONFIG\_FILE. Default 코어 명세 파일들은 qemu의 소스를 푼 디렉토리에 포함되어 있으니 편한 곳으로 옮기고 환경 변수로 그들의 위치를 설정한다. 이러한 설정들을 마치면  .bash\_rc에 다음과 같은 라인들이 추가하는 것을 추천한다.
+In order to execute TQSim, it is required to provide the detailed specification of the target core architecture. You can find a sample configuration file armv7.cfg at the main directory of the source tree (let it (QEMU_SRC)). Set the ARCH_CONFIG_FILE environment variable with an export command: export ARCH_CONFIG_FILE=(CUSTOM_DIRECTORY)/armv7.cfg
 
-export QEMU_BIN=$HOME/qemu/bin/
-export ARCH_CONFIG_FILE=~/armv7.cfg
-export PATH=$PATH:$QEMU_BIN
+To launch a test run, do the followings.
 
-TQEMU 자체가 실행이 잘되었는지 확인하기 위해서는 tqemu\_configure로 configure했을 때 기준으로 qemu 소스 디렉토리/example로 가서 qemu-arm hello_world를 실행해보면 된다.
+change the current directory to (QEMU_SRC)/example cd (QEMU_SRC)/example
+type the command "qemu-arm hello_world" 
 
-# Execution
 
+# Note
+
+Note that all target binaries are compiled through arm-linux-gnueabi-gcc compiler with "-static" option
 
 # Appendix: Libraries We Use
 The following sets forth attribution notices for third party software that may be contained in portions of the timed QEMU product. We thank the open source community for all of their contributions.
