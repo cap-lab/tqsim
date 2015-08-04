@@ -1,0 +1,2205 @@
+/home/shkang/workspace/qemu-src/target-arm/translate.c: In function ‘arm_translate_init’:
+/home/shkang/workspace/qemu-src/target-arm/translate.c:94:5: error: expected declaration specifiers before ‘cpu_env’
+     cpu_env = tcg_global_reg_new_ptr(TCG_AREG0, "env");
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:96:5: error: expected declaration specifiers before ‘for’
+     for (i = 0; i < 16; i++) {
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:96:17: error: expected declaration specifiers before ‘i’
+     for (i = 0; i < 16; i++) {
+                 ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:96:25: error: expected declaration specifiers before ‘i’
+     for (i = 0; i < 16; i++) {
+                         ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:101:5: error: expected declaration specifiers before ‘cpu_CF’
+     cpu_CF = tcg_global_mem_new_i32(TCG_AREG0, offsetof(CPUARMState, CF), "CF");
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:102:5: error: expected declaration specifiers before ‘cpu_NF’
+     cpu_NF = tcg_global_mem_new_i32(TCG_AREG0, offsetof(CPUARMState, NF), "NF");
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:103:5: error: expected declaration specifiers before ‘cpu_VF’
+     cpu_VF = tcg_global_mem_new_i32(TCG_AREG0, offsetof(CPUARMState, VF), "VF");
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:104:5: error: expected declaration specifiers before ‘cpu_ZF’
+     cpu_ZF = tcg_global_mem_new_i32(TCG_AREG0, offsetof(CPUARMState, ZF), "ZF");
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:106:5: error: expected declaration specifiers before ‘cpu_exclusive_addr’
+     cpu_exclusive_addr = tcg_global_mem_new_i64(TCG_AREG0,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:108:5: error: expected declaration specifiers before ‘cpu_exclusive_val’
+     cpu_exclusive_val = tcg_global_mem_new_i64(TCG_AREG0,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:111:5: error: expected declaration specifiers before ‘cpu_exclusive_test’
+     cpu_exclusive_test = tcg_global_mem_new_i64(TCG_AREG0,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:113:5: error: expected declaration specifiers before ‘cpu_exclusive_info’
+     cpu_exclusive_info = tcg_global_mem_new_i32(TCG_AREG0,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:117:5: error: expected declaration specifiers before ‘a64_translate_init’
+     a64_translate_init();
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:118:1: error: expected declaration specifiers before ‘}’ token
+ }
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:121:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:143:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:152:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:162:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:178:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:187:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:207:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:216:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:225:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:235:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:246:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:262:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:278:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:290:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:298:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:306:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:321:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:335:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:349:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:367:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:386:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:402:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:416:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:422:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:429:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:436:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:443:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:451:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:465:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:493:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:508:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:517:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {                                                                     \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:530:1: note: in expansion of macro ‘GEN_SHIFT’
+ GEN_SHIFT(shl)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:517:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {                                                                     \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:531:1: note: in expansion of macro ‘GEN_SHIFT’
+ GEN_SHIFT(shr)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:535:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:547:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:557:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:571:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:616:2: error: expected declaration specifiers before ‘;’ token
+ };
+  ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:620:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:656:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:703:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:744:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:817:22: error: storage class specified for parameter ‘table_logic_cc’
+ static const uint8_t table_logic_cc[16] = {
+                      ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:817:1: error: parameter ‘table_logic_cc’ is initialized
+ static const uint8_t table_logic_cc[16] = {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:818:5: error: initialization makes pointer from integer without a cast [-Werror]
+     1, /* and */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:818:5: error: (near initialization for ‘table_logic_cc’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:819:5: error: excess elements in scalar initializer [-Werror]
+     1, /* xor */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:819:5: error: (near initialization for ‘table_logic_cc’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:820:5: error: excess elements in scalar initializer [-Werror]
+     0, /* sub */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:820:5: error: (near initialization for ‘table_logic_cc’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:821:5: error: excess elements in scalar initializer [-Werror]
+     0, /* rsb */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:821:5: error: (near initialization for ‘table_logic_cc’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:822:5: error: excess elements in scalar initializer [-Werror]
+     0, /* add */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:822:5: error: (near initialization for ‘table_logic_cc’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:823:5: error: excess elements in scalar initializer [-Werror]
+     0, /* adc */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:823:5: error: (near initialization for ‘table_logic_cc’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:824:5: error: excess elements in scalar initializer [-Werror]
+     0, /* sbc */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:824:5: error: (near initialization for ‘table_logic_cc’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:825:5: error: excess elements in scalar initializer [-Werror]
+     0, /* rsc */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:825:5: error: (near initialization for ‘table_logic_cc’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:826:5: error: excess elements in scalar initializer [-Werror]
+     1, /* andl */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:826:5: error: (near initialization for ‘table_logic_cc’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:827:5: error: excess elements in scalar initializer [-Werror]
+     1, /* xorl */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:827:5: error: (near initialization for ‘table_logic_cc’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:828:5: error: excess elements in scalar initializer [-Werror]
+     0, /* cmp */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:828:5: error: (near initialization for ‘table_logic_cc’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:829:5: error: excess elements in scalar initializer [-Werror]
+     0, /* cmn */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:829:5: error: (near initialization for ‘table_logic_cc’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:830:5: error: excess elements in scalar initializer [-Werror]
+     1, /* orr */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:830:5: error: (near initialization for ‘table_logic_cc’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:831:5: error: excess elements in scalar initializer [-Werror]
+     1, /* mov */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:831:5: error: (near initialization for ‘table_logic_cc’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:832:5: error: excess elements in scalar initializer [-Werror]
+     1, /* bic */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:832:5: error: (near initialization for ‘table_logic_cc’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:833:5: error: excess elements in scalar initializer [-Werror]
+     1, /* mvn */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:833:5: error: (near initialization for ‘table_logic_cc’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:837:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:857:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:876:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:903:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:916:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1038:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1043:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1027:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {                                                                        \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1086:1: note: in expansion of macro ‘DO_GEN_LD’
+ DO_GEN_LD(8s, MO_SB)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1027:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {                                                                        \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1087:1: note: in expansion of macro ‘DO_GEN_LD’
+ DO_GEN_LD(8u, MO_UB)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1027:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {                                                                        \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1088:1: note: in expansion of macro ‘DO_GEN_LD’
+ DO_GEN_LD(16s, MO_TESW)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1027:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {                                                                        \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1089:1: note: in expansion of macro ‘DO_GEN_LD’
+ DO_GEN_LD(16u, MO_TEUW)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1027:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {                                                                        \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1090:1: note: in expansion of macro ‘DO_GEN_LD’
+ DO_GEN_LD(32u, MO_TEUL)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1033:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {                                                                        \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1091:1: note: in expansion of macro ‘DO_GEN_ST’
+ DO_GEN_ST(8, MO_UB)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1033:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {                                                                        \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1092:1: note: in expansion of macro ‘DO_GEN_ST’
+ DO_GEN_ST(16, MO_TEUW)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1033:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {                                                                        \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1093:1: note: in expansion of macro ‘DO_GEN_ST’
+ DO_GEN_ST(32, MO_TEUL)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1096:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1101:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1119:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1135:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1145:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1153:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1162:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1169:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1197:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1224:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1238:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {                                                                     \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1248:1: note: in expansion of macro ‘VFP_OP2’
+ VFP_OP2(add)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1238:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {                                                                     \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1249:1: note: in expansion of macro ‘VFP_OP2’
+ VFP_OP2(sub)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1238:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {                                                                     \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1250:1: note: in expansion of macro ‘VFP_OP2’
+ VFP_OP2(mul)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1238:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {                                                                     \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1251:1: note: in expansion of macro ‘VFP_OP2’
+ VFP_OP2(div)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1256:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1268:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1278:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1286:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1294:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1302:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1310:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1318:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1327:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1337:1: note: in expansion of macro ‘VFP_GEN_ITOF’
+ VFP_GEN_ITOF(uito)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1327:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1338:1: note: in expansion of macro ‘VFP_GEN_ITOF’
+ VFP_GEN_ITOF(sito)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1343:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1353:1: note: in expansion of macro ‘VFP_GEN_FTOI’
+ VFP_GEN_FTOI(toui)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1343:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1354:1: note: in expansion of macro ‘VFP_GEN_FTOI’
+ VFP_GEN_FTOI(touiz)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1343:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1355:1: note: in expansion of macro ‘VFP_GEN_FTOI’
+ VFP_GEN_FTOI(tosi)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1343:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1356:1: note: in expansion of macro ‘VFP_GEN_FTOI’
+ VFP_GEN_FTOI(tosiz)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1361:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1374:1: note: in expansion of macro ‘VFP_GEN_FIX’
+ VFP_GEN_FIX(tosh, _round_to_zero)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1361:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1375:1: note: in expansion of macro ‘VFP_GEN_FIX’
+ VFP_GEN_FIX(tosl, _round_to_zero)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1361:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1376:1: note: in expansion of macro ‘VFP_GEN_FIX’
+ VFP_GEN_FIX(touh, _round_to_zero)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1361:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1377:1: note: in expansion of macro ‘VFP_GEN_FIX’
+ VFP_GEN_FIX(toul, _round_to_zero)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1361:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1378:1: note: in expansion of macro ‘VFP_GEN_FIX’
+ VFP_GEN_FIX(shto, )
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1361:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1379:1: note: in expansion of macro ‘VFP_GEN_FIX’
+ VFP_GEN_FIX(slto, )
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1361:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1380:1: note: in expansion of macro ‘VFP_GEN_FIX’
+ VFP_GEN_FIX(uhto, )
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1361:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1381:1: note: in expansion of macro ‘VFP_GEN_FIX’
+ VFP_GEN_FIX(ulto, )
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1385:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1394:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1404:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1420:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1427:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1434:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1440:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1445:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1455:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1463:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1471:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1481:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1486:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1491:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1498:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1504:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1509:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1514:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1520:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1526:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1533:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1556:1: note: in expansion of macro ‘IWMMXT_OP’
+ IWMMXT_OP(maddsq)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1533:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1557:1: note: in expansion of macro ‘IWMMXT_OP’
+ IWMMXT_OP(madduq)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1533:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1558:1: note: in expansion of macro ‘IWMMXT_OP’
+ IWMMXT_OP(sadb)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1533:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1559:1: note: in expansion of macro ‘IWMMXT_OP’
+ IWMMXT_OP(sadw)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1533:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1560:1: note: in expansion of macro ‘IWMMXT_OP’
+ IWMMXT_OP(mulslw)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1533:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1561:1: note: in expansion of macro ‘IWMMXT_OP’
+ IWMMXT_OP(mulshw)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1533:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1562:1: note: in expansion of macro ‘IWMMXT_OP’
+ IWMMXT_OP(mululw)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1533:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1563:1: note: in expansion of macro ‘IWMMXT_OP’
+ IWMMXT_OP(muluhw)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1533:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1564:1: note: in expansion of macro ‘IWMMXT_OP’
+ IWMMXT_OP(macsw)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1533:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1565:1: note: in expansion of macro ‘IWMMXT_OP’
+ IWMMXT_OP(macuw)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1546:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##b) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1567:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(unpackl)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1547:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##w) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1567:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(unpackl)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1548:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##l)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1567:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(unpackl)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1546:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##b) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1568:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(unpackh)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1547:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##w) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1568:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(unpackh)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1548:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##l)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1568:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(unpackh)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1552:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1570:1: note: in expansion of macro ‘IWMMXT_OP_ENV1’
+ IWMMXT_OP_ENV1(unpacklub)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1552:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1571:1: note: in expansion of macro ‘IWMMXT_OP_ENV1’
+ IWMMXT_OP_ENV1(unpackluw)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1552:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1572:1: note: in expansion of macro ‘IWMMXT_OP_ENV1’
+ IWMMXT_OP_ENV1(unpacklul)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1552:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1573:1: note: in expansion of macro ‘IWMMXT_OP_ENV1’
+ IWMMXT_OP_ENV1(unpackhub)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1552:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1574:1: note: in expansion of macro ‘IWMMXT_OP_ENV1’
+ IWMMXT_OP_ENV1(unpackhuw)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1552:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1575:1: note: in expansion of macro ‘IWMMXT_OP_ENV1’
+ IWMMXT_OP_ENV1(unpackhul)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1552:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1576:1: note: in expansion of macro ‘IWMMXT_OP_ENV1’
+ IWMMXT_OP_ENV1(unpacklsb)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1552:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1577:1: note: in expansion of macro ‘IWMMXT_OP_ENV1’
+ IWMMXT_OP_ENV1(unpacklsw)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1552:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1578:1: note: in expansion of macro ‘IWMMXT_OP_ENV1’
+ IWMMXT_OP_ENV1(unpacklsl)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1552:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1579:1: note: in expansion of macro ‘IWMMXT_OP_ENV1’
+ IWMMXT_OP_ENV1(unpackhsb)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1552:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1580:1: note: in expansion of macro ‘IWMMXT_OP_ENV1’
+ IWMMXT_OP_ENV1(unpackhsw)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1552:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1581:1: note: in expansion of macro ‘IWMMXT_OP_ENV1’
+ IWMMXT_OP_ENV1(unpackhsl)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1546:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##b) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1583:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(cmpeq)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1547:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##w) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1583:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(cmpeq)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1548:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##l)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1583:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(cmpeq)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1546:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##b) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1584:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(cmpgtu)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1547:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##w) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1584:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(cmpgtu)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1548:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##l)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1584:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(cmpgtu)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1546:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##b) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1585:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(cmpgts)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1547:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##w) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1585:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(cmpgts)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1548:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##l)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1585:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(cmpgts)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1546:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##b) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1587:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(mins)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1547:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##w) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1587:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(mins)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1548:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##l)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1587:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(mins)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1546:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##b) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1588:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(minu)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1547:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##w) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1588:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(minu)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1548:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##l)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1588:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(minu)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1546:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##b) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1589:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(maxs)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1547:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##w) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1589:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(maxs)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1548:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##l)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1589:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(maxs)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1546:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##b) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1590:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(maxu)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1547:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##w) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1590:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(maxu)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1548:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##l)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1590:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(maxu)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1546:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##b) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1592:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(subn)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1547:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##w) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1592:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(subn)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1548:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##l)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1592:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(subn)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1546:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##b) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1593:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(addn)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1547:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##w) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1593:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(addn)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1548:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##l)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1593:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(addn)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1546:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##b) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1594:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(subu)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1547:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##w) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1594:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(subu)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1548:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##l)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1594:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(subu)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1546:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##b) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1595:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(addu)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1547:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##w) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1595:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(addu)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1548:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##l)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1595:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(addu)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1546:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##b) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1596:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(subs)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1547:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##w) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1596:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(subs)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1548:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##l)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1596:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(subs)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1546:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##b) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1597:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(adds)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1547:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##w) \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1597:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(adds)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1548:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(name##l)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1597:1: note: in expansion of macro ‘IWMMXT_OP_ENV_SIZE’
+ IWMMXT_OP_ENV_SIZE(adds)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1599:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(avgb0)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1600:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(avgb1)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1601:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(avgw0)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1602:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(avgw1)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1604:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(packuw)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1605:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(packul)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1606:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(packuq)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1607:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(packsw)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1608:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(packsl)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1540:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ { \
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1609:1: note: in expansion of macro ‘IWMMXT_OP_ENV’
+ IWMMXT_OP_ENV(packsq)
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1612:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1620:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1628:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1635:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1643:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1677:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:1701:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:2707:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:2796:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:2803:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:2809:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:2822:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:2831:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:2840:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:2863:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:2972:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:3020:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:3058:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:3118:22: error: storage class specified for parameter ‘fp_decode_rm’
+ static const uint8_t fp_decode_rm[] = {
+                      ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:3118:1: error: parameter ‘fp_decode_rm’ is initialized
+ static const uint8_t fp_decode_rm[] = {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:3119:5: error: initialization makes pointer from integer without a cast [-Werror]
+     FPROUNDING_TIEAWAY,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:3119:5: error: (near initialization for ‘fp_decode_rm’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:3120:5: error: excess elements in scalar initializer [-Werror]
+     FPROUNDING_TIEEVEN,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:3120:5: error: (near initialization for ‘fp_decode_rm’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:3121:5: error: excess elements in scalar initializer [-Werror]
+     FPROUNDING_POSINF,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:3121:5: error: (near initialization for ‘fp_decode_rm’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:3122:5: error: excess elements in scalar initializer [-Werror]
+     FPROUNDING_NEGINF,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:3122:5: error: (near initialization for ‘fp_decode_rm’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:3126:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:3162:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4080:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4102:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4115:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4129:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4168:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4190:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4199:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4210:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4218:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4239:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4249:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4311:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4318:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4324:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4340:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4379:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4418:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4440:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4463:3: error: storage class specified for parameter ‘neon_ls_element_type’
+ } neon_ls_element_type[11] = {
+   ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4463:1: error: parameter ‘neon_ls_element_type’ is initialized
+ } neon_ls_element_type[11] = {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4464:5: error: braces around scalar initializer [-Werror]
+     {4, 4, 1},
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4464:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4464:5: error: initialization makes pointer from integer without a cast [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4464:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4464:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4464:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4464:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4464:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4465:5: error: braces around scalar initializer [-Werror]
+     {4, 4, 2},
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4465:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4465:5: error: initialization makes pointer from integer without a cast [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4465:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4465:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4465:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4465:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4465:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4465:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4465:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4466:5: error: braces around scalar initializer [-Werror]
+     {4, 1, 1},
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4466:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4466:5: error: initialization makes pointer from integer without a cast [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4466:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4466:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4466:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4466:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4466:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4466:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4466:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4467:5: error: braces around scalar initializer [-Werror]
+     {4, 2, 1},
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4467:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4467:5: error: initialization makes pointer from integer without a cast [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4467:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4467:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4467:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4467:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4467:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4467:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4467:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4468:5: error: braces around scalar initializer [-Werror]
+     {3, 3, 1},
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4468:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4468:5: error: initialization makes pointer from integer without a cast [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4468:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4468:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4468:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4468:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4468:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4468:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4468:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4469:5: error: braces around scalar initializer [-Werror]
+     {3, 3, 2},
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4469:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4469:5: error: initialization makes pointer from integer without a cast [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4469:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4469:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4469:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4469:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4469:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4469:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4469:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4470:5: error: braces around scalar initializer [-Werror]
+     {3, 1, 1},
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4470:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4470:5: error: initialization makes pointer from integer without a cast [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4470:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4470:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4470:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4470:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4470:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4470:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4470:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4471:5: error: braces around scalar initializer [-Werror]
+     {1, 1, 1},
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4471:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4471:5: error: initialization makes pointer from integer without a cast [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4471:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4471:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4471:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4471:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4471:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4471:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4471:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4472:5: error: braces around scalar initializer [-Werror]
+     {2, 2, 1},
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4472:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4472:5: error: initialization makes pointer from integer without a cast [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4472:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4472:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4472:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4472:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4472:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4472:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4472:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4473:5: error: braces around scalar initializer [-Werror]
+     {2, 2, 2},
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4473:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4473:5: error: initialization makes pointer from integer without a cast [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4473:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4473:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4473:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4473:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4473:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4473:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4473:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4474:5: error: braces around scalar initializer [-Werror]
+     {2, 1, 1}
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4474:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4474:5: error: initialization makes pointer from integer without a cast [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4474:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4474:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4474:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4474:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4474:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4474:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4474:5: error: (near initialization for ‘neon_ls_element_type’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4480:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4808:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4815:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4825:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4835:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4845:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4856:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4889:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4909:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4919:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4929:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4941:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4951:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:4982:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5035:22: error: storage class specified for parameter ‘neon_3r_sizes’
+ static const uint8_t neon_3r_sizes[] = {
+                      ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5035:1: error: parameter ‘neon_3r_sizes’ is initialized
+ static const uint8_t neon_3r_sizes[] = {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5036:5: error: array index in non-array initializer
+     [NEON_3R_VHADD] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5036:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5036:5: error: initialization makes pointer from integer without a cast [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5036:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5037:5: error: array index in non-array initializer
+     [NEON_3R_VQADD] = 0xf,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5037:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5037:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5037:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5038:5: error: array index in non-array initializer
+     [NEON_3R_VRHADD] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5038:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5038:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5038:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5039:5: error: array index in non-array initializer
+     [NEON_3R_LOGIC] = 0xf, /* size field encodes op type */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5039:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5039:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5039:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5040:5: error: array index in non-array initializer
+     [NEON_3R_VHSUB] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5040:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5040:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5040:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5041:5: error: array index in non-array initializer
+     [NEON_3R_VQSUB] = 0xf,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5041:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5041:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5041:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5042:5: error: array index in non-array initializer
+     [NEON_3R_VCGT] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5042:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5042:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5042:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5043:5: error: array index in non-array initializer
+     [NEON_3R_VCGE] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5043:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5043:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5043:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5044:5: error: array index in non-array initializer
+     [NEON_3R_VSHL] = 0xf,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5044:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5044:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5044:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5045:5: error: array index in non-array initializer
+     [NEON_3R_VQSHL] = 0xf,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5045:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5045:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5045:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5046:5: error: array index in non-array initializer
+     [NEON_3R_VRSHL] = 0xf,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5046:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5046:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5046:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5047:5: error: array index in non-array initializer
+     [NEON_3R_VQRSHL] = 0xf,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5047:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5047:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5047:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5048:5: error: array index in non-array initializer
+     [NEON_3R_VMAX] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5048:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5048:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5048:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5049:5: error: array index in non-array initializer
+     [NEON_3R_VMIN] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5049:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5049:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5049:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5050:5: error: array index in non-array initializer
+     [NEON_3R_VABD] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5050:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5050:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5050:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5051:5: error: array index in non-array initializer
+     [NEON_3R_VABA] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5051:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5051:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5051:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5052:5: error: array index in non-array initializer
+     [NEON_3R_VADD_VSUB] = 0xf,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5052:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5052:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5052:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5053:5: error: array index in non-array initializer
+     [NEON_3R_VTST_VCEQ] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5053:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5053:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5053:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5054:5: error: array index in non-array initializer
+     [NEON_3R_VML] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5054:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5054:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5054:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5055:5: error: array index in non-array initializer
+     [NEON_3R_VMUL] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5055:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5055:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5055:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5056:5: error: array index in non-array initializer
+     [NEON_3R_VPMAX] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5056:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5056:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5056:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5057:5: error: array index in non-array initializer
+     [NEON_3R_VPMIN] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5057:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5057:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5057:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5058:5: error: array index in non-array initializer
+     [NEON_3R_VQDMULH_VQRDMULH] = 0x6,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5058:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5058:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5058:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5059:5: error: array index in non-array initializer
+     [NEON_3R_VPADD] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5059:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5059:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5059:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5060:5: error: array index in non-array initializer
+     [NEON_3R_SHA] = 0xf, /* size field encodes op type */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5060:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5060:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5060:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5061:5: error: array index in non-array initializer
+     [NEON_3R_VFM] = 0x5, /* size bit 1 encodes op */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5061:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5061:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5061:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5062:5: error: array index in non-array initializer
+     [NEON_3R_FLOAT_ARITH] = 0x5, /* size bit 1 encodes op */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5062:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5062:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5062:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5063:5: error: array index in non-array initializer
+     [NEON_3R_FLOAT_MULTIPLY] = 0x5, /* size bit 1 encodes op */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5063:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5063:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5063:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5064:5: error: array index in non-array initializer
+     [NEON_3R_FLOAT_CMP] = 0x5, /* size bit 1 encodes op */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5064:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5064:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5064:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5065:5: error: array index in non-array initializer
+     [NEON_3R_FLOAT_ACMP] = 0x5, /* size bit 1 encodes op */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5065:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5065:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5065:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5066:5: error: array index in non-array initializer
+     [NEON_3R_FLOAT_MINMAX] = 0x5, /* size bit 1 encodes op */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5066:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5066:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5066:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5067:5: error: array index in non-array initializer
+     [NEON_3R_FLOAT_MISC] = 0x5, /* size bit 1 encodes op */
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5067:5: error: (near initialization for ‘neon_3r_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5067:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5067:5: error: (near initialization for ‘neon_3r_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5138:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5151:22: error: storage class specified for parameter ‘neon_2rm_sizes’
+ static const uint8_t neon_2rm_sizes[] = {
+                      ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5151:1: error: parameter ‘neon_2rm_sizes’ is initialized
+ static const uint8_t neon_2rm_sizes[] = {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5152:5: error: array index in non-array initializer
+     [NEON_2RM_VREV64] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5152:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5152:5: error: initialization makes pointer from integer without a cast [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5152:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5153:5: error: array index in non-array initializer
+     [NEON_2RM_VREV32] = 0x3,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5153:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5153:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5153:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5154:5: error: array index in non-array initializer
+     [NEON_2RM_VREV16] = 0x1,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5154:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5154:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5154:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5155:5: error: array index in non-array initializer
+     [NEON_2RM_VPADDL] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5155:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5155:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5155:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5156:5: error: array index in non-array initializer
+     [NEON_2RM_VPADDL_U] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5156:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5156:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5156:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5157:5: error: array index in non-array initializer
+     [NEON_2RM_AESE] = 0x1,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5157:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5157:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5157:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5158:5: error: array index in non-array initializer
+     [NEON_2RM_AESMC] = 0x1,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5158:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5158:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5158:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5159:5: error: array index in non-array initializer
+     [NEON_2RM_VCLS] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5159:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5159:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5159:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5160:5: error: array index in non-array initializer
+     [NEON_2RM_VCLZ] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5160:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5160:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5160:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5161:5: error: array index in non-array initializer
+     [NEON_2RM_VCNT] = 0x1,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5161:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5161:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5161:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5162:5: error: array index in non-array initializer
+     [NEON_2RM_VMVN] = 0x1,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5162:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5162:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5162:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5163:5: error: array index in non-array initializer
+     [NEON_2RM_VPADAL] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5163:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5163:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5163:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5164:5: error: array index in non-array initializer
+     [NEON_2RM_VPADAL_U] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5164:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5164:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5164:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5165:5: error: array index in non-array initializer
+     [NEON_2RM_VQABS] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5165:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5165:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5165:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5166:5: error: array index in non-array initializer
+     [NEON_2RM_VQNEG] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5166:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5166:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5166:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5167:5: error: array index in non-array initializer
+     [NEON_2RM_VCGT0] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5167:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5167:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5167:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5168:5: error: array index in non-array initializer
+     [NEON_2RM_VCGE0] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5168:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5168:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5168:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5169:5: error: array index in non-array initializer
+     [NEON_2RM_VCEQ0] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5169:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5169:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5169:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5170:5: error: array index in non-array initializer
+     [NEON_2RM_VCLE0] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5170:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5170:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5170:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5171:5: error: array index in non-array initializer
+     [NEON_2RM_VCLT0] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5171:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5171:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5171:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5172:5: error: array index in non-array initializer
+     [NEON_2RM_SHA1H] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5172:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5172:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5172:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5173:5: error: array index in non-array initializer
+     [NEON_2RM_VABS] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5173:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5173:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5173:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5174:5: error: array index in non-array initializer
+     [NEON_2RM_VNEG] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5174:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5174:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5174:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5175:5: error: array index in non-array initializer
+     [NEON_2RM_VCGT0_F] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5175:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5175:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5175:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5176:5: error: array index in non-array initializer
+     [NEON_2RM_VCGE0_F] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5176:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5176:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5176:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5177:5: error: array index in non-array initializer
+     [NEON_2RM_VCEQ0_F] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5177:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5177:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5177:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5178:5: error: array index in non-array initializer
+     [NEON_2RM_VCLE0_F] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5178:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5178:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5178:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5179:5: error: array index in non-array initializer
+     [NEON_2RM_VCLT0_F] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5179:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5179:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5179:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5180:5: error: array index in non-array initializer
+     [NEON_2RM_VABS_F] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5180:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5180:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5180:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5181:5: error: array index in non-array initializer
+     [NEON_2RM_VNEG_F] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5181:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5181:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5181:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5182:5: error: array index in non-array initializer
+     [NEON_2RM_VSWP] = 0x1,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5182:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5182:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5182:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5183:5: error: array index in non-array initializer
+     [NEON_2RM_VTRN] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5183:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5183:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5183:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5184:5: error: array index in non-array initializer
+     [NEON_2RM_VUZP] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5184:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5184:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5184:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5185:5: error: array index in non-array initializer
+     [NEON_2RM_VZIP] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5185:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5185:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5185:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5186:5: error: array index in non-array initializer
+     [NEON_2RM_VMOVN] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5186:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5186:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5186:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5187:5: error: array index in non-array initializer
+     [NEON_2RM_VQMOVN] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5187:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5187:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5187:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5188:5: error: array index in non-array initializer
+     [NEON_2RM_VSHLL] = 0x7,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5188:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5188:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5188:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5189:5: error: array index in non-array initializer
+     [NEON_2RM_SHA1SU1] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5189:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5189:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5189:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5190:5: error: array index in non-array initializer
+     [NEON_2RM_VRINTN] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5190:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5190:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5190:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5191:5: error: array index in non-array initializer
+     [NEON_2RM_VRINTX] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5191:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5191:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5191:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5192:5: error: array index in non-array initializer
+     [NEON_2RM_VRINTA] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5192:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5192:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5192:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5193:5: error: array index in non-array initializer
+     [NEON_2RM_VRINTZ] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5193:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5193:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5193:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5194:5: error: array index in non-array initializer
+     [NEON_2RM_VCVT_F16_F32] = 0x2,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5194:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5194:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5194:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5195:5: error: array index in non-array initializer
+     [NEON_2RM_VRINTM] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5195:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5195:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5195:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5196:5: error: array index in non-array initializer
+     [NEON_2RM_VCVT_F32_F16] = 0x2,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5196:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5196:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5196:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5197:5: error: array index in non-array initializer
+     [NEON_2RM_VRINTP] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5197:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5197:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5197:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5198:5: error: array index in non-array initializer
+     [NEON_2RM_VCVTAU] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5198:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5198:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5198:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5199:5: error: array index in non-array initializer
+     [NEON_2RM_VCVTAS] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5199:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5199:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5199:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5200:5: error: array index in non-array initializer
+     [NEON_2RM_VCVTNU] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5200:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5200:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5200:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5201:5: error: array index in non-array initializer
+     [NEON_2RM_VCVTNS] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5201:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5201:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5201:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5202:5: error: array index in non-array initializer
+     [NEON_2RM_VCVTPU] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5202:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5202:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5202:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5203:5: error: array index in non-array initializer
+     [NEON_2RM_VCVTPS] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5203:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5203:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5203:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5204:5: error: array index in non-array initializer
+     [NEON_2RM_VCVTMU] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5204:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5204:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5204:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5205:5: error: array index in non-array initializer
+     [NEON_2RM_VCVTMS] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5205:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5205:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5205:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5206:5: error: array index in non-array initializer
+     [NEON_2RM_VRECPE] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5206:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5206:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5206:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5207:5: error: array index in non-array initializer
+     [NEON_2RM_VRSQRTE] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5207:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5207:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5207:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5208:5: error: array index in non-array initializer
+     [NEON_2RM_VRECPE_F] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5208:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5208:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5208:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5209:5: error: array index in non-array initializer
+     [NEON_2RM_VRSQRTE_F] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5209:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5209:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5209:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5210:5: error: array index in non-array initializer
+     [NEON_2RM_VCVT_FS] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5210:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5210:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5210:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5211:5: error: array index in non-array initializer
+     [NEON_2RM_VCVT_FU] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5211:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5211:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5211:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5212:5: error: array index in non-array initializer
+     [NEON_2RM_VCVT_SF] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5212:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5212:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5212:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5213:5: error: array index in non-array initializer
+     [NEON_2RM_VCVT_UF] = 0x4,
+     ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5213:5: error: (near initialization for ‘neon_2rm_sizes’)
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5213:5: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5213:5: error: (near initialization for ‘neon_2rm_sizes’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:5222:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:7217:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:7467:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:7480:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:7495:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:7513:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:7529:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:7567:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:7574:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:7677:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:7733:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:9176:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:9189:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:9259:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:10440:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11172:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11547:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11552:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11556:20: error: storage class specified for parameter ‘cpu_mode_names’
+ static const char *cpu_mode_names[16] = {
+                    ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11556:1: error: parameter ‘cpu_mode_names’ is initialized
+ static const char *cpu_mode_names[16] = {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11557:3: error: initialization from incompatible pointer type [-Werror]
+   "usr", "fiq", "irq", "svc", "???", "???", "mon", "abt",
+   ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11557:3: error: (near initialization for ‘cpu_mode_names’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11557:3: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11557:3: error: (near initialization for ‘cpu_mode_names’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11557:3: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11557:3: error: (near initialization for ‘cpu_mode_names’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11557:3: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11557:3: error: (near initialization for ‘cpu_mode_names’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11557:3: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11557:3: error: (near initialization for ‘cpu_mode_names’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11557:3: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11557:3: error: (near initialization for ‘cpu_mode_names’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11557:3: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11557:3: error: (near initialization for ‘cpu_mode_names’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11557:3: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11557:3: error: (near initialization for ‘cpu_mode_names’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11558:3: error: excess elements in scalar initializer [-Werror]
+   "???", "???", "hyp", "und", "???", "???", "???", "sys"
+   ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11558:3: error: (near initialization for ‘cpu_mode_names’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11558:3: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11558:3: error: (near initialization for ‘cpu_mode_names’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11558:3: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11558:3: error: (near initialization for ‘cpu_mode_names’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11558:3: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11558:3: error: (near initialization for ‘cpu_mode_names’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11558:3: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11558:3: error: (near initialization for ‘cpu_mode_names’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11558:3: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11558:3: error: (near initialization for ‘cpu_mode_names’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11558:3: error: excess elements in scalar initializer [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11558:3: error: (near initialization for ‘cpu_mode_names’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11559:1: error: excess elements in scalar initializer [-Werror]
+ };
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11559:1: error: (near initialization for ‘cpu_mode_names’) [-Werror]
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11563:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11611:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:90:6: error: old-style parameter declarations in prototyped function definition
+ void arm_translate_init(void)
+      ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:11619:1: error: expected ‘{’ at end of input
+ }
+ ^
+In file included from /home/shkang/workspace/qemu-src/target-arm/translate.c:56:0:
+/home/shkang/workspace/qemu-src/target-arm/translate.c: At top level:
+/home/shkang/workspace/qemu-src/target-arm/translate.h:123:20: error: ‘gen_bpredaccess’ declared ‘static’ but never defined [-Werror=unused-function]
+ static inline void gen_bpredaccess(DisasContext *s, int n, target_ulong dest, int is_cond);
+                    ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:57:17: error: ‘gen_opc_condexec_bits’ defined but not used [-Werror=unused-variable]
+ static uint32_t gen_opc_condexec_bits[OPC_BUF_SIZE];
+                 ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:67:17: error: ‘cpu_V0’ defined but not used [-Werror=unused-variable]
+ static TCGv_i64 cpu_V0, cpu_V1, cpu_M0;
+                 ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:67:25: error: ‘cpu_V1’ defined but not used [-Werror=unused-variable]
+ static TCGv_i64 cpu_V0, cpu_V1, cpu_M0;
+                         ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:67:33: error: ‘cpu_M0’ defined but not used [-Werror=unused-variable]
+ static TCGv_i64 cpu_V0, cpu_V1, cpu_M0;
+                                 ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:68:17: error: ‘cpu_R’ defined but not used [-Werror=unused-variable]
+ static TCGv_i32 cpu_R[16];
+                 ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:69:17: error: ‘cpu_CF’ defined but not used [-Werror=unused-variable]
+ static TCGv_i32 cpu_CF, cpu_NF, cpu_VF, cpu_ZF;
+                 ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:69:25: error: ‘cpu_NF’ defined but not used [-Werror=unused-variable]
+ static TCGv_i32 cpu_CF, cpu_NF, cpu_VF, cpu_ZF;
+                         ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:69:33: error: ‘cpu_VF’ defined but not used [-Werror=unused-variable]
+ static TCGv_i32 cpu_CF, cpu_NF, cpu_VF, cpu_ZF;
+                                 ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:69:41: error: ‘cpu_ZF’ defined but not used [-Werror=unused-variable]
+ static TCGv_i32 cpu_CF, cpu_NF, cpu_VF, cpu_ZF;
+                                         ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:70:17: error: ‘cpu_exclusive_addr’ defined but not used [-Werror=unused-variable]
+ static TCGv_i64 cpu_exclusive_addr;
+                 ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:71:17: error: ‘cpu_exclusive_val’ defined but not used [-Werror=unused-variable]
+ static TCGv_i64 cpu_exclusive_val;
+                 ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:73:17: error: ‘cpu_exclusive_test’ defined but not used [-Werror=unused-variable]
+ static TCGv_i64 cpu_exclusive_test;
+                 ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:74:17: error: ‘cpu_exclusive_info’ defined but not used [-Werror=unused-variable]
+ static TCGv_i32 cpu_exclusive_info;
+                 ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:78:17: error: ‘cpu_F0s’ defined but not used [-Werror=unused-variable]
+ static TCGv_i32 cpu_F0s, cpu_F1s;
+                 ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:78:26: error: ‘cpu_F1s’ defined but not used [-Werror=unused-variable]
+ static TCGv_i32 cpu_F0s, cpu_F1s;
+                          ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:79:17: error: ‘cpu_F0d’ defined but not used [-Werror=unused-variable]
+ static TCGv_i64 cpu_F0d, cpu_F1d;
+                 ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:79:26: error: ‘cpu_F1d’ defined but not used [-Werror=unused-variable]
+ static TCGv_i64 cpu_F0d, cpu_F1d;
+                          ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:81:12: error: ‘cond_jmp’ defined but not used [-Werror=unused-variable]
+ static int cond_jmp=0;
+            ^
+In file included from /home/shkang/workspace/qemu-src/target-arm/translate.c:83:0:
+/home/shkang/workspace/qemu-src/include/exec/gen-icount.h:50:13: error: ‘gen_tb_end’ defined but not used [-Werror=unused-function]
+ static void gen_tb_end(TranslationBlock *tb, int num_insns)
+             ^
+/home/shkang/workspace/qemu-src/target-arm/translate.c:85:20: error: ‘regnames’ defined but not used [-Werror=unused-variable]
+ static const char *regnames[] =
+                    ^
+cc1: all warnings being treated as errors
+make[1]: *** [target-arm/translate.o] Error 1
+make: *** [subdir-arm-linux-user] Error 2

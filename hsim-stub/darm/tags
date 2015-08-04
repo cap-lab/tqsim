@@ -1,0 +1,1419 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+APPEND	darm.c	37;"	d	file:
+AR	Makefile	/^AR = ar$/;"	m
+ARMExpandImm	armv7.c	46;"	d	file:
+ARMv7	darmtbl.py	/^ARMv7 = [$/;"	v
+ARRAYSIZE	darm.h	36;"	d
+B	darm.h	/^    uint32_t        B;$/;"	m	struct:_darm_t
+B	darmtbl3.py	/^B       = Bitsize('B', 1, 'B')$/;"	v
+BIN_EXT	Makefile	/^	BIN_EXT = .exe$/;"	m
+BIN_EXT	Makefile	/^	BIN_EXT =$/;"	m
+BITMSK_12	armv7.c	37;"	d	file:
+BITMSK_16	armv7.c	38;"	d	file:
+BITMSK_24	armv7.c	39;"	d	file:
+BITMSK_8	thumb.c	37;"	d	file:
+BITMSK_8	thumb2.c	39;"	d	file:
+B_INVLD	darm.h	41;"	d
+B_SET	darm.h	40;"	d
+B_UNSET	darm.h	39;"	d
+Bitsize	darmtbl2.py	/^class Bitsize:$/;"	c
+C	tests/tests.c	1561;"	d	file:
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -std=c99 -Wall -O2 -Wextra -Wno-missing-field-initializers$/;"	m
+CHK	utils/elfdarm.c	46;"	d	file:
+CPOpc	darmtbl.py	/^CPOpc         = Immediate('CPOpc', 3, 'Coprocessor Operation Mode')$/;"	v
+CPOpc	darmtbl2.py	/^CPOpc         = Bitsize('CPOpc', 3, 'Coprocessor Operation Mode')$/;"	v
+CRd	darm.h	/^    darm_reg_t      CRd;$/;"	m	struct:_darm_t
+CRd	darmtbl.py	/^CRd           = Immediate('CRd', 4, 'Coprocessor Destination Register')$/;"	v
+CRd	darmtbl2.py	/^CRd           = Bitsize('CRd', 4, 'Coprocessor Destination Register')$/;"	v
+CRm	darm.h	/^    darm_reg_t      CRm;$/;"	m	struct:_darm_t
+CRm	darmtbl.py	/^CRm           = Immediate('CRm', 4, 'Coprocessor Operand Register')$/;"	v
+CRm	darmtbl2.py	/^CRm           = Bitsize('CRm', 4, 'Coprocessor Operand Register')$/;"	v
+CRn	darm.h	/^    darm_reg_t      CRn;$/;"	m	struct:_darm_t
+CRn	darmtbl.py	/^CRn           = Immediate('CRn', 4, 'Coprocessor Operand Register')$/;"	v
+CRn	darmtbl2.py	/^CRn           = Bitsize('CRn', 4, 'Coprocessor Operand Register')$/;"	v
+C_AL	darm.h	/^    C_GE = 10, C_LT = 11, C_GT = 12, C_LE = 13, C_AL = 14,$/;"	e	enum:_darm_cond_t
+C_CC	darm.h	/^    C_EQ = 0, C_NE = 1, C_CS = 2, C_CC = 3, C_MI = 4,$/;"	e	enum:_darm_cond_t
+C_CS	darm.h	/^    C_EQ = 0, C_NE = 1, C_CS = 2, C_CC = 3, C_MI = 4,$/;"	e	enum:_darm_cond_t
+C_EQ	darm.h	/^    C_EQ = 0, C_NE = 1, C_CS = 2, C_CC = 3, C_MI = 4,$/;"	e	enum:_darm_cond_t
+C_GE	darm.h	/^    C_GE = 10, C_LT = 11, C_GT = 12, C_LE = 13, C_AL = 14,$/;"	e	enum:_darm_cond_t
+C_GT	darm.h	/^    C_GE = 10, C_LT = 11, C_GT = 12, C_LE = 13, C_AL = 14,$/;"	e	enum:_darm_cond_t
+C_HI	darm.h	/^    C_PL = 5, C_VS = 6, C_VC = 7, C_HI = 8, C_LS = 9,$/;"	e	enum:_darm_cond_t
+C_HS	darm.h	/^    C_HS = C_CS, C_LO = C_CC,$/;"	e	enum:_darm_cond_t
+C_INVLD	darm.h	/^    C_INVLD = -1$/;"	e	enum:_darm_cond_t
+C_LE	darm.h	/^    C_GE = 10, C_LT = 11, C_GT = 12, C_LE = 13, C_AL = 14,$/;"	e	enum:_darm_cond_t
+C_LO	darm.h	/^    C_HS = C_CS, C_LO = C_CC,$/;"	e	enum:_darm_cond_t
+C_LS	darm.h	/^    C_PL = 5, C_VS = 6, C_VC = 7, C_HI = 8, C_LS = 9,$/;"	e	enum:_darm_cond_t
+C_LT	darm.h	/^    C_GE = 10, C_LT = 11, C_GT = 12, C_LE = 13, C_AL = 14,$/;"	e	enum:_darm_cond_t
+C_MI	darm.h	/^    C_EQ = 0, C_NE = 1, C_CS = 2, C_CC = 3, C_MI = 4,$/;"	e	enum:_darm_cond_t
+C_NE	darm.h	/^    C_EQ = 0, C_NE = 1, C_CS = 2, C_CC = 3, C_MI = 4,$/;"	e	enum:_darm_cond_t
+C_PL	darm.h	/^    C_PL = 5, C_VS = 6, C_VC = 7, C_HI = 8, C_LS = 9,$/;"	e	enum:_darm_cond_t
+C_UNCOND	darm.h	/^    C_UNCOND = 15,$/;"	e	enum:_darm_cond_t
+C_VC	darm.h	/^    C_PL = 5, C_VS = 6, C_VC = 7, C_HI = 8, C_LS = 9,$/;"	e	enum:_darm_cond_t
+C_VS	darm.h	/^    C_PL = 5, C_VS = 6, C_VC = 7, C_HI = 8, C_LS = 9,$/;"	e	enum:_darm_cond_t
+Condition	darm.py	/^class Condition(_Base):$/;"	c
+D	darm.h	/^    uint32_t        D;$/;"	m	struct:_darm_t
+D	darmtbl.py	/^D             = Immediate('D', 1, 'User-defined bit')$/;"	v
+D	darmtbl2.py	/^D             = Bitsize('D', 1, 'User-defined bit')$/;"	v
+Darm	darm.py	/^class Darm:$/;"	c
+Darm	darm.rb	/^  module Darm$/;"	m	class:FFI
+Darm	darm.rb	/^class Darm$/;"	c
+DarmInst	darm.rb	/^    class DarmInst < FFI::Struct$/;"	c	class:FFI.Darm
+DarmStr	darm.rb	/^    class DarmStr < FFI::Struct$/;"	c	class:FFI.Darm
+E	darm.h	/^    uint32_t        E;$/;"	m	struct:_darm_t
+E	darmtbl.py	/^E             = Immediate('E', 1, 'Endian Specifier')$/;"	v
+E	darmtbl2.py	/^E             = Bitsize('E', 1, 'Endian Specifier')$/;"	v
+E	darmtbl3.py	/^E       = Bitsize('E', 1, 'Quiet NaN Exception')$/;"	v
+Encoding	darm.py	/^class Encoding(_Base):$/;"	c
+F	darmtbl3.py	/^F       = Bitsize('F', 1, 'Floating Point Operation')$/;"	v
+F	tests/tests.c	1567;"	d	file:
+FFI	darm.rb	/^module FFI$/;"	m
+FP	darm.h	/^    FP = 11, IP = 12, SP = 13, LR = 14, PC = 15,$/;"	e	enum:_darm_reg_t
+GENCODEOBJ	Makefile	/^GENCODEOBJ = darm-tbl.o armv7-tbl.o thumb-tbl.o thumb2-tbl.o$/;"	m
+GENCODESRC	Makefile	/^GENCODESRC = darm-tbl.c darm-tbl.h armv7-tbl.c armv7-tbl.h \\$/;"	m
+GENR	Makefile	/^GENR = $(GENCODESRC) $(GENCODEOBJ) $(OBJ)$/;"	m
+H	darm.h	/^    uint32_t        H;$/;"	m	struct:_darm_t
+H	darmtbl.py	/^H             = Immediate('H', 1, 'Sign Extension Bit for BL(X)')$/;"	v
+H	darmtbl2.py	/^H             = Bitsize('H', 1, 'Sign Extension Bit for BL(X)')$/;"	v
+I	darm.h	/^    uint32_t        I;$/;"	m	struct:_darm_t
+IP	darm.h	/^    FP = 11, IP = 12, SP = 13, LR = 14, PC = 15,$/;"	e	enum:_darm_reg_t
+I_ADC	darm-tbl.h	/^    I_INVLD, I_ADC, I_ADD, I_ADDW, I_ADR, I_AND, I_ASR, I_B, I_BFC, I_BFI,$/;"	e	enum:_darm_instr_t
+I_ADD	darm-tbl.h	/^    I_INVLD, I_ADC, I_ADD, I_ADDW, I_ADR, I_AND, I_ASR, I_B, I_BFC, I_BFI,$/;"	e	enum:_darm_instr_t
+I_ADDW	darm-tbl.h	/^    I_INVLD, I_ADC, I_ADD, I_ADDW, I_ADR, I_AND, I_ASR, I_B, I_BFC, I_BFI,$/;"	e	enum:_darm_instr_t
+I_ADR	darm-tbl.h	/^    I_INVLD, I_ADC, I_ADD, I_ADDW, I_ADR, I_AND, I_ASR, I_B, I_BFC, I_BFI,$/;"	e	enum:_darm_instr_t
+I_AND	darm-tbl.h	/^    I_INVLD, I_ADC, I_ADD, I_ADDW, I_ADR, I_AND, I_ASR, I_B, I_BFC, I_BFI,$/;"	e	enum:_darm_instr_t
+I_ASR	darm-tbl.h	/^    I_INVLD, I_ADC, I_ADD, I_ADDW, I_ADR, I_AND, I_ASR, I_B, I_BFC, I_BFI,$/;"	e	enum:_darm_instr_t
+I_B	darm-tbl.h	/^    I_INVLD, I_ADC, I_ADD, I_ADDW, I_ADR, I_AND, I_ASR, I_B, I_BFC, I_BFI,$/;"	e	enum:_darm_instr_t
+I_BFC	darm-tbl.h	/^    I_INVLD, I_ADC, I_ADD, I_ADDW, I_ADR, I_AND, I_ASR, I_B, I_BFC, I_BFI,$/;"	e	enum:_darm_instr_t
+I_BFI	darm-tbl.h	/^    I_INVLD, I_ADC, I_ADD, I_ADDW, I_ADR, I_AND, I_ASR, I_B, I_BFC, I_BFI,$/;"	e	enum:_darm_instr_t
+I_BIC	darm-tbl.h	/^    I_BIC, I_BKPT, I_BL, I_BLX, I_BX, I_BXJ, I_CBNZ, I_CBZ, I_CDP, I_CDP2,$/;"	e	enum:_darm_instr_t
+I_BKPT	darm-tbl.h	/^    I_BIC, I_BKPT, I_BL, I_BLX, I_BX, I_BXJ, I_CBNZ, I_CBZ, I_CDP, I_CDP2,$/;"	e	enum:_darm_instr_t
+I_BL	darm-tbl.h	/^    I_BIC, I_BKPT, I_BL, I_BLX, I_BX, I_BXJ, I_CBNZ, I_CBZ, I_CDP, I_CDP2,$/;"	e	enum:_darm_instr_t
+I_BLX	darm-tbl.h	/^    I_BIC, I_BKPT, I_BL, I_BLX, I_BX, I_BXJ, I_CBNZ, I_CBZ, I_CDP, I_CDP2,$/;"	e	enum:_darm_instr_t
+I_BX	darm-tbl.h	/^    I_BIC, I_BKPT, I_BL, I_BLX, I_BX, I_BXJ, I_CBNZ, I_CBZ, I_CDP, I_CDP2,$/;"	e	enum:_darm_instr_t
+I_BXJ	darm-tbl.h	/^    I_BIC, I_BKPT, I_BL, I_BLX, I_BX, I_BXJ, I_CBNZ, I_CBZ, I_CDP, I_CDP2,$/;"	e	enum:_darm_instr_t
+I_CBNZ	darm-tbl.h	/^    I_BIC, I_BKPT, I_BL, I_BLX, I_BX, I_BXJ, I_CBNZ, I_CBZ, I_CDP, I_CDP2,$/;"	e	enum:_darm_instr_t
+I_CBZ	darm-tbl.h	/^    I_BIC, I_BKPT, I_BL, I_BLX, I_BX, I_BXJ, I_CBNZ, I_CBZ, I_CDP, I_CDP2,$/;"	e	enum:_darm_instr_t
+I_CDP	darm-tbl.h	/^    I_BIC, I_BKPT, I_BL, I_BLX, I_BX, I_BXJ, I_CBNZ, I_CBZ, I_CDP, I_CDP2,$/;"	e	enum:_darm_instr_t
+I_CDP2	darm-tbl.h	/^    I_BIC, I_BKPT, I_BL, I_BLX, I_BX, I_BXJ, I_CBNZ, I_CBZ, I_CDP, I_CDP2,$/;"	e	enum:_darm_instr_t
+I_CHKA	darm-tbl.h	/^    I_CHKA, I_CLREX, I_CLZ, I_CMN, I_CMP, I_CPS, I_CPY, I_DBG, I_DMB, I_DSB,$/;"	e	enum:_darm_instr_t
+I_CLREX	darm-tbl.h	/^    I_CHKA, I_CLREX, I_CLZ, I_CMN, I_CMP, I_CPS, I_CPY, I_DBG, I_DMB, I_DSB,$/;"	e	enum:_darm_instr_t
+I_CLZ	darm-tbl.h	/^    I_CHKA, I_CLREX, I_CLZ, I_CMN, I_CMP, I_CPS, I_CPY, I_DBG, I_DMB, I_DSB,$/;"	e	enum:_darm_instr_t
+I_CMN	darm-tbl.h	/^    I_CHKA, I_CLREX, I_CLZ, I_CMN, I_CMP, I_CPS, I_CPY, I_DBG, I_DMB, I_DSB,$/;"	e	enum:_darm_instr_t
+I_CMP	darm-tbl.h	/^    I_CHKA, I_CLREX, I_CLZ, I_CMN, I_CMP, I_CPS, I_CPY, I_DBG, I_DMB, I_DSB,$/;"	e	enum:_darm_instr_t
+I_CPS	darm-tbl.h	/^    I_CHKA, I_CLREX, I_CLZ, I_CMN, I_CMP, I_CPS, I_CPY, I_DBG, I_DMB, I_DSB,$/;"	e	enum:_darm_instr_t
+I_CPY	darm-tbl.h	/^    I_CHKA, I_CLREX, I_CLZ, I_CMN, I_CMP, I_CPS, I_CPY, I_DBG, I_DMB, I_DSB,$/;"	e	enum:_darm_instr_t
+I_DBG	darm-tbl.h	/^    I_CHKA, I_CLREX, I_CLZ, I_CMN, I_CMP, I_CPS, I_CPY, I_DBG, I_DMB, I_DSB,$/;"	e	enum:_darm_instr_t
+I_DMB	darm-tbl.h	/^    I_CHKA, I_CLREX, I_CLZ, I_CMN, I_CMP, I_CPS, I_CPY, I_DBG, I_DMB, I_DSB,$/;"	e	enum:_darm_instr_t
+I_DSB	darm-tbl.h	/^    I_CHKA, I_CLREX, I_CLZ, I_CMN, I_CMP, I_CPS, I_CPY, I_DBG, I_DMB, I_DSB,$/;"	e	enum:_darm_instr_t
+I_ENTERX	darm-tbl.h	/^    I_ENTERX, I_EOR, I_HB, I_HBL, I_HBLP, I_HBP, I_ISB, I_IT, I_LDC, I_LDC2,$/;"	e	enum:_darm_instr_t
+I_EOR	darm-tbl.h	/^    I_ENTERX, I_EOR, I_HB, I_HBL, I_HBLP, I_HBP, I_ISB, I_IT, I_LDC, I_LDC2,$/;"	e	enum:_darm_instr_t
+I_HB	darm-tbl.h	/^    I_ENTERX, I_EOR, I_HB, I_HBL, I_HBLP, I_HBP, I_ISB, I_IT, I_LDC, I_LDC2,$/;"	e	enum:_darm_instr_t
+I_HBL	darm-tbl.h	/^    I_ENTERX, I_EOR, I_HB, I_HBL, I_HBLP, I_HBP, I_ISB, I_IT, I_LDC, I_LDC2,$/;"	e	enum:_darm_instr_t
+I_HBLP	darm-tbl.h	/^    I_ENTERX, I_EOR, I_HB, I_HBL, I_HBLP, I_HBP, I_ISB, I_IT, I_LDC, I_LDC2,$/;"	e	enum:_darm_instr_t
+I_HBP	darm-tbl.h	/^    I_ENTERX, I_EOR, I_HB, I_HBL, I_HBLP, I_HBP, I_ISB, I_IT, I_LDC, I_LDC2,$/;"	e	enum:_darm_instr_t
+I_INSTRCNT	darm-tbl.h	/^    I_WFI, I_YIELD, I_INSTRCNT$/;"	e	enum:_darm_instr_t
+I_INVLD	darm-tbl.h	/^    I_INVLD, I_ADC, I_ADD, I_ADDW, I_ADR, I_AND, I_ASR, I_B, I_BFC, I_BFI,$/;"	e	enum:_darm_instr_t
+I_ISB	darm-tbl.h	/^    I_ENTERX, I_EOR, I_HB, I_HBL, I_HBLP, I_HBP, I_ISB, I_IT, I_LDC, I_LDC2,$/;"	e	enum:_darm_instr_t
+I_IT	darm-tbl.h	/^    I_ENTERX, I_EOR, I_HB, I_HBL, I_HBLP, I_HBP, I_ISB, I_IT, I_LDC, I_LDC2,$/;"	e	enum:_darm_instr_t
+I_LDC	darm-tbl.h	/^    I_ENTERX, I_EOR, I_HB, I_HBL, I_HBLP, I_HBP, I_ISB, I_IT, I_LDC, I_LDC2,$/;"	e	enum:_darm_instr_t
+I_LDC2	darm-tbl.h	/^    I_ENTERX, I_EOR, I_HB, I_HBL, I_HBLP, I_HBP, I_ISB, I_IT, I_LDC, I_LDC2,$/;"	e	enum:_darm_instr_t
+I_LDM	darm-tbl.h	/^    I_LDM, I_LDMDA, I_LDMDB, I_LDMIB, I_LDR, I_LDRB, I_LDRBT, I_LDRD, I_LDREX,$/;"	e	enum:_darm_instr_t
+I_LDMDA	darm-tbl.h	/^    I_LDM, I_LDMDA, I_LDMDB, I_LDMIB, I_LDR, I_LDRB, I_LDRBT, I_LDRD, I_LDREX,$/;"	e	enum:_darm_instr_t
+I_LDMDB	darm-tbl.h	/^    I_LDM, I_LDMDA, I_LDMDB, I_LDMIB, I_LDR, I_LDRB, I_LDRBT, I_LDRD, I_LDREX,$/;"	e	enum:_darm_instr_t
+I_LDMIB	darm-tbl.h	/^    I_LDM, I_LDMDA, I_LDMDB, I_LDMIB, I_LDR, I_LDRB, I_LDRBT, I_LDRD, I_LDREX,$/;"	e	enum:_darm_instr_t
+I_LDR	darm-tbl.h	/^    I_LDM, I_LDMDA, I_LDMDB, I_LDMIB, I_LDR, I_LDRB, I_LDRBT, I_LDRD, I_LDREX,$/;"	e	enum:_darm_instr_t
+I_LDRB	darm-tbl.h	/^    I_LDM, I_LDMDA, I_LDMDB, I_LDMIB, I_LDR, I_LDRB, I_LDRBT, I_LDRD, I_LDREX,$/;"	e	enum:_darm_instr_t
+I_LDRBT	darm-tbl.h	/^    I_LDM, I_LDMDA, I_LDMDB, I_LDMIB, I_LDR, I_LDRB, I_LDRBT, I_LDRD, I_LDREX,$/;"	e	enum:_darm_instr_t
+I_LDRD	darm-tbl.h	/^    I_LDM, I_LDMDA, I_LDMDB, I_LDMIB, I_LDR, I_LDRB, I_LDRBT, I_LDRD, I_LDREX,$/;"	e	enum:_darm_instr_t
+I_LDREX	darm-tbl.h	/^    I_LDM, I_LDMDA, I_LDMDB, I_LDMIB, I_LDR, I_LDRB, I_LDRBT, I_LDRD, I_LDREX,$/;"	e	enum:_darm_instr_t
+I_LDREXB	darm-tbl.h	/^    I_LDREXB, I_LDREXD, I_LDREXH, I_LDRH, I_LDRHT, I_LDRSB, I_LDRSBT, I_LDRSH,$/;"	e	enum:_darm_instr_t
+I_LDREXD	darm-tbl.h	/^    I_LDREXB, I_LDREXD, I_LDREXH, I_LDRH, I_LDRHT, I_LDRSB, I_LDRSBT, I_LDRSH,$/;"	e	enum:_darm_instr_t
+I_LDREXH	darm-tbl.h	/^    I_LDREXB, I_LDREXD, I_LDREXH, I_LDRH, I_LDRHT, I_LDRSB, I_LDRSBT, I_LDRSH,$/;"	e	enum:_darm_instr_t
+I_LDRH	darm-tbl.h	/^    I_LDREXB, I_LDREXD, I_LDREXH, I_LDRH, I_LDRHT, I_LDRSB, I_LDRSBT, I_LDRSH,$/;"	e	enum:_darm_instr_t
+I_LDRHT	darm-tbl.h	/^    I_LDREXB, I_LDREXD, I_LDREXH, I_LDRH, I_LDRHT, I_LDRSB, I_LDRSBT, I_LDRSH,$/;"	e	enum:_darm_instr_t
+I_LDRSB	darm-tbl.h	/^    I_LDREXB, I_LDREXD, I_LDREXH, I_LDRH, I_LDRHT, I_LDRSB, I_LDRSBT, I_LDRSH,$/;"	e	enum:_darm_instr_t
+I_LDRSBT	darm-tbl.h	/^    I_LDREXB, I_LDREXD, I_LDREXH, I_LDRH, I_LDRHT, I_LDRSB, I_LDRSBT, I_LDRSH,$/;"	e	enum:_darm_instr_t
+I_LDRSH	darm-tbl.h	/^    I_LDREXB, I_LDREXD, I_LDREXH, I_LDRH, I_LDRHT, I_LDRSB, I_LDRSBT, I_LDRSH,$/;"	e	enum:_darm_instr_t
+I_LDRSHT	darm-tbl.h	/^    I_LDRSHT, I_LDRT, I_LEAVEX, I_LSL, I_LSR, I_MCR, I_MCR2, I_MCRR, I_MCRR2,$/;"	e	enum:_darm_instr_t
+I_LDRT	darm-tbl.h	/^    I_LDRSHT, I_LDRT, I_LEAVEX, I_LSL, I_LSR, I_MCR, I_MCR2, I_MCRR, I_MCRR2,$/;"	e	enum:_darm_instr_t
+I_LEAVEX	darm-tbl.h	/^    I_LDRSHT, I_LDRT, I_LEAVEX, I_LSL, I_LSR, I_MCR, I_MCR2, I_MCRR, I_MCRR2,$/;"	e	enum:_darm_instr_t
+I_LSL	darm-tbl.h	/^    I_LDRSHT, I_LDRT, I_LEAVEX, I_LSL, I_LSR, I_MCR, I_MCR2, I_MCRR, I_MCRR2,$/;"	e	enum:_darm_instr_t
+I_LSR	darm-tbl.h	/^    I_LDRSHT, I_LDRT, I_LEAVEX, I_LSL, I_LSR, I_MCR, I_MCR2, I_MCRR, I_MCRR2,$/;"	e	enum:_darm_instr_t
+I_MCR	darm-tbl.h	/^    I_LDRSHT, I_LDRT, I_LEAVEX, I_LSL, I_LSR, I_MCR, I_MCR2, I_MCRR, I_MCRR2,$/;"	e	enum:_darm_instr_t
+I_MCR2	darm-tbl.h	/^    I_LDRSHT, I_LDRT, I_LEAVEX, I_LSL, I_LSR, I_MCR, I_MCR2, I_MCRR, I_MCRR2,$/;"	e	enum:_darm_instr_t
+I_MCRR	darm-tbl.h	/^    I_LDRSHT, I_LDRT, I_LEAVEX, I_LSL, I_LSR, I_MCR, I_MCR2, I_MCRR, I_MCRR2,$/;"	e	enum:_darm_instr_t
+I_MCRR2	darm-tbl.h	/^    I_LDRSHT, I_LDRT, I_LEAVEX, I_LSL, I_LSR, I_MCR, I_MCR2, I_MCRR, I_MCRR2,$/;"	e	enum:_darm_instr_t
+I_MLA	darm-tbl.h	/^    I_MLA, I_MLS, I_MOV, I_MOVT, I_MOVW, I_MRC, I_MRC2, I_MRRC, I_MRRC2,$/;"	e	enum:_darm_instr_t
+I_MLS	darm-tbl.h	/^    I_MLA, I_MLS, I_MOV, I_MOVT, I_MOVW, I_MRC, I_MRC2, I_MRRC, I_MRRC2,$/;"	e	enum:_darm_instr_t
+I_MOV	darm-tbl.h	/^    I_MLA, I_MLS, I_MOV, I_MOVT, I_MOVW, I_MRC, I_MRC2, I_MRRC, I_MRRC2,$/;"	e	enum:_darm_instr_t
+I_MOVT	darm-tbl.h	/^    I_MLA, I_MLS, I_MOV, I_MOVT, I_MOVW, I_MRC, I_MRC2, I_MRRC, I_MRRC2,$/;"	e	enum:_darm_instr_t
+I_MOVW	darm-tbl.h	/^    I_MLA, I_MLS, I_MOV, I_MOVT, I_MOVW, I_MRC, I_MRC2, I_MRRC, I_MRRC2,$/;"	e	enum:_darm_instr_t
+I_MRC	darm-tbl.h	/^    I_MLA, I_MLS, I_MOV, I_MOVT, I_MOVW, I_MRC, I_MRC2, I_MRRC, I_MRRC2,$/;"	e	enum:_darm_instr_t
+I_MRC2	darm-tbl.h	/^    I_MLA, I_MLS, I_MOV, I_MOVT, I_MOVW, I_MRC, I_MRC2, I_MRRC, I_MRRC2,$/;"	e	enum:_darm_instr_t
+I_MRRC	darm-tbl.h	/^    I_MLA, I_MLS, I_MOV, I_MOVT, I_MOVW, I_MRC, I_MRC2, I_MRRC, I_MRRC2,$/;"	e	enum:_darm_instr_t
+I_MRRC2	darm-tbl.h	/^    I_MLA, I_MLS, I_MOV, I_MOVT, I_MOVW, I_MRC, I_MRC2, I_MRRC, I_MRRC2,$/;"	e	enum:_darm_instr_t
+I_MRS	darm-tbl.h	/^    I_MRS, I_MSR, I_MUL, I_MVN, I_NEG, I_NOP, I_ORN, I_ORR, I_PKH, I_PLD,$/;"	e	enum:_darm_instr_t
+I_MSR	darm-tbl.h	/^    I_MRS, I_MSR, I_MUL, I_MVN, I_NEG, I_NOP, I_ORN, I_ORR, I_PKH, I_PLD,$/;"	e	enum:_darm_instr_t
+I_MUL	darm-tbl.h	/^    I_MRS, I_MSR, I_MUL, I_MVN, I_NEG, I_NOP, I_ORN, I_ORR, I_PKH, I_PLD,$/;"	e	enum:_darm_instr_t
+I_MVN	darm-tbl.h	/^    I_MRS, I_MSR, I_MUL, I_MVN, I_NEG, I_NOP, I_ORN, I_ORR, I_PKH, I_PLD,$/;"	e	enum:_darm_instr_t
+I_NEG	darm-tbl.h	/^    I_MRS, I_MSR, I_MUL, I_MVN, I_NEG, I_NOP, I_ORN, I_ORR, I_PKH, I_PLD,$/;"	e	enum:_darm_instr_t
+I_NOP	darm-tbl.h	/^    I_MRS, I_MSR, I_MUL, I_MVN, I_NEG, I_NOP, I_ORN, I_ORR, I_PKH, I_PLD,$/;"	e	enum:_darm_instr_t
+I_ORN	darm-tbl.h	/^    I_MRS, I_MSR, I_MUL, I_MVN, I_NEG, I_NOP, I_ORN, I_ORR, I_PKH, I_PLD,$/;"	e	enum:_darm_instr_t
+I_ORR	darm-tbl.h	/^    I_MRS, I_MSR, I_MUL, I_MVN, I_NEG, I_NOP, I_ORN, I_ORR, I_PKH, I_PLD,$/;"	e	enum:_darm_instr_t
+I_PKH	darm-tbl.h	/^    I_MRS, I_MSR, I_MUL, I_MVN, I_NEG, I_NOP, I_ORN, I_ORR, I_PKH, I_PLD,$/;"	e	enum:_darm_instr_t
+I_PLD	darm-tbl.h	/^    I_MRS, I_MSR, I_MUL, I_MVN, I_NEG, I_NOP, I_ORN, I_ORR, I_PKH, I_PLD,$/;"	e	enum:_darm_instr_t
+I_PLDW	darm-tbl.h	/^    I_PLDW, I_PLI, I_POP, I_PUSH, I_QADD, I_QADD16, I_QADD8, I_QASX, I_QDADD,$/;"	e	enum:_darm_instr_t
+I_PLI	darm-tbl.h	/^    I_PLDW, I_PLI, I_POP, I_PUSH, I_QADD, I_QADD16, I_QADD8, I_QASX, I_QDADD,$/;"	e	enum:_darm_instr_t
+I_POP	darm-tbl.h	/^    I_PLDW, I_PLI, I_POP, I_PUSH, I_QADD, I_QADD16, I_QADD8, I_QASX, I_QDADD,$/;"	e	enum:_darm_instr_t
+I_PUSH	darm-tbl.h	/^    I_PLDW, I_PLI, I_POP, I_PUSH, I_QADD, I_QADD16, I_QADD8, I_QASX, I_QDADD,$/;"	e	enum:_darm_instr_t
+I_QADD	darm-tbl.h	/^    I_PLDW, I_PLI, I_POP, I_PUSH, I_QADD, I_QADD16, I_QADD8, I_QASX, I_QDADD,$/;"	e	enum:_darm_instr_t
+I_QADD16	darm-tbl.h	/^    I_PLDW, I_PLI, I_POP, I_PUSH, I_QADD, I_QADD16, I_QADD8, I_QASX, I_QDADD,$/;"	e	enum:_darm_instr_t
+I_QADD8	darm-tbl.h	/^    I_PLDW, I_PLI, I_POP, I_PUSH, I_QADD, I_QADD16, I_QADD8, I_QASX, I_QDADD,$/;"	e	enum:_darm_instr_t
+I_QASX	darm-tbl.h	/^    I_PLDW, I_PLI, I_POP, I_PUSH, I_QADD, I_QADD16, I_QADD8, I_QASX, I_QDADD,$/;"	e	enum:_darm_instr_t
+I_QDADD	darm-tbl.h	/^    I_PLDW, I_PLI, I_POP, I_PUSH, I_QADD, I_QADD16, I_QADD8, I_QASX, I_QDADD,$/;"	e	enum:_darm_instr_t
+I_QDSUB	darm-tbl.h	/^    I_QDSUB, I_QSAX, I_QSUB, I_QSUB16, I_QSUB8, I_RBIT, I_REV, I_REV16,$/;"	e	enum:_darm_instr_t
+I_QSAX	darm-tbl.h	/^    I_QDSUB, I_QSAX, I_QSUB, I_QSUB16, I_QSUB8, I_RBIT, I_REV, I_REV16,$/;"	e	enum:_darm_instr_t
+I_QSUB	darm-tbl.h	/^    I_QDSUB, I_QSAX, I_QSUB, I_QSUB16, I_QSUB8, I_RBIT, I_REV, I_REV16,$/;"	e	enum:_darm_instr_t
+I_QSUB16	darm-tbl.h	/^    I_QDSUB, I_QSAX, I_QSUB, I_QSUB16, I_QSUB8, I_RBIT, I_REV, I_REV16,$/;"	e	enum:_darm_instr_t
+I_QSUB8	darm-tbl.h	/^    I_QDSUB, I_QSAX, I_QSUB, I_QSUB16, I_QSUB8, I_RBIT, I_REV, I_REV16,$/;"	e	enum:_darm_instr_t
+I_RBIT	darm-tbl.h	/^    I_QDSUB, I_QSAX, I_QSUB, I_QSUB16, I_QSUB8, I_RBIT, I_REV, I_REV16,$/;"	e	enum:_darm_instr_t
+I_REV	darm-tbl.h	/^    I_QDSUB, I_QSAX, I_QSUB, I_QSUB16, I_QSUB8, I_RBIT, I_REV, I_REV16,$/;"	e	enum:_darm_instr_t
+I_REV16	darm-tbl.h	/^    I_QDSUB, I_QSAX, I_QSUB, I_QSUB16, I_QSUB8, I_RBIT, I_REV, I_REV16,$/;"	e	enum:_darm_instr_t
+I_REVSH	darm-tbl.h	/^    I_REVSH, I_RFE, I_ROR, I_RRX, I_RSB, I_RSC, I_SADD16, I_SADD8, I_SASX,$/;"	e	enum:_darm_instr_t
+I_RFE	darm-tbl.h	/^    I_REVSH, I_RFE, I_ROR, I_RRX, I_RSB, I_RSC, I_SADD16, I_SADD8, I_SASX,$/;"	e	enum:_darm_instr_t
+I_ROR	darm-tbl.h	/^    I_REVSH, I_RFE, I_ROR, I_RRX, I_RSB, I_RSC, I_SADD16, I_SADD8, I_SASX,$/;"	e	enum:_darm_instr_t
+I_RRX	darm-tbl.h	/^    I_REVSH, I_RFE, I_ROR, I_RRX, I_RSB, I_RSC, I_SADD16, I_SADD8, I_SASX,$/;"	e	enum:_darm_instr_t
+I_RSB	darm-tbl.h	/^    I_REVSH, I_RFE, I_ROR, I_RRX, I_RSB, I_RSC, I_SADD16, I_SADD8, I_SASX,$/;"	e	enum:_darm_instr_t
+I_RSC	darm-tbl.h	/^    I_REVSH, I_RFE, I_ROR, I_RRX, I_RSB, I_RSC, I_SADD16, I_SADD8, I_SASX,$/;"	e	enum:_darm_instr_t
+I_SADD16	darm-tbl.h	/^    I_REVSH, I_RFE, I_ROR, I_RRX, I_RSB, I_RSC, I_SADD16, I_SADD8, I_SASX,$/;"	e	enum:_darm_instr_t
+I_SADD8	darm-tbl.h	/^    I_REVSH, I_RFE, I_ROR, I_RRX, I_RSB, I_RSC, I_SADD16, I_SADD8, I_SASX,$/;"	e	enum:_darm_instr_t
+I_SASX	darm-tbl.h	/^    I_REVSH, I_RFE, I_ROR, I_RRX, I_RSB, I_RSC, I_SADD16, I_SADD8, I_SASX,$/;"	e	enum:_darm_instr_t
+I_SBC	darm-tbl.h	/^    I_SBC, I_SBFX, I_SDIV, I_SEL, I_SETEND, I_SEV, I_SHADD16, I_SHADD8,$/;"	e	enum:_darm_instr_t
+I_SBFX	darm-tbl.h	/^    I_SBC, I_SBFX, I_SDIV, I_SEL, I_SETEND, I_SEV, I_SHADD16, I_SHADD8,$/;"	e	enum:_darm_instr_t
+I_SDIV	darm-tbl.h	/^    I_SBC, I_SBFX, I_SDIV, I_SEL, I_SETEND, I_SEV, I_SHADD16, I_SHADD8,$/;"	e	enum:_darm_instr_t
+I_SEL	darm-tbl.h	/^    I_SBC, I_SBFX, I_SDIV, I_SEL, I_SETEND, I_SEV, I_SHADD16, I_SHADD8,$/;"	e	enum:_darm_instr_t
+I_SETEND	darm-tbl.h	/^    I_SBC, I_SBFX, I_SDIV, I_SEL, I_SETEND, I_SEV, I_SHADD16, I_SHADD8,$/;"	e	enum:_darm_instr_t
+I_SEV	darm-tbl.h	/^    I_SBC, I_SBFX, I_SDIV, I_SEL, I_SETEND, I_SEV, I_SHADD16, I_SHADD8,$/;"	e	enum:_darm_instr_t
+I_SHADD16	darm-tbl.h	/^    I_SBC, I_SBFX, I_SDIV, I_SEL, I_SETEND, I_SEV, I_SHADD16, I_SHADD8,$/;"	e	enum:_darm_instr_t
+I_SHADD8	darm-tbl.h	/^    I_SBC, I_SBFX, I_SDIV, I_SEL, I_SETEND, I_SEV, I_SHADD16, I_SHADD8,$/;"	e	enum:_darm_instr_t
+I_SHASX	darm-tbl.h	/^    I_SHASX, I_SHSAX, I_SHSUB16, I_SHSUB8, I_SMC, I_SMLA, I_SMLABB, I_SMLABT,$/;"	e	enum:_darm_instr_t
+I_SHSAX	darm-tbl.h	/^    I_SHASX, I_SHSAX, I_SHSUB16, I_SHSUB8, I_SMC, I_SMLA, I_SMLABB, I_SMLABT,$/;"	e	enum:_darm_instr_t
+I_SHSUB16	darm-tbl.h	/^    I_SHASX, I_SHSAX, I_SHSUB16, I_SHSUB8, I_SMC, I_SMLA, I_SMLABB, I_SMLABT,$/;"	e	enum:_darm_instr_t
+I_SHSUB8	darm-tbl.h	/^    I_SHASX, I_SHSAX, I_SHSUB16, I_SHSUB8, I_SMC, I_SMLA, I_SMLABB, I_SMLABT,$/;"	e	enum:_darm_instr_t
+I_SMC	darm-tbl.h	/^    I_SHASX, I_SHSAX, I_SHSUB16, I_SHSUB8, I_SMC, I_SMLA, I_SMLABB, I_SMLABT,$/;"	e	enum:_darm_instr_t
+I_SMLA	darm-tbl.h	/^    I_SHASX, I_SHSAX, I_SHSUB16, I_SHSUB8, I_SMC, I_SMLA, I_SMLABB, I_SMLABT,$/;"	e	enum:_darm_instr_t
+I_SMLABB	darm-tbl.h	/^    I_SHASX, I_SHSAX, I_SHSUB16, I_SHSUB8, I_SMC, I_SMLA, I_SMLABB, I_SMLABT,$/;"	e	enum:_darm_instr_t
+I_SMLABT	darm-tbl.h	/^    I_SHASX, I_SHSAX, I_SHSUB16, I_SHSUB8, I_SMC, I_SMLA, I_SMLABB, I_SMLABT,$/;"	e	enum:_darm_instr_t
+I_SMLAD	darm-tbl.h	/^    I_SMLAD, I_SMLAL, I_SMLALBB, I_SMLALBT, I_SMLALD, I_SMLALTB, I_SMLALTT,$/;"	e	enum:_darm_instr_t
+I_SMLAL	darm-tbl.h	/^    I_SMLAD, I_SMLAL, I_SMLALBB, I_SMLALBT, I_SMLALD, I_SMLALTB, I_SMLALTT,$/;"	e	enum:_darm_instr_t
+I_SMLALBB	darm-tbl.h	/^    I_SMLAD, I_SMLAL, I_SMLALBB, I_SMLALBT, I_SMLALD, I_SMLALTB, I_SMLALTT,$/;"	e	enum:_darm_instr_t
+I_SMLALBT	darm-tbl.h	/^    I_SMLAD, I_SMLAL, I_SMLALBB, I_SMLALBT, I_SMLALD, I_SMLALTB, I_SMLALTT,$/;"	e	enum:_darm_instr_t
+I_SMLALD	darm-tbl.h	/^    I_SMLAD, I_SMLAL, I_SMLALBB, I_SMLALBT, I_SMLALD, I_SMLALTB, I_SMLALTT,$/;"	e	enum:_darm_instr_t
+I_SMLALTB	darm-tbl.h	/^    I_SMLAD, I_SMLAL, I_SMLALBB, I_SMLALBT, I_SMLALD, I_SMLALTB, I_SMLALTT,$/;"	e	enum:_darm_instr_t
+I_SMLALTT	darm-tbl.h	/^    I_SMLAD, I_SMLAL, I_SMLALBB, I_SMLALBT, I_SMLALD, I_SMLALTB, I_SMLALTT,$/;"	e	enum:_darm_instr_t
+I_SMLATB	darm-tbl.h	/^    I_SMLATB, I_SMLATT, I_SMLAW, I_SMLSD, I_SMLSLD, I_SMMLA, I_SMMLS, I_SMMUL,$/;"	e	enum:_darm_instr_t
+I_SMLATT	darm-tbl.h	/^    I_SMLATB, I_SMLATT, I_SMLAW, I_SMLSD, I_SMLSLD, I_SMMLA, I_SMMLS, I_SMMUL,$/;"	e	enum:_darm_instr_t
+I_SMLAW	darm-tbl.h	/^    I_SMLATB, I_SMLATT, I_SMLAW, I_SMLSD, I_SMLSLD, I_SMMLA, I_SMMLS, I_SMMUL,$/;"	e	enum:_darm_instr_t
+I_SMLSD	darm-tbl.h	/^    I_SMLATB, I_SMLATT, I_SMLAW, I_SMLSD, I_SMLSLD, I_SMMLA, I_SMMLS, I_SMMUL,$/;"	e	enum:_darm_instr_t
+I_SMLSLD	darm-tbl.h	/^    I_SMLATB, I_SMLATT, I_SMLAW, I_SMLSD, I_SMLSLD, I_SMMLA, I_SMMLS, I_SMMUL,$/;"	e	enum:_darm_instr_t
+I_SMMLA	darm-tbl.h	/^    I_SMLATB, I_SMLATT, I_SMLAW, I_SMLSD, I_SMLSLD, I_SMMLA, I_SMMLS, I_SMMUL,$/;"	e	enum:_darm_instr_t
+I_SMMLS	darm-tbl.h	/^    I_SMLATB, I_SMLATT, I_SMLAW, I_SMLSD, I_SMLSLD, I_SMMLA, I_SMMLS, I_SMMUL,$/;"	e	enum:_darm_instr_t
+I_SMMUL	darm-tbl.h	/^    I_SMLATB, I_SMLATT, I_SMLAW, I_SMLSD, I_SMLSLD, I_SMMLA, I_SMMLS, I_SMMUL,$/;"	e	enum:_darm_instr_t
+I_SMUAD	darm-tbl.h	/^    I_SMUAD, I_SMUL, I_SMULBB, I_SMULBT, I_SMULL, I_SMULTB, I_SMULTT, I_SMULW,$/;"	e	enum:_darm_instr_t
+I_SMUL	darm-tbl.h	/^    I_SMUAD, I_SMUL, I_SMULBB, I_SMULBT, I_SMULL, I_SMULTB, I_SMULTT, I_SMULW,$/;"	e	enum:_darm_instr_t
+I_SMULBB	darm-tbl.h	/^    I_SMUAD, I_SMUL, I_SMULBB, I_SMULBT, I_SMULL, I_SMULTB, I_SMULTT, I_SMULW,$/;"	e	enum:_darm_instr_t
+I_SMULBT	darm-tbl.h	/^    I_SMUAD, I_SMUL, I_SMULBB, I_SMULBT, I_SMULL, I_SMULTB, I_SMULTT, I_SMULW,$/;"	e	enum:_darm_instr_t
+I_SMULL	darm-tbl.h	/^    I_SMUAD, I_SMUL, I_SMULBB, I_SMULBT, I_SMULL, I_SMULTB, I_SMULTT, I_SMULW,$/;"	e	enum:_darm_instr_t
+I_SMULTB	darm-tbl.h	/^    I_SMUAD, I_SMUL, I_SMULBB, I_SMULBT, I_SMULL, I_SMULTB, I_SMULTT, I_SMULW,$/;"	e	enum:_darm_instr_t
+I_SMULTT	darm-tbl.h	/^    I_SMUAD, I_SMUL, I_SMULBB, I_SMULBT, I_SMULL, I_SMULTB, I_SMULTT, I_SMULW,$/;"	e	enum:_darm_instr_t
+I_SMULW	darm-tbl.h	/^    I_SMUAD, I_SMUL, I_SMULBB, I_SMULBT, I_SMULL, I_SMULTB, I_SMULTT, I_SMULW,$/;"	e	enum:_darm_instr_t
+I_SMUSD	darm-tbl.h	/^    I_SMUSD, I_SRS, I_SSAT, I_SSAT16, I_SSAX, I_SSUB16, I_SSUB8, I_STC,$/;"	e	enum:_darm_instr_t
+I_SRS	darm-tbl.h	/^    I_SMUSD, I_SRS, I_SSAT, I_SSAT16, I_SSAX, I_SSUB16, I_SSUB8, I_STC,$/;"	e	enum:_darm_instr_t
+I_SSAT	darm-tbl.h	/^    I_SMUSD, I_SRS, I_SSAT, I_SSAT16, I_SSAX, I_SSUB16, I_SSUB8, I_STC,$/;"	e	enum:_darm_instr_t
+I_SSAT16	darm-tbl.h	/^    I_SMUSD, I_SRS, I_SSAT, I_SSAT16, I_SSAX, I_SSUB16, I_SSUB8, I_STC,$/;"	e	enum:_darm_instr_t
+I_SSAX	darm-tbl.h	/^    I_SMUSD, I_SRS, I_SSAT, I_SSAT16, I_SSAX, I_SSUB16, I_SSUB8, I_STC,$/;"	e	enum:_darm_instr_t
+I_SSUB16	darm-tbl.h	/^    I_SMUSD, I_SRS, I_SSAT, I_SSAT16, I_SSAX, I_SSUB16, I_SSUB8, I_STC,$/;"	e	enum:_darm_instr_t
+I_SSUB8	darm-tbl.h	/^    I_SMUSD, I_SRS, I_SSAT, I_SSAT16, I_SSAX, I_SSUB16, I_SSUB8, I_STC,$/;"	e	enum:_darm_instr_t
+I_STC	darm-tbl.h	/^    I_SMUSD, I_SRS, I_SSAT, I_SSAT16, I_SSAX, I_SSUB16, I_SSUB8, I_STC,$/;"	e	enum:_darm_instr_t
+I_STC2	darm-tbl.h	/^    I_STC2, I_STM, I_STMDA, I_STMDB, I_STMIB, I_STR, I_STRB, I_STRBT, I_STRD,$/;"	e	enum:_darm_instr_t
+I_STM	darm-tbl.h	/^    I_STC2, I_STM, I_STMDA, I_STMDB, I_STMIB, I_STR, I_STRB, I_STRBT, I_STRD,$/;"	e	enum:_darm_instr_t
+I_STMDA	darm-tbl.h	/^    I_STC2, I_STM, I_STMDA, I_STMDB, I_STMIB, I_STR, I_STRB, I_STRBT, I_STRD,$/;"	e	enum:_darm_instr_t
+I_STMDB	darm-tbl.h	/^    I_STC2, I_STM, I_STMDA, I_STMDB, I_STMIB, I_STR, I_STRB, I_STRBT, I_STRD,$/;"	e	enum:_darm_instr_t
+I_STMIB	darm-tbl.h	/^    I_STC2, I_STM, I_STMDA, I_STMDB, I_STMIB, I_STR, I_STRB, I_STRBT, I_STRD,$/;"	e	enum:_darm_instr_t
+I_STR	darm-tbl.h	/^    I_STC2, I_STM, I_STMDA, I_STMDB, I_STMIB, I_STR, I_STRB, I_STRBT, I_STRD,$/;"	e	enum:_darm_instr_t
+I_STRB	darm-tbl.h	/^    I_STC2, I_STM, I_STMDA, I_STMDB, I_STMIB, I_STR, I_STRB, I_STRBT, I_STRD,$/;"	e	enum:_darm_instr_t
+I_STRBT	darm-tbl.h	/^    I_STC2, I_STM, I_STMDA, I_STMDB, I_STMIB, I_STR, I_STRB, I_STRBT, I_STRD,$/;"	e	enum:_darm_instr_t
+I_STRD	darm-tbl.h	/^    I_STC2, I_STM, I_STMDA, I_STMDB, I_STMIB, I_STR, I_STRB, I_STRBT, I_STRD,$/;"	e	enum:_darm_instr_t
+I_STREX	darm-tbl.h	/^    I_STREX, I_STREXB, I_STREXD, I_STREXH, I_STRH, I_STRHT, I_STRT, I_SUB,$/;"	e	enum:_darm_instr_t
+I_STREXB	darm-tbl.h	/^    I_STREX, I_STREXB, I_STREXD, I_STREXH, I_STRH, I_STRHT, I_STRT, I_SUB,$/;"	e	enum:_darm_instr_t
+I_STREXD	darm-tbl.h	/^    I_STREX, I_STREXB, I_STREXD, I_STREXH, I_STRH, I_STRHT, I_STRT, I_SUB,$/;"	e	enum:_darm_instr_t
+I_STREXH	darm-tbl.h	/^    I_STREX, I_STREXB, I_STREXD, I_STREXH, I_STRH, I_STRHT, I_STRT, I_SUB,$/;"	e	enum:_darm_instr_t
+I_STRH	darm-tbl.h	/^    I_STREX, I_STREXB, I_STREXD, I_STREXH, I_STRH, I_STRHT, I_STRT, I_SUB,$/;"	e	enum:_darm_instr_t
+I_STRHT	darm-tbl.h	/^    I_STREX, I_STREXB, I_STREXD, I_STREXH, I_STRH, I_STRHT, I_STRT, I_SUB,$/;"	e	enum:_darm_instr_t
+I_STRT	darm-tbl.h	/^    I_STREX, I_STREXB, I_STREXD, I_STREXH, I_STRH, I_STRHT, I_STRT, I_SUB,$/;"	e	enum:_darm_instr_t
+I_SUB	darm-tbl.h	/^    I_STREX, I_STREXB, I_STREXD, I_STREXH, I_STRH, I_STRHT, I_STRT, I_SUB,$/;"	e	enum:_darm_instr_t
+I_SUBW	darm-tbl.h	/^    I_SUBW, I_SVC, I_SWP, I_SWPB, I_SXTAB, I_SXTAB16, I_SXTAH, I_SXTB,$/;"	e	enum:_darm_instr_t
+I_SVC	darm-tbl.h	/^    I_SUBW, I_SVC, I_SWP, I_SWPB, I_SXTAB, I_SXTAB16, I_SXTAH, I_SXTB,$/;"	e	enum:_darm_instr_t
+I_SWP	darm-tbl.h	/^    I_SUBW, I_SVC, I_SWP, I_SWPB, I_SXTAB, I_SXTAB16, I_SXTAH, I_SXTB,$/;"	e	enum:_darm_instr_t
+I_SWPB	darm-tbl.h	/^    I_SUBW, I_SVC, I_SWP, I_SWPB, I_SXTAB, I_SXTAB16, I_SXTAH, I_SXTB,$/;"	e	enum:_darm_instr_t
+I_SXTAB	darm-tbl.h	/^    I_SUBW, I_SVC, I_SWP, I_SWPB, I_SXTAB, I_SXTAB16, I_SXTAH, I_SXTB,$/;"	e	enum:_darm_instr_t
+I_SXTAB16	darm-tbl.h	/^    I_SUBW, I_SVC, I_SWP, I_SWPB, I_SXTAB, I_SXTAB16, I_SXTAH, I_SXTB,$/;"	e	enum:_darm_instr_t
+I_SXTAH	darm-tbl.h	/^    I_SUBW, I_SVC, I_SWP, I_SWPB, I_SXTAB, I_SXTAB16, I_SXTAH, I_SXTB,$/;"	e	enum:_darm_instr_t
+I_SXTB	darm-tbl.h	/^    I_SUBW, I_SVC, I_SWP, I_SWPB, I_SXTAB, I_SXTAB16, I_SXTAH, I_SXTB,$/;"	e	enum:_darm_instr_t
+I_SXTB16	darm-tbl.h	/^    I_SXTB16, I_SXTH, I_TBB, I_TBH, I_TEQ, I_TST, I_UADD16, I_UADD8, I_UASX,$/;"	e	enum:_darm_instr_t
+I_SXTH	darm-tbl.h	/^    I_SXTB16, I_SXTH, I_TBB, I_TBH, I_TEQ, I_TST, I_UADD16, I_UADD8, I_UASX,$/;"	e	enum:_darm_instr_t
+I_TBB	darm-tbl.h	/^    I_SXTB16, I_SXTH, I_TBB, I_TBH, I_TEQ, I_TST, I_UADD16, I_UADD8, I_UASX,$/;"	e	enum:_darm_instr_t
+I_TBH	darm-tbl.h	/^    I_SXTB16, I_SXTH, I_TBB, I_TBH, I_TEQ, I_TST, I_UADD16, I_UADD8, I_UASX,$/;"	e	enum:_darm_instr_t
+I_TEQ	darm-tbl.h	/^    I_SXTB16, I_SXTH, I_TBB, I_TBH, I_TEQ, I_TST, I_UADD16, I_UADD8, I_UASX,$/;"	e	enum:_darm_instr_t
+I_TST	darm-tbl.h	/^    I_SXTB16, I_SXTH, I_TBB, I_TBH, I_TEQ, I_TST, I_UADD16, I_UADD8, I_UASX,$/;"	e	enum:_darm_instr_t
+I_UADD16	darm-tbl.h	/^    I_SXTB16, I_SXTH, I_TBB, I_TBH, I_TEQ, I_TST, I_UADD16, I_UADD8, I_UASX,$/;"	e	enum:_darm_instr_t
+I_UADD8	darm-tbl.h	/^    I_SXTB16, I_SXTH, I_TBB, I_TBH, I_TEQ, I_TST, I_UADD16, I_UADD8, I_UASX,$/;"	e	enum:_darm_instr_t
+I_UASX	darm-tbl.h	/^    I_SXTB16, I_SXTH, I_TBB, I_TBH, I_TEQ, I_TST, I_UADD16, I_UADD8, I_UASX,$/;"	e	enum:_darm_instr_t
+I_UBFX	darm-tbl.h	/^    I_UBFX, I_UDF, I_UDIV, I_UHADD16, I_UHADD8, I_UHASX, I_UHSAX, I_UHSUB16,$/;"	e	enum:_darm_instr_t
+I_UDF	darm-tbl.h	/^    I_UBFX, I_UDF, I_UDIV, I_UHADD16, I_UHADD8, I_UHASX, I_UHSAX, I_UHSUB16,$/;"	e	enum:_darm_instr_t
+I_UDIV	darm-tbl.h	/^    I_UBFX, I_UDF, I_UDIV, I_UHADD16, I_UHADD8, I_UHASX, I_UHSAX, I_UHSUB16,$/;"	e	enum:_darm_instr_t
+I_UHADD16	darm-tbl.h	/^    I_UBFX, I_UDF, I_UDIV, I_UHADD16, I_UHADD8, I_UHASX, I_UHSAX, I_UHSUB16,$/;"	e	enum:_darm_instr_t
+I_UHADD8	darm-tbl.h	/^    I_UBFX, I_UDF, I_UDIV, I_UHADD16, I_UHADD8, I_UHASX, I_UHSAX, I_UHSUB16,$/;"	e	enum:_darm_instr_t
+I_UHASX	darm-tbl.h	/^    I_UBFX, I_UDF, I_UDIV, I_UHADD16, I_UHADD8, I_UHASX, I_UHSAX, I_UHSUB16,$/;"	e	enum:_darm_instr_t
+I_UHSAX	darm-tbl.h	/^    I_UBFX, I_UDF, I_UDIV, I_UHADD16, I_UHADD8, I_UHASX, I_UHSAX, I_UHSUB16,$/;"	e	enum:_darm_instr_t
+I_UHSUB16	darm-tbl.h	/^    I_UBFX, I_UDF, I_UDIV, I_UHADD16, I_UHADD8, I_UHASX, I_UHSAX, I_UHSUB16,$/;"	e	enum:_darm_instr_t
+I_UHSUB8	darm-tbl.h	/^    I_UHSUB8, I_UMAAL, I_UMLAL, I_UMULL, I_UQADD16, I_UQADD8, I_UQASX,$/;"	e	enum:_darm_instr_t
+I_UMAAL	darm-tbl.h	/^    I_UHSUB8, I_UMAAL, I_UMLAL, I_UMULL, I_UQADD16, I_UQADD8, I_UQASX,$/;"	e	enum:_darm_instr_t
+I_UMLAL	darm-tbl.h	/^    I_UHSUB8, I_UMAAL, I_UMLAL, I_UMULL, I_UQADD16, I_UQADD8, I_UQASX,$/;"	e	enum:_darm_instr_t
+I_UMULL	darm-tbl.h	/^    I_UHSUB8, I_UMAAL, I_UMLAL, I_UMULL, I_UQADD16, I_UQADD8, I_UQASX,$/;"	e	enum:_darm_instr_t
+I_UQADD16	darm-tbl.h	/^    I_UHSUB8, I_UMAAL, I_UMLAL, I_UMULL, I_UQADD16, I_UQADD8, I_UQASX,$/;"	e	enum:_darm_instr_t
+I_UQADD8	darm-tbl.h	/^    I_UHSUB8, I_UMAAL, I_UMLAL, I_UMULL, I_UQADD16, I_UQADD8, I_UQASX,$/;"	e	enum:_darm_instr_t
+I_UQASX	darm-tbl.h	/^    I_UHSUB8, I_UMAAL, I_UMLAL, I_UMULL, I_UQADD16, I_UQADD8, I_UQASX,$/;"	e	enum:_darm_instr_t
+I_UQSAX	darm-tbl.h	/^    I_UQSAX, I_UQSUB16, I_UQSUB8, I_USAD8, I_USADA8, I_USAT, I_USAT16, I_USAX,$/;"	e	enum:_darm_instr_t
+I_UQSUB16	darm-tbl.h	/^    I_UQSAX, I_UQSUB16, I_UQSUB8, I_USAD8, I_USADA8, I_USAT, I_USAT16, I_USAX,$/;"	e	enum:_darm_instr_t
+I_UQSUB8	darm-tbl.h	/^    I_UQSAX, I_UQSUB16, I_UQSUB8, I_USAD8, I_USADA8, I_USAT, I_USAT16, I_USAX,$/;"	e	enum:_darm_instr_t
+I_USAD8	darm-tbl.h	/^    I_UQSAX, I_UQSUB16, I_UQSUB8, I_USAD8, I_USADA8, I_USAT, I_USAT16, I_USAX,$/;"	e	enum:_darm_instr_t
+I_USADA8	darm-tbl.h	/^    I_UQSAX, I_UQSUB16, I_UQSUB8, I_USAD8, I_USADA8, I_USAT, I_USAT16, I_USAX,$/;"	e	enum:_darm_instr_t
+I_USAT	darm-tbl.h	/^    I_UQSAX, I_UQSUB16, I_UQSUB8, I_USAD8, I_USADA8, I_USAT, I_USAT16, I_USAX,$/;"	e	enum:_darm_instr_t
+I_USAT16	darm-tbl.h	/^    I_UQSAX, I_UQSUB16, I_UQSUB8, I_USAD8, I_USADA8, I_USAT, I_USAT16, I_USAX,$/;"	e	enum:_darm_instr_t
+I_USAX	darm-tbl.h	/^    I_UQSAX, I_UQSUB16, I_UQSUB8, I_USAD8, I_USADA8, I_USAT, I_USAT16, I_USAX,$/;"	e	enum:_darm_instr_t
+I_USUB16	darm-tbl.h	/^    I_USUB16, I_USUB8, I_UXTAB, I_UXTAB16, I_UXTAH, I_UXTB, I_UXTB16, I_UXTH,$/;"	e	enum:_darm_instr_t
+I_USUB8	darm-tbl.h	/^    I_USUB16, I_USUB8, I_UXTAB, I_UXTAB16, I_UXTAH, I_UXTB, I_UXTB16, I_UXTH,$/;"	e	enum:_darm_instr_t
+I_UXTAB	darm-tbl.h	/^    I_USUB16, I_USUB8, I_UXTAB, I_UXTAB16, I_UXTAH, I_UXTB, I_UXTB16, I_UXTH,$/;"	e	enum:_darm_instr_t
+I_UXTAB16	darm-tbl.h	/^    I_USUB16, I_USUB8, I_UXTAB, I_UXTAB16, I_UXTAH, I_UXTB, I_UXTB16, I_UXTH,$/;"	e	enum:_darm_instr_t
+I_UXTAH	darm-tbl.h	/^    I_USUB16, I_USUB8, I_UXTAB, I_UXTAB16, I_UXTAH, I_UXTB, I_UXTB16, I_UXTH,$/;"	e	enum:_darm_instr_t
+I_UXTB	darm-tbl.h	/^    I_USUB16, I_USUB8, I_UXTAB, I_UXTAB16, I_UXTAH, I_UXTB, I_UXTB16, I_UXTH,$/;"	e	enum:_darm_instr_t
+I_UXTB16	darm-tbl.h	/^    I_USUB16, I_USUB8, I_UXTAB, I_UXTAB16, I_UXTAH, I_UXTB, I_UXTB16, I_UXTH,$/;"	e	enum:_darm_instr_t
+I_UXTH	darm-tbl.h	/^    I_USUB16, I_USUB8, I_UXTAB, I_UXTAB16, I_UXTAH, I_UXTB, I_UXTB16, I_UXTH,$/;"	e	enum:_darm_instr_t
+I_VABA	darm-tbl.h	/^    I_VABA, I_VABAL, I_VABD, I_VABDL, I_VABS, I_VACGE, I_VACGT, I_VACLE,$/;"	e	enum:_darm_instr_t
+I_VABAL	darm-tbl.h	/^    I_VABA, I_VABAL, I_VABD, I_VABDL, I_VABS, I_VACGE, I_VACGT, I_VACLE,$/;"	e	enum:_darm_instr_t
+I_VABD	darm-tbl.h	/^    I_VABA, I_VABAL, I_VABD, I_VABDL, I_VABS, I_VACGE, I_VACGT, I_VACLE,$/;"	e	enum:_darm_instr_t
+I_VABDL	darm-tbl.h	/^    I_VABA, I_VABAL, I_VABD, I_VABDL, I_VABS, I_VACGE, I_VACGT, I_VACLE,$/;"	e	enum:_darm_instr_t
+I_VABS	darm-tbl.h	/^    I_VABA, I_VABAL, I_VABD, I_VABDL, I_VABS, I_VACGE, I_VACGT, I_VACLE,$/;"	e	enum:_darm_instr_t
+I_VACGE	darm-tbl.h	/^    I_VABA, I_VABAL, I_VABD, I_VABDL, I_VABS, I_VACGE, I_VACGT, I_VACLE,$/;"	e	enum:_darm_instr_t
+I_VACGT	darm-tbl.h	/^    I_VABA, I_VABAL, I_VABD, I_VABDL, I_VABS, I_VACGE, I_VACGT, I_VACLE,$/;"	e	enum:_darm_instr_t
+I_VACLE	darm-tbl.h	/^    I_VABA, I_VABAL, I_VABD, I_VABDL, I_VABS, I_VACGE, I_VACGT, I_VACLE,$/;"	e	enum:_darm_instr_t
+I_VACLT	darm-tbl.h	/^    I_VACLT, I_VADD, I_VADDHN, I_VADDL, I_VADDW, I_VAND, I_VBIC, I_VBIF,$/;"	e	enum:_darm_instr_t
+I_VADD	darm-tbl.h	/^    I_VACLT, I_VADD, I_VADDHN, I_VADDL, I_VADDW, I_VAND, I_VBIC, I_VBIF,$/;"	e	enum:_darm_instr_t
+I_VADDHN	darm-tbl.h	/^    I_VACLT, I_VADD, I_VADDHN, I_VADDL, I_VADDW, I_VAND, I_VBIC, I_VBIF,$/;"	e	enum:_darm_instr_t
+I_VADDL	darm-tbl.h	/^    I_VACLT, I_VADD, I_VADDHN, I_VADDL, I_VADDW, I_VAND, I_VBIC, I_VBIF,$/;"	e	enum:_darm_instr_t
+I_VADDW	darm-tbl.h	/^    I_VACLT, I_VADD, I_VADDHN, I_VADDL, I_VADDW, I_VAND, I_VBIC, I_VBIF,$/;"	e	enum:_darm_instr_t
+I_VAND	darm-tbl.h	/^    I_VACLT, I_VADD, I_VADDHN, I_VADDL, I_VADDW, I_VAND, I_VBIC, I_VBIF,$/;"	e	enum:_darm_instr_t
+I_VBIC	darm-tbl.h	/^    I_VACLT, I_VADD, I_VADDHN, I_VADDL, I_VADDW, I_VAND, I_VBIC, I_VBIF,$/;"	e	enum:_darm_instr_t
+I_VBIF	darm-tbl.h	/^    I_VACLT, I_VADD, I_VADDHN, I_VADDL, I_VADDW, I_VAND, I_VBIC, I_VBIF,$/;"	e	enum:_darm_instr_t
+I_VBIT	darm-tbl.h	/^    I_VBIT, I_VBSL, I_VCEQ, I_VCGE, I_VCGT, I_VCLE, I_VCLS, I_VCLT, I_VCLZ,$/;"	e	enum:_darm_instr_t
+I_VBSL	darm-tbl.h	/^    I_VBIT, I_VBSL, I_VCEQ, I_VCGE, I_VCGT, I_VCLE, I_VCLS, I_VCLT, I_VCLZ,$/;"	e	enum:_darm_instr_t
+I_VCEQ	darm-tbl.h	/^    I_VBIT, I_VBSL, I_VCEQ, I_VCGE, I_VCGT, I_VCLE, I_VCLS, I_VCLT, I_VCLZ,$/;"	e	enum:_darm_instr_t
+I_VCGE	darm-tbl.h	/^    I_VBIT, I_VBSL, I_VCEQ, I_VCGE, I_VCGT, I_VCLE, I_VCLS, I_VCLT, I_VCLZ,$/;"	e	enum:_darm_instr_t
+I_VCGT	darm-tbl.h	/^    I_VBIT, I_VBSL, I_VCEQ, I_VCGE, I_VCGT, I_VCLE, I_VCLS, I_VCLT, I_VCLZ,$/;"	e	enum:_darm_instr_t
+I_VCLE	darm-tbl.h	/^    I_VBIT, I_VBSL, I_VCEQ, I_VCGE, I_VCGT, I_VCLE, I_VCLS, I_VCLT, I_VCLZ,$/;"	e	enum:_darm_instr_t
+I_VCLS	darm-tbl.h	/^    I_VBIT, I_VBSL, I_VCEQ, I_VCGE, I_VCGT, I_VCLE, I_VCLS, I_VCLT, I_VCLZ,$/;"	e	enum:_darm_instr_t
+I_VCLT	darm-tbl.h	/^    I_VBIT, I_VBSL, I_VCEQ, I_VCGE, I_VCGT, I_VCLE, I_VCLS, I_VCLT, I_VCLZ,$/;"	e	enum:_darm_instr_t
+I_VCLZ	darm-tbl.h	/^    I_VBIT, I_VBSL, I_VCEQ, I_VCGE, I_VCGT, I_VCLE, I_VCLS, I_VCLT, I_VCLZ,$/;"	e	enum:_darm_instr_t
+I_VCMP	darm-tbl.h	/^    I_VCMP, I_VCMPE, I_VCNT, I_VCVT, I_VCVTB, I_VCVTR, I_VCVTT, I_VDIV,$/;"	e	enum:_darm_instr_t
+I_VCMPE	darm-tbl.h	/^    I_VCMP, I_VCMPE, I_VCNT, I_VCVT, I_VCVTB, I_VCVTR, I_VCVTT, I_VDIV,$/;"	e	enum:_darm_instr_t
+I_VCNT	darm-tbl.h	/^    I_VCMP, I_VCMPE, I_VCNT, I_VCVT, I_VCVTB, I_VCVTR, I_VCVTT, I_VDIV,$/;"	e	enum:_darm_instr_t
+I_VCVT	darm-tbl.h	/^    I_VCMP, I_VCMPE, I_VCNT, I_VCVT, I_VCVTB, I_VCVTR, I_VCVTT, I_VDIV,$/;"	e	enum:_darm_instr_t
+I_VCVTB	darm-tbl.h	/^    I_VCMP, I_VCMPE, I_VCNT, I_VCVT, I_VCVTB, I_VCVTR, I_VCVTT, I_VDIV,$/;"	e	enum:_darm_instr_t
+I_VCVTR	darm-tbl.h	/^    I_VCMP, I_VCMPE, I_VCNT, I_VCVT, I_VCVTB, I_VCVTR, I_VCVTT, I_VDIV,$/;"	e	enum:_darm_instr_t
+I_VCVTT	darm-tbl.h	/^    I_VCMP, I_VCMPE, I_VCNT, I_VCVT, I_VCVTB, I_VCVTR, I_VCVTT, I_VDIV,$/;"	e	enum:_darm_instr_t
+I_VDIV	darm-tbl.h	/^    I_VCMP, I_VCMPE, I_VCNT, I_VCVT, I_VCVTB, I_VCVTR, I_VCVTT, I_VDIV,$/;"	e	enum:_darm_instr_t
+I_VDUP	darm-tbl.h	/^    I_VDUP, I_VEOR, I_VEXT, I_VHADD, I_VHSUB, I_VLD1, I_VLD2, I_VLD3, I_VLD4,$/;"	e	enum:_darm_instr_t
+I_VEOR	darm-tbl.h	/^    I_VDUP, I_VEOR, I_VEXT, I_VHADD, I_VHSUB, I_VLD1, I_VLD2, I_VLD3, I_VLD4,$/;"	e	enum:_darm_instr_t
+I_VEXT	darm-tbl.h	/^    I_VDUP, I_VEOR, I_VEXT, I_VHADD, I_VHSUB, I_VLD1, I_VLD2, I_VLD3, I_VLD4,$/;"	e	enum:_darm_instr_t
+I_VHADD	darm-tbl.h	/^    I_VDUP, I_VEOR, I_VEXT, I_VHADD, I_VHSUB, I_VLD1, I_VLD2, I_VLD3, I_VLD4,$/;"	e	enum:_darm_instr_t
+I_VHSUB	darm-tbl.h	/^    I_VDUP, I_VEOR, I_VEXT, I_VHADD, I_VHSUB, I_VLD1, I_VLD2, I_VLD3, I_VLD4,$/;"	e	enum:_darm_instr_t
+I_VLD1	darm-tbl.h	/^    I_VDUP, I_VEOR, I_VEXT, I_VHADD, I_VHSUB, I_VLD1, I_VLD2, I_VLD3, I_VLD4,$/;"	e	enum:_darm_instr_t
+I_VLD2	darm-tbl.h	/^    I_VDUP, I_VEOR, I_VEXT, I_VHADD, I_VHSUB, I_VLD1, I_VLD2, I_VLD3, I_VLD4,$/;"	e	enum:_darm_instr_t
+I_VLD3	darm-tbl.h	/^    I_VDUP, I_VEOR, I_VEXT, I_VHADD, I_VHSUB, I_VLD1, I_VLD2, I_VLD3, I_VLD4,$/;"	e	enum:_darm_instr_t
+I_VLD4	darm-tbl.h	/^    I_VDUP, I_VEOR, I_VEXT, I_VHADD, I_VHSUB, I_VLD1, I_VLD2, I_VLD3, I_VLD4,$/;"	e	enum:_darm_instr_t
+I_VLDM	darm-tbl.h	/^    I_VLDM, I_VLDR, I_VMAX, I_VMIN, I_VMLA, I_VMLAL, I_VMLS, I_VMLSL, I_VMOV,$/;"	e	enum:_darm_instr_t
+I_VLDR	darm-tbl.h	/^    I_VLDM, I_VLDR, I_VMAX, I_VMIN, I_VMLA, I_VMLAL, I_VMLS, I_VMLSL, I_VMOV,$/;"	e	enum:_darm_instr_t
+I_VMAX	darm-tbl.h	/^    I_VLDM, I_VLDR, I_VMAX, I_VMIN, I_VMLA, I_VMLAL, I_VMLS, I_VMLSL, I_VMOV,$/;"	e	enum:_darm_instr_t
+I_VMIN	darm-tbl.h	/^    I_VLDM, I_VLDR, I_VMAX, I_VMIN, I_VMLA, I_VMLAL, I_VMLS, I_VMLSL, I_VMOV,$/;"	e	enum:_darm_instr_t
+I_VMLA	darm-tbl.h	/^    I_VLDM, I_VLDR, I_VMAX, I_VMIN, I_VMLA, I_VMLAL, I_VMLS, I_VMLSL, I_VMOV,$/;"	e	enum:_darm_instr_t
+I_VMLAL	darm-tbl.h	/^    I_VLDM, I_VLDR, I_VMAX, I_VMIN, I_VMLA, I_VMLAL, I_VMLS, I_VMLSL, I_VMOV,$/;"	e	enum:_darm_instr_t
+I_VMLS	darm-tbl.h	/^    I_VLDM, I_VLDR, I_VMAX, I_VMIN, I_VMLA, I_VMLAL, I_VMLS, I_VMLSL, I_VMOV,$/;"	e	enum:_darm_instr_t
+I_VMLSL	darm-tbl.h	/^    I_VLDM, I_VLDR, I_VMAX, I_VMIN, I_VMLA, I_VMLAL, I_VMLS, I_VMLSL, I_VMOV,$/;"	e	enum:_darm_instr_t
+I_VMOV	darm-tbl.h	/^    I_VLDM, I_VLDR, I_VMAX, I_VMIN, I_VMLA, I_VMLAL, I_VMLS, I_VMLSL, I_VMOV,$/;"	e	enum:_darm_instr_t
+I_VMOVL	darm-tbl.h	/^    I_VMOVL, I_VMOVN, I_VMRS, I_VMSR, I_VMUL, I_VMULL, I_VMVN, I_VNEG,$/;"	e	enum:_darm_instr_t
+I_VMOVN	darm-tbl.h	/^    I_VMOVL, I_VMOVN, I_VMRS, I_VMSR, I_VMUL, I_VMULL, I_VMVN, I_VNEG,$/;"	e	enum:_darm_instr_t
+I_VMRS	darm-tbl.h	/^    I_VMOVL, I_VMOVN, I_VMRS, I_VMSR, I_VMUL, I_VMULL, I_VMVN, I_VNEG,$/;"	e	enum:_darm_instr_t
+I_VMSR	darm-tbl.h	/^    I_VMOVL, I_VMOVN, I_VMRS, I_VMSR, I_VMUL, I_VMULL, I_VMVN, I_VNEG,$/;"	e	enum:_darm_instr_t
+I_VMUL	darm-tbl.h	/^    I_VMOVL, I_VMOVN, I_VMRS, I_VMSR, I_VMUL, I_VMULL, I_VMVN, I_VNEG,$/;"	e	enum:_darm_instr_t
+I_VMULL	darm-tbl.h	/^    I_VMOVL, I_VMOVN, I_VMRS, I_VMSR, I_VMUL, I_VMULL, I_VMVN, I_VNEG,$/;"	e	enum:_darm_instr_t
+I_VMVN	darm-tbl.h	/^    I_VMOVL, I_VMOVN, I_VMRS, I_VMSR, I_VMUL, I_VMULL, I_VMVN, I_VNEG,$/;"	e	enum:_darm_instr_t
+I_VNEG	darm-tbl.h	/^    I_VMOVL, I_VMOVN, I_VMRS, I_VMSR, I_VMUL, I_VMULL, I_VMVN, I_VNEG,$/;"	e	enum:_darm_instr_t
+I_VNMLA	darm-tbl.h	/^    I_VNMLA, I_VNMLS, I_VNMUL, I_VORN, I_VORR, I_VPADAL, I_VPADD, I_VPADDL,$/;"	e	enum:_darm_instr_t
+I_VNMLS	darm-tbl.h	/^    I_VNMLA, I_VNMLS, I_VNMUL, I_VORN, I_VORR, I_VPADAL, I_VPADD, I_VPADDL,$/;"	e	enum:_darm_instr_t
+I_VNMUL	darm-tbl.h	/^    I_VNMLA, I_VNMLS, I_VNMUL, I_VORN, I_VORR, I_VPADAL, I_VPADD, I_VPADDL,$/;"	e	enum:_darm_instr_t
+I_VORN	darm-tbl.h	/^    I_VNMLA, I_VNMLS, I_VNMUL, I_VORN, I_VORR, I_VPADAL, I_VPADD, I_VPADDL,$/;"	e	enum:_darm_instr_t
+I_VORR	darm-tbl.h	/^    I_VNMLA, I_VNMLS, I_VNMUL, I_VORN, I_VORR, I_VPADAL, I_VPADD, I_VPADDL,$/;"	e	enum:_darm_instr_t
+I_VPADAL	darm-tbl.h	/^    I_VNMLA, I_VNMLS, I_VNMUL, I_VORN, I_VORR, I_VPADAL, I_VPADD, I_VPADDL,$/;"	e	enum:_darm_instr_t
+I_VPADD	darm-tbl.h	/^    I_VNMLA, I_VNMLS, I_VNMUL, I_VORN, I_VORR, I_VPADAL, I_VPADD, I_VPADDL,$/;"	e	enum:_darm_instr_t
+I_VPADDL	darm-tbl.h	/^    I_VNMLA, I_VNMLS, I_VNMUL, I_VORN, I_VORR, I_VPADAL, I_VPADD, I_VPADDL,$/;"	e	enum:_darm_instr_t
+I_VPMAX	darm-tbl.h	/^    I_VPMAX, I_VPMIN, I_VPOP, I_VPUSH, I_VQABS, I_VQADD, I_VQDMLAL, I_VQDMLSL,$/;"	e	enum:_darm_instr_t
+I_VPMIN	darm-tbl.h	/^    I_VPMAX, I_VPMIN, I_VPOP, I_VPUSH, I_VQABS, I_VQADD, I_VQDMLAL, I_VQDMLSL,$/;"	e	enum:_darm_instr_t
+I_VPOP	darm-tbl.h	/^    I_VPMAX, I_VPMIN, I_VPOP, I_VPUSH, I_VQABS, I_VQADD, I_VQDMLAL, I_VQDMLSL,$/;"	e	enum:_darm_instr_t
+I_VPUSH	darm-tbl.h	/^    I_VPMAX, I_VPMIN, I_VPOP, I_VPUSH, I_VQABS, I_VQADD, I_VQDMLAL, I_VQDMLSL,$/;"	e	enum:_darm_instr_t
+I_VQABS	darm-tbl.h	/^    I_VPMAX, I_VPMIN, I_VPOP, I_VPUSH, I_VQABS, I_VQADD, I_VQDMLAL, I_VQDMLSL,$/;"	e	enum:_darm_instr_t
+I_VQADD	darm-tbl.h	/^    I_VPMAX, I_VPMIN, I_VPOP, I_VPUSH, I_VQABS, I_VQADD, I_VQDMLAL, I_VQDMLSL,$/;"	e	enum:_darm_instr_t
+I_VQDMLAL	darm-tbl.h	/^    I_VPMAX, I_VPMIN, I_VPOP, I_VPUSH, I_VQABS, I_VQADD, I_VQDMLAL, I_VQDMLSL,$/;"	e	enum:_darm_instr_t
+I_VQDMLSL	darm-tbl.h	/^    I_VPMAX, I_VPMIN, I_VPOP, I_VPUSH, I_VQABS, I_VQADD, I_VQDMLAL, I_VQDMLSL,$/;"	e	enum:_darm_instr_t
+I_VQDMULH	darm-tbl.h	/^    I_VQDMULH, I_VQDMULL, I_VQMOVN, I_VQMOVUN, I_VQNEG, I_VQRDMULH, I_VQRSHL,$/;"	e	enum:_darm_instr_t
+I_VQDMULL	darm-tbl.h	/^    I_VQDMULH, I_VQDMULL, I_VQMOVN, I_VQMOVUN, I_VQNEG, I_VQRDMULH, I_VQRSHL,$/;"	e	enum:_darm_instr_t
+I_VQMOVN	darm-tbl.h	/^    I_VQDMULH, I_VQDMULL, I_VQMOVN, I_VQMOVUN, I_VQNEG, I_VQRDMULH, I_VQRSHL,$/;"	e	enum:_darm_instr_t
+I_VQMOVUN	darm-tbl.h	/^    I_VQDMULH, I_VQDMULL, I_VQMOVN, I_VQMOVUN, I_VQNEG, I_VQRDMULH, I_VQRSHL,$/;"	e	enum:_darm_instr_t
+I_VQNEG	darm-tbl.h	/^    I_VQDMULH, I_VQDMULL, I_VQMOVN, I_VQMOVUN, I_VQNEG, I_VQRDMULH, I_VQRSHL,$/;"	e	enum:_darm_instr_t
+I_VQRDMULH	darm-tbl.h	/^    I_VQDMULH, I_VQDMULL, I_VQMOVN, I_VQMOVUN, I_VQNEG, I_VQRDMULH, I_VQRSHL,$/;"	e	enum:_darm_instr_t
+I_VQRSHL	darm-tbl.h	/^    I_VQDMULH, I_VQDMULL, I_VQMOVN, I_VQMOVUN, I_VQNEG, I_VQRDMULH, I_VQRSHL,$/;"	e	enum:_darm_instr_t
+I_VQRSHRN	darm-tbl.h	/^    I_VQRSHRN, I_VQRSHRUN, I_VQSHL, I_VQSHLU, I_VQSHRN, I_VQSHRUN, I_VQSUB,$/;"	e	enum:_darm_instr_t
+I_VQRSHRUN	darm-tbl.h	/^    I_VQRSHRN, I_VQRSHRUN, I_VQSHL, I_VQSHLU, I_VQSHRN, I_VQSHRUN, I_VQSUB,$/;"	e	enum:_darm_instr_t
+I_VQSHL	darm-tbl.h	/^    I_VQRSHRN, I_VQRSHRUN, I_VQSHL, I_VQSHLU, I_VQSHRN, I_VQSHRUN, I_VQSUB,$/;"	e	enum:_darm_instr_t
+I_VQSHLU	darm-tbl.h	/^    I_VQRSHRN, I_VQRSHRUN, I_VQSHL, I_VQSHLU, I_VQSHRN, I_VQSHRUN, I_VQSUB,$/;"	e	enum:_darm_instr_t
+I_VQSHRN	darm-tbl.h	/^    I_VQRSHRN, I_VQRSHRUN, I_VQSHL, I_VQSHLU, I_VQSHRN, I_VQSHRUN, I_VQSUB,$/;"	e	enum:_darm_instr_t
+I_VQSHRUN	darm-tbl.h	/^    I_VQRSHRN, I_VQRSHRUN, I_VQSHL, I_VQSHLU, I_VQSHRN, I_VQSHRUN, I_VQSUB,$/;"	e	enum:_darm_instr_t
+I_VQSUB	darm-tbl.h	/^    I_VQRSHRN, I_VQRSHRUN, I_VQSHL, I_VQSHLU, I_VQSHRN, I_VQSHRUN, I_VQSUB,$/;"	e	enum:_darm_instr_t
+I_VRADDHN	darm-tbl.h	/^    I_VRADDHN, I_VRECPE, I_VRECPS, I_VREV16, I_VREV32, I_VREV64, I_VRHADD,$/;"	e	enum:_darm_instr_t
+I_VRECPE	darm-tbl.h	/^    I_VRADDHN, I_VRECPE, I_VRECPS, I_VREV16, I_VREV32, I_VREV64, I_VRHADD,$/;"	e	enum:_darm_instr_t
+I_VRECPS	darm-tbl.h	/^    I_VRADDHN, I_VRECPE, I_VRECPS, I_VREV16, I_VREV32, I_VREV64, I_VRHADD,$/;"	e	enum:_darm_instr_t
+I_VREV16	darm-tbl.h	/^    I_VRADDHN, I_VRECPE, I_VRECPS, I_VREV16, I_VREV32, I_VREV64, I_VRHADD,$/;"	e	enum:_darm_instr_t
+I_VREV32	darm-tbl.h	/^    I_VRADDHN, I_VRECPE, I_VRECPS, I_VREV16, I_VREV32, I_VREV64, I_VRHADD,$/;"	e	enum:_darm_instr_t
+I_VREV64	darm-tbl.h	/^    I_VRADDHN, I_VRECPE, I_VRECPS, I_VREV16, I_VREV32, I_VREV64, I_VRHADD,$/;"	e	enum:_darm_instr_t
+I_VRHADD	darm-tbl.h	/^    I_VRADDHN, I_VRECPE, I_VRECPS, I_VREV16, I_VREV32, I_VREV64, I_VRHADD,$/;"	e	enum:_darm_instr_t
+I_VRSHL	darm-tbl.h	/^    I_VRSHL, I_VRSHR, I_VRSHRN, I_VRSQRTE, I_VRSQRTS, I_VRSRA, I_VRSUBHN,$/;"	e	enum:_darm_instr_t
+I_VRSHR	darm-tbl.h	/^    I_VRSHL, I_VRSHR, I_VRSHRN, I_VRSQRTE, I_VRSQRTS, I_VRSRA, I_VRSUBHN,$/;"	e	enum:_darm_instr_t
+I_VRSHRN	darm-tbl.h	/^    I_VRSHL, I_VRSHR, I_VRSHRN, I_VRSQRTE, I_VRSQRTS, I_VRSRA, I_VRSUBHN,$/;"	e	enum:_darm_instr_t
+I_VRSQRTE	darm-tbl.h	/^    I_VRSHL, I_VRSHR, I_VRSHRN, I_VRSQRTE, I_VRSQRTS, I_VRSRA, I_VRSUBHN,$/;"	e	enum:_darm_instr_t
+I_VRSQRTS	darm-tbl.h	/^    I_VRSHL, I_VRSHR, I_VRSHRN, I_VRSQRTE, I_VRSQRTS, I_VRSRA, I_VRSUBHN,$/;"	e	enum:_darm_instr_t
+I_VRSRA	darm-tbl.h	/^    I_VRSHL, I_VRSHR, I_VRSHRN, I_VRSQRTE, I_VRSQRTS, I_VRSRA, I_VRSUBHN,$/;"	e	enum:_darm_instr_t
+I_VRSUBHN	darm-tbl.h	/^    I_VRSHL, I_VRSHR, I_VRSHRN, I_VRSQRTE, I_VRSQRTS, I_VRSRA, I_VRSUBHN,$/;"	e	enum:_darm_instr_t
+I_VSHL	darm-tbl.h	/^    I_VSHL, I_VSHLL, I_VSHR, I_VSHRN, I_VSLI, I_VSQRT, I_VSRA, I_VSRI, I_VST1,$/;"	e	enum:_darm_instr_t
+I_VSHLL	darm-tbl.h	/^    I_VSHL, I_VSHLL, I_VSHR, I_VSHRN, I_VSLI, I_VSQRT, I_VSRA, I_VSRI, I_VST1,$/;"	e	enum:_darm_instr_t
+I_VSHR	darm-tbl.h	/^    I_VSHL, I_VSHLL, I_VSHR, I_VSHRN, I_VSLI, I_VSQRT, I_VSRA, I_VSRI, I_VST1,$/;"	e	enum:_darm_instr_t
+I_VSHRN	darm-tbl.h	/^    I_VSHL, I_VSHLL, I_VSHR, I_VSHRN, I_VSLI, I_VSQRT, I_VSRA, I_VSRI, I_VST1,$/;"	e	enum:_darm_instr_t
+I_VSLI	darm-tbl.h	/^    I_VSHL, I_VSHLL, I_VSHR, I_VSHRN, I_VSLI, I_VSQRT, I_VSRA, I_VSRI, I_VST1,$/;"	e	enum:_darm_instr_t
+I_VSQRT	darm-tbl.h	/^    I_VSHL, I_VSHLL, I_VSHR, I_VSHRN, I_VSLI, I_VSQRT, I_VSRA, I_VSRI, I_VST1,$/;"	e	enum:_darm_instr_t
+I_VSRA	darm-tbl.h	/^    I_VSHL, I_VSHLL, I_VSHR, I_VSHRN, I_VSLI, I_VSQRT, I_VSRA, I_VSRI, I_VST1,$/;"	e	enum:_darm_instr_t
+I_VSRI	darm-tbl.h	/^    I_VSHL, I_VSHLL, I_VSHR, I_VSHRN, I_VSLI, I_VSQRT, I_VSRA, I_VSRI, I_VST1,$/;"	e	enum:_darm_instr_t
+I_VST1	darm-tbl.h	/^    I_VSHL, I_VSHLL, I_VSHR, I_VSHRN, I_VSLI, I_VSQRT, I_VSRA, I_VSRI, I_VST1,$/;"	e	enum:_darm_instr_t
+I_VST2	darm-tbl.h	/^    I_VST2, I_VST3, I_VST4, I_VSTM, I_VSTR, I_VSUB, I_VSUBHN, I_VSUBL,$/;"	e	enum:_darm_instr_t
+I_VST3	darm-tbl.h	/^    I_VST2, I_VST3, I_VST4, I_VSTM, I_VSTR, I_VSUB, I_VSUBHN, I_VSUBL,$/;"	e	enum:_darm_instr_t
+I_VST4	darm-tbl.h	/^    I_VST2, I_VST3, I_VST4, I_VSTM, I_VSTR, I_VSUB, I_VSUBHN, I_VSUBL,$/;"	e	enum:_darm_instr_t
+I_VSTM	darm-tbl.h	/^    I_VST2, I_VST3, I_VST4, I_VSTM, I_VSTR, I_VSUB, I_VSUBHN, I_VSUBL,$/;"	e	enum:_darm_instr_t
+I_VSTR	darm-tbl.h	/^    I_VST2, I_VST3, I_VST4, I_VSTM, I_VSTR, I_VSUB, I_VSUBHN, I_VSUBL,$/;"	e	enum:_darm_instr_t
+I_VSUB	darm-tbl.h	/^    I_VST2, I_VST3, I_VST4, I_VSTM, I_VSTR, I_VSUB, I_VSUBHN, I_VSUBL,$/;"	e	enum:_darm_instr_t
+I_VSUBHN	darm-tbl.h	/^    I_VST2, I_VST3, I_VST4, I_VSTM, I_VSTR, I_VSUB, I_VSUBHN, I_VSUBL,$/;"	e	enum:_darm_instr_t
+I_VSUBL	darm-tbl.h	/^    I_VST2, I_VST3, I_VST4, I_VSTM, I_VSTR, I_VSUB, I_VSUBHN, I_VSUBL,$/;"	e	enum:_darm_instr_t
+I_VSUBW	darm-tbl.h	/^    I_VSUBW, I_VSWP, I_VTBL, I_VTBX, I_VTRN, I_VTST, I_VUZP, I_VZIP, I_WFE,$/;"	e	enum:_darm_instr_t
+I_VSWP	darm-tbl.h	/^    I_VSUBW, I_VSWP, I_VTBL, I_VTBX, I_VTRN, I_VTST, I_VUZP, I_VZIP, I_WFE,$/;"	e	enum:_darm_instr_t
+I_VTBL	darm-tbl.h	/^    I_VSUBW, I_VSWP, I_VTBL, I_VTBX, I_VTRN, I_VTST, I_VUZP, I_VZIP, I_WFE,$/;"	e	enum:_darm_instr_t
+I_VTBX	darm-tbl.h	/^    I_VSUBW, I_VSWP, I_VTBL, I_VTBX, I_VTRN, I_VTST, I_VUZP, I_VZIP, I_WFE,$/;"	e	enum:_darm_instr_t
+I_VTRN	darm-tbl.h	/^    I_VSUBW, I_VSWP, I_VTBL, I_VTBX, I_VTRN, I_VTST, I_VUZP, I_VZIP, I_WFE,$/;"	e	enum:_darm_instr_t
+I_VTST	darm-tbl.h	/^    I_VSUBW, I_VSWP, I_VTBL, I_VTBX, I_VTRN, I_VTST, I_VUZP, I_VZIP, I_WFE,$/;"	e	enum:_darm_instr_t
+I_VUZP	darm-tbl.h	/^    I_VSUBW, I_VSWP, I_VTBL, I_VTBX, I_VTRN, I_VTST, I_VUZP, I_VZIP, I_WFE,$/;"	e	enum:_darm_instr_t
+I_VZIP	darm-tbl.h	/^    I_VSUBW, I_VSWP, I_VTBL, I_VTBX, I_VTRN, I_VTST, I_VUZP, I_VZIP, I_WFE,$/;"	e	enum:_darm_instr_t
+I_WFE	darm-tbl.h	/^    I_VSUBW, I_VSWP, I_VTBL, I_VTBX, I_VTRN, I_VTST, I_VUZP, I_VZIP, I_WFE,$/;"	e	enum:_darm_instr_t
+I_WFI	darm-tbl.h	/^    I_WFI, I_YIELD, I_INSTRCNT$/;"	e	enum:_darm_instr_t
+I_YIELD	darm-tbl.h	/^    I_WFI, I_YIELD, I_INSTRCNT$/;"	e	enum:_darm_instr_t
+Immediate	darmtbl.py	/^class Immediate(Operand):$/;"	c
+Instruction	darm.py	/^class Instruction(_Base):$/;"	c
+J1	darmtbl2.py	/^J1            = Bitsize('J1', 1, 'Immediate')$/;"	v
+J2	darmtbl2.py	/^J2            = Bitsize('J2', 1, 'Immediate')$/;"	v
+L	darmtbl3.py	/^L       = Bitsize('L', 1, 'shift amount etc')$/;"	v
+LIBS	Makefile	/^LIBS  = libdarm.a libdarm$(LIB_EXT)$/;"	m
+LIB_EXT	Makefile	/^	LIB_EXT = .dll$/;"	m
+LIB_EXT	Makefile	/^	LIB_EXT = .so$/;"	m
+LR	darm.h	/^    FP = 11, IP = 12, SP = 13, LR = 14, PC = 15,$/;"	e	enum:_darm_reg_t
+M	darm.h	/^    uint32_t        M;$/;"	m	struct:_darm_t
+M	darmtbl.py	/^M             = Immediate('M', 1, 'High 16bits for Rm')$/;"	v
+M	darmtbl2.py	/^M             = Bitsize('M', 1, 'High 16bits for Rm')$/;"	v
+MAXFILESIZE	utils/elfdarm.c	43;"	d	file:
+N	darm.h	/^    uint32_t        N;$/;"	m	struct:_darm_t
+N	darmtbl.py	/^N             = Immediate('N', 1, 'High 16bits for Rn')$/;"	v
+N	darmtbl2.py	/^N             = Bitsize('N', 1, 'High 16bits for Rn')$/;"	v
+OBJ	Makefile	/^OBJ = $(SRC:.c=.o)$/;"	m
+O_INVLD	darm.h	/^    O_INVLD = -1,$/;"	e	enum:_darm_option_t
+O_ISH	darm.h	/^    O_ISH   = 11, \/\/ b1011$/;"	e	enum:_darm_option_t
+O_ISHST	darm.h	/^    O_ISHST = 10, \/\/ b1010$/;"	e	enum:_darm_option_t
+O_NSH	darm.h	/^    O_NSH   = 7,  \/\/ b0111$/;"	e	enum:_darm_option_t
+O_NSHST	darm.h	/^    O_NSHST = 6,  \/\/ b0110$/;"	e	enum:_darm_option_t
+O_OSH	darm.h	/^    O_OSH   = 3,  \/\/ b0011$/;"	e	enum:_darm_option_t
+O_OSHST	darm.h	/^    O_OSHST = 2,  \/\/ b0010$/;"	e	enum:_darm_option_t
+O_ST	darm.h	/^    O_ST    = 14, \/\/ b1110$/;"	e	enum:_darm_option_t
+O_SY	darm.h	/^    O_SY    = 15, \/\/ b1111$/;"	e	enum:_darm_option_t
+Operand	darmtbl.py	/^class Operand:$/;"	c
+P	darm.h	/^    uint32_t        P;$/;"	m	struct:_darm_t
+P	darmtbl.py	/^P             = Immediate('P', 1, 'Protected Mode Flag?')$/;"	v
+P	darmtbl2.py	/^P             = Bitsize('P', 1, 'Protected Mode Flag?')$/;"	v
+PC	darm.h	/^    FP = 11, IP = 12, SP = 13, LR = 14, PC = 15,$/;"	e	enum:_darm_reg_t
+PF_X	utils/elfdarm.h	34;"	d
+PRINT_FLAG	darm.c	652;"	d	file:
+PRINT_REG	darm.c	636;"	d	file:
+Q	darmtbl3.py	/^Q       = Bitsize('Q', 1, 'Q')$/;"	v
+R	darm.h	/^    uint32_t        R;$/;"	m	struct:_darm_t
+R	darmtbl.py	/^R             = Immediate('R', 1, 'Round Integer')$/;"	v
+R	darmtbl2.py	/^R             = Bitsize('R', 1, 'Round Integer')$/;"	v
+ROR	armv7.c	41;"	d	file:
+ROR	thumb2.c	40;"	d	file:
+R_INVLD	darm.h	/^    R_INVLD = -1$/;"	e	enum:_darm_reg_t
+Ra	darm.h	/^    darm_reg_t      Ra; \/\/ accumulate operand$/;"	m	struct:_darm_t
+Ra	darmtbl.py	/^Ra            = Register('Ra', 4, 'Accumulate Register')$/;"	v
+Ra	darmtbl2.py	/^Ra            = Bitsize('Ra', 4, 'Accumulate Register')$/;"	v
+Rd	darm.h	/^    darm_reg_t      Rd; \/\/ destination$/;"	m	struct:_darm_t
+Rd	darmtbl.py	/^Rd            = Register('Rd', 4, 'Destination Register')$/;"	v
+Rd	darmtbl2.py	/^Rd            = Bitsize('Rd', 4, 'Destination Register')$/;"	v
+Rd3	darmtbl2.py	/^Rd3           = Bitsize('Rd3', 3, 'Destination Register')$/;"	v
+RdHi	darm.h	/^    darm_reg_t      RdHi; \/\/ high 32bits destination$/;"	m	struct:_darm_t
+RdHi	darmtbl.py	/^RdHi          = Immediate('RdHi', 4, 'High 32bits for Rd')$/;"	v
+RdHi	darmtbl2.py	/^RdHi          = Bitsize('RdHi', 4, 'High 32bits for Rd')$/;"	v
+RdLo	darm.h	/^    darm_reg_t      RdLo; \/\/ low 32bits destination$/;"	m	struct:_darm_t
+RdLo	darmtbl.py	/^RdLo          = Immediate('RdLo', 4, 'Low 32bits for Rd')$/;"	v
+RdLo	darmtbl2.py	/^RdLo          = Bitsize('RdLo', 4, 'Low 32bits for Rd')$/;"	v
+Rdm	darmtbl2.py	/^Rdm           = Bitsize('Rdm', 4, 'Destination & M Register')$/;"	v
+Rdm3	darmtbl2.py	/^Rdm3          = Bitsize('Rdm3', 3, 'Destination & M Register')$/;"	v
+Rdn	darmtbl2.py	/^Rdn           = Bitsize('Rdn', 4, 'Destination & N Register')$/;"	v
+Rdn3	darmtbl2.py	/^Rdn3          = Bitsize('Rdn3', 3, 'Destination & N Register')$/;"	v
+Register	darm.py	/^class Register(_Base):$/;"	c
+Register	darmtbl.py	/^class Register(Operand):$/;"	c
+RegisterList	darm.py	/^class RegisterList:$/;"	c
+Rm	darm.h	/^    darm_reg_t      Rm; \/\/ second operand$/;"	m	struct:_darm_t
+Rm	darmtbl.py	/^Rm            = Register('Rm', 4, 'Shift Register')$/;"	v
+Rm	darmtbl2.py	/^Rm            = Bitsize('Rm', 4, 'Shift Register')$/;"	v
+Rm3	darmtbl2.py	/^Rm3           = Bitsize('Rm3', 3, 'Shift Register')$/;"	v
+Rn	darm.h	/^    darm_reg_t      Rn; \/\/ first operand$/;"	m	struct:_darm_t
+Rn	darmtbl.py	/^Rn            = Register('Rn', 4, 'N Register')$/;"	v
+Rn	darmtbl2.py	/^Rn            = Bitsize('Rn', 4, 'N Register')$/;"	v
+Rn3	darmtbl2.py	/^Rn3           = Bitsize('Rn3', 3, 'N Register')$/;"	v
+Rs	darm.h	/^    darm_reg_t      Rs;$/;"	m	struct:_darm_t
+Rs	darmtbl.py	/^Rs            = Immediate('Rs', 4, 'Shift Immediate')$/;"	v
+Rs	darmtbl2.py	/^Rs            = Bitsize('Rs', 4, 'Shift Immediate')$/;"	v
+Rt	darm.h	/^    darm_reg_t      Rt; \/\/ transferred operand$/;"	m	struct:_darm_t
+Rt	darmtbl.py	/^Rt            = Register('Rt', 4, 'Transferred Register')$/;"	v
+Rt	darmtbl2.py	/^Rt            = Bitsize('Rt', 4, 'Transferred Register')$/;"	v
+Rt2	darm.h	/^    darm_reg_t      Rt2; \/\/ second transferred operand$/;"	m	struct:_darm_t
+Rt2	darmtbl.py	/^Rt2           = Immediate('Rt2', 4, 'Second Ternary Register')$/;"	v
+Rt2	darmtbl2.py	/^Rt2           = Bitsize('Rt2', 4, 'Second Ternary Register')$/;"	v
+Rt3	darmtbl2.py	/^Rt3           = Bitsize('Rt3', 3, 'Transferred Register')$/;"	v
+S	darm.h	/^    uint32_t        S;$/;"	m	struct:_darm_t
+S	darmtbl.py	/^S             = Register('S', 1, 'Update Conditional Flags')$/;"	v
+S	darmtbl2.py	/^S             = Bitsize('S', 1, 'Update Conditional Flags')$/;"	v
+SIGN_EXTEND32	tests/expand.c	9;"	d	file:
+SIGN_EXTEND32	thumb2.c	41;"	d	file:
+SP	darm.h	/^    FP = 11, IP = 12, SP = 13, LR = 14, PC = 15,$/;"	e	enum:_darm_reg_t
+SRC	Makefile	/^SRC = $(wildcard *.c)$/;"	m
+STUFF	Makefile	/^STUFF = $(GENR) $(LIBS) $(TOOLS)$/;"	m
+S_ASR	darm.h	/^    S_LSL = 0, S_LSR = 1, S_ASR = 2, S_ROR = 3,$/;"	e	enum:_darm_shift_type_t
+S_INVLD	darm.h	/^    S_INVLD = -1,$/;"	e	enum:_darm_shift_type_t
+S_LSL	darm.h	/^    S_LSL = 0, S_LSR = 1, S_ASR = 2, S_ROR = 3,$/;"	e	enum:_darm_shift_type_t
+S_LSR	darm.h	/^    S_LSL = 0, S_LSR = 1, S_ASR = 2, S_ROR = 3,$/;"	e	enum:_darm_shift_type_t
+S_ROR	darm.h	/^    S_LSL = 0, S_LSR = 1, S_ASR = 2, S_ROR = 3,$/;"	e	enum:_darm_shift_type_t
+Shift	darm.py	/^class Shift:$/;"	c
+T	darm.h	/^    uint32_t        T;$/;"	m	struct:_darm_t
+T	darmtbl3.py	/^T       = Bitsize('T', 1, 'lowbit')$/;"	v
+THUMB2_INSTRUCTION_COUNT	thumb2-tbl.h	33;"	d
+TOOLS	Makefile	/^TOOLS = tests\/tests$(BIN_EXT) tests\/expand$(BIN_EXT) utils\/elfdarm$(BIN_EXT)$/;"	m
+T_ARM_ADR	darm-tbl.h	/^    T_ARM_ADR,$/;"	e	enum:_darm_enctype_t
+T_ARM_ARITH_IMM	darm-tbl.h	/^    T_ARM_ARITH_IMM,$/;"	e	enum:_darm_enctype_t
+T_ARM_ARITH_SHIFT	darm-tbl.h	/^    T_ARM_ARITH_SHIFT,$/;"	e	enum:_darm_enctype_t
+T_ARM_BITREV	darm-tbl.h	/^    T_ARM_BITREV,$/;"	e	enum:_darm_enctype_t
+T_ARM_BITS	darm-tbl.h	/^    T_ARM_BITS,$/;"	e	enum:_darm_enctype_t
+T_ARM_BRNCHMISC	darm-tbl.h	/^    T_ARM_BRNCHMISC,$/;"	e	enum:_darm_enctype_t
+T_ARM_BRNCHSC	darm-tbl.h	/^    T_ARM_BRNCHSC,$/;"	e	enum:_darm_enctype_t
+T_ARM_CMP_IMM	darm-tbl.h	/^    T_ARM_CMP_IMM,$/;"	e	enum:_darm_enctype_t
+T_ARM_CMP_OP	darm-tbl.h	/^    T_ARM_CMP_OP,$/;"	e	enum:_darm_enctype_t
+T_ARM_DST_SRC	darm-tbl.h	/^    T_ARM_DST_SRC,$/;"	e	enum:_darm_enctype_t
+T_ARM_LDSTREGS	darm-tbl.h	/^    T_ARM_LDSTREGS,$/;"	e	enum:_darm_enctype_t
+T_ARM_MISC	darm-tbl.h	/^    T_ARM_MISC,$/;"	e	enum:_darm_enctype_t
+T_ARM_MOV_IMM	darm-tbl.h	/^    T_ARM_MOV_IMM,$/;"	e	enum:_darm_enctype_t
+T_ARM_MUL	darm-tbl.h	/^    T_ARM_MUL,$/;"	e	enum:_darm_enctype_t
+T_ARM_MVCR	darm-tbl.h	/^    T_ARM_MVCR,$/;"	e	enum:_darm_enctype_t
+T_ARM_OPLESS	darm-tbl.h	/^    T_ARM_OPLESS,$/;"	e	enum:_darm_enctype_t
+T_ARM_PAS	darm-tbl.h	/^    T_ARM_PAS,$/;"	e	enum:_darm_enctype_t
+T_ARM_PUSR	darm-tbl.h	/^    T_ARM_PUSR,$/;"	e	enum:_darm_enctype_t
+T_ARM_SAT	darm-tbl.h	/^    T_ARM_SAT,$/;"	e	enum:_darm_enctype_t
+T_ARM_SM	darm-tbl.h	/^    T_ARM_SM,$/;"	e	enum:_darm_enctype_t
+T_ARM_STACK0	darm-tbl.h	/^    T_ARM_STACK0,$/;"	e	enum:_darm_enctype_t
+T_ARM_STACK1	darm-tbl.h	/^    T_ARM_STACK1,$/;"	e	enum:_darm_enctype_t
+T_ARM_STACK2	darm-tbl.h	/^    T_ARM_STACK2,$/;"	e	enum:_darm_enctype_t
+T_ARM_SYNC	darm-tbl.h	/^    T_ARM_SYNC,$/;"	e	enum:_darm_enctype_t
+T_ARM_UDF	darm-tbl.h	/^    T_ARM_UDF,$/;"	e	enum:_darm_enctype_t
+T_ARM_UNCOND	darm-tbl.h	/^    T_ARM_UNCOND,$/;"	e	enum:_darm_enctype_t
+T_INVLD	darm-tbl.h	/^    T_INVLD,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_IMM12	darm-tbl.h	/^    T_THUMB2_IMM12,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_IMM1_IMM3_IMM8	darm-tbl.h	/^    T_THUMB2_IMM1_IMM3_IMM8,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_IMM2	darm-tbl.h	/^    T_THUMB2_IMM2,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_IMM2_IMM3	darm-tbl.h	/^    T_THUMB2_IMM2_IMM3,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_IMM8	darm-tbl.h	/^    T_THUMB2_IMM8,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_NO_FLAG	darm-tbl.h	/^    T_THUMB2_NO_FLAG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_NO_IMM	darm-tbl.h	/^    T_THUMB2_NO_IMM,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_NO_REG	darm-tbl.h	/^    T_THUMB2_NO_REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_RD_REG	darm-tbl.h	/^    T_THUMB2_RD_REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_RD_RM_REG	darm-tbl.h	/^    T_THUMB2_RD_RM_REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_REGLIST_FLAG	darm-tbl.h	/^    T_THUMB2_REGLIST_FLAG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_RM_REG	darm-tbl.h	/^    T_THUMB2_RM_REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_RN_RD_REG	darm-tbl.h	/^    T_THUMB2_RN_RD_REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_RN_RD_RM_RA_REG	darm-tbl.h	/^    T_THUMB2_RN_RD_RM_RA_REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_RN_RD_RM_REG	darm-tbl.h	/^    T_THUMB2_RN_RD_RM_REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_RN_RD_RT_REG	darm-tbl.h	/^    T_THUMB2_RN_RD_RT_REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_RN_RD_RT_RT2_REG	darm-tbl.h	/^    T_THUMB2_RN_RD_RT_RT2_REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_RN_REG	darm-tbl.h	/^    T_THUMB2_RN_REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_RN_RM_REG	darm-tbl.h	/^    T_THUMB2_RN_RM_REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_RN_RM_RT_REG	darm-tbl.h	/^    T_THUMB2_RN_RM_RT_REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_RN_RT_REG	darm-tbl.h	/^    T_THUMB2_RN_RT_REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_RN_RT_RT2_REG	darm-tbl.h	/^    T_THUMB2_RN_RT_RT2_REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_ROTATE_FLAG	darm-tbl.h	/^    T_THUMB2_ROTATE_FLAG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_RT_REG	darm-tbl.h	/^    T_THUMB2_RT_REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_RT_RT2_REG	darm-tbl.h	/^    T_THUMB2_RT_RT2_REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_S_FLAG	darm-tbl.h	/^    T_THUMB2_S_FLAG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_S_TYPE_FLAG	darm-tbl.h	/^    T_THUMB2_S_TYPE_FLAG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_TYPE_FLAG	darm-tbl.h	/^    T_THUMB2_TYPE_FLAG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_U_FLAG	darm-tbl.h	/^    T_THUMB2_U_FLAG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_WP_REGLIST_FLAG	darm-tbl.h	/^    T_THUMB2_WP_REGLIST_FLAG,$/;"	e	enum:_darm_enctype_t
+T_THUMB2_WUP_FLAG	darm-tbl.h	/^    T_THUMB2_WUP_FLAG,$/;"	e	enum:_darm_enctype_t
+T_THUMB_2REG_IMM	darm-tbl.h	/^    T_THUMB_2REG_IMM,$/;"	e	enum:_darm_enctype_t
+T_THUMB_3REG	darm-tbl.h	/^    T_THUMB_3REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB_ADD_SP_IMM	darm-tbl.h	/^    T_THUMB_ADD_SP_IMM,$/;"	e	enum:_darm_enctype_t
+T_THUMB_BRANCH_REG	darm-tbl.h	/^    T_THUMB_BRANCH_REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB_CBZ	darm-tbl.h	/^    T_THUMB_CBZ,$/;"	e	enum:_darm_enctype_t
+T_THUMB_CMP	darm-tbl.h	/^    T_THUMB_CMP,$/;"	e	enum:_darm_enctype_t
+T_THUMB_COND_BRANCH	darm-tbl.h	/^    T_THUMB_COND_BRANCH,$/;"	e	enum:_darm_enctype_t
+T_THUMB_EXTEND	darm-tbl.h	/^    T_THUMB_EXTEND,$/;"	e	enum:_darm_enctype_t
+T_THUMB_GPI	darm-tbl.h	/^    T_THUMB_GPI,$/;"	e	enum:_darm_enctype_t
+T_THUMB_HAS_IMM8	darm-tbl.h	/^    T_THUMB_HAS_IMM8,$/;"	e	enum:_darm_enctype_t
+T_THUMB_IT_HINTS	darm-tbl.h	/^    T_THUMB_IT_HINTS,$/;"	e	enum:_darm_enctype_t
+T_THUMB_LDR_PC	darm-tbl.h	/^    T_THUMB_LDR_PC,$/;"	e	enum:_darm_enctype_t
+T_THUMB_MOD_SP_IMM	darm-tbl.h	/^    T_THUMB_MOD_SP_IMM,$/;"	e	enum:_darm_enctype_t
+T_THUMB_MOD_SP_REG	darm-tbl.h	/^    T_THUMB_MOD_SP_REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB_MOV4	darm-tbl.h	/^    T_THUMB_MOV4,$/;"	e	enum:_darm_enctype_t
+T_THUMB_ONLY_IMM8	darm-tbl.h	/^    T_THUMB_ONLY_IMM8,$/;"	e	enum:_darm_enctype_t
+T_THUMB_PUSHPOP	darm-tbl.h	/^    T_THUMB_PUSHPOP,$/;"	e	enum:_darm_enctype_t
+T_THUMB_REV	darm-tbl.h	/^    T_THUMB_REV,$/;"	e	enum:_darm_enctype_t
+T_THUMB_RW_MEMI	darm-tbl.h	/^    T_THUMB_RW_MEMI,$/;"	e	enum:_darm_enctype_t
+T_THUMB_RW_MEMO	darm-tbl.h	/^    T_THUMB_RW_MEMO,$/;"	e	enum:_darm_enctype_t
+T_THUMB_RW_REG	darm-tbl.h	/^    T_THUMB_RW_REG,$/;"	e	enum:_darm_enctype_t
+T_THUMB_SETEND	darm-tbl.h	/^    T_THUMB_SETEND,$/;"	e	enum:_darm_enctype_t
+T_THUMB_SHIFT_IMM	darm-tbl.h	/^    T_THUMB_SHIFT_IMM,$/;"	e	enum:_darm_enctype_t
+T_THUMB_STACK	darm-tbl.h	/^    T_THUMB_STACK,$/;"	e	enum:_darm_enctype_t
+T_THUMB_UNCOND_BRANCH	darm-tbl.h	/^    T_THUMB_UNCOND_BRANCH,$/;"	e	enum:_darm_enctype_t
+U	darm.h	/^    uint32_t        U;$/;"	m	struct:_darm_t
+U	darmtbl.py	/^U             = Immediate('U', 1, 'Addition flag for PLD')$/;"	v
+U	darmtbl2.py	/^U             = Bitsize('U', 1, 'Addition flag for PLD')$/;"	v
+U	darmtbl3.py	/^U       = Bitsize('U', 1, 'Unsigned')$/;"	v
+VFP_ARMv7	darmtbl3.py	/^VFP_ARMv7 = [$/;"	v
+VFP_Thumb	darmtbl3.py	/^VFP_Thumb = [$/;"	v
+Vd	darmtbl3.py	/^Vd      = Bitsize('Vd', 4, 'Vector Destination Register')$/;"	v
+Vm	darmtbl3.py	/^Vm      = Bitsize('Vm', 4, 'Second Vector Source Register')$/;"	v
+Vn	darmtbl3.py	/^Vn      = Bitsize('Vn', 4, 'Vector Source Register')$/;"	v
+W	darm.h	/^    uint32_t        W;$/;"	m	struct:_darm_t
+W	darmtbl.py	/^W             = Immediate('W', 1, 'Some Bit for LDM')$/;"	v
+W	darmtbl2.py	/^W             = Bitsize('W', 1, 'Some Bit for LDM')$/;"	v
+_Base	darm.py	/^class _Base:$/;"	c
+_Darm	darm.py	/^class _Darm(Structure):$/;"	c
+_DarmStr	darm.py	/^class _DarmStr(Structure):$/;"	c
+__ARMV7_TBL__	armv7-tbl.h	30;"	d
+__DARM_TBL__	darm-tbl.h	30;"	d
+__DARM__	darm.h	31;"	d
+__ELFDARM__	utils/elfdarm.h	2;"	d
+__THUMB2_H__	thumb2.h	31;"	d
+__THUMB2_TBL__	thumb2-tbl.h	30;"	d
+__THUMB_TBL__	thumb-tbl.h	30;"	d
+__bool__	darm.py	/^    __bool__ = __nonzero__$/;"	v	class:RegisterList
+__bool__	darm.py	/^    __bool__ = __nonzero__$/;"	v	class:_Base
+__init__	darm.py	/^    def __init__(self, d):$/;"	m	class:Darm
+__init__	darm.py	/^    def __init__(self, idx):$/;"	m	class:_Base
+__init__	darm.py	/^    def __init__(self, reglist):$/;"	m	class:RegisterList
+__init__	darm.py	/^    def __init__(self, type_, Rs, shift):$/;"	m	class:Shift
+__init__	darmtbl.py	/^    def __init__(self, name, bitsize, comment):$/;"	m	class:Operand
+__init__	darmtbl2.py	/^    def __init__(self, name, bitsize, comment):$/;"	m	class:Bitsize
+__int__	darm.py	/^    def __int__(self):$/;"	m	class:_Base	file:
+__nonzero__	darm.py	/^    def __nonzero__(self):$/;"	m	class:RegisterList	file:
+__nonzero__	darm.py	/^    def __nonzero__(self):$/;"	m	class:Shift	file:
+__nonzero__	darm.py	/^    def __nonzero__(self):$/;"	m	class:_Base	file:
+__repr__	darm.py	/^    def __repr__(self):$/;"	m	class:Condition	file:
+__repr__	darm.py	/^    def __repr__(self):$/;"	m	class:Darm	file:
+__repr__	darm.py	/^    def __repr__(self):$/;"	m	class:Encoding	file:
+__repr__	darm.py	/^    def __repr__(self):$/;"	m	class:Instruction	file:
+__repr__	darm.py	/^    def __repr__(self):$/;"	m	class:Register	file:
+__repr__	darm.py	/^    def __repr__(self):$/;"	m	class:Shift	file:
+__repr__	darmtbl.py	/^    def __repr__(self):$/;"	m	class:Operand	file:
+__repr__	darmtbl2.py	/^    def __repr__(self):$/;"	m	class:Bitsize	file:
+__str__	darm.py	/^    def __str__(self):$/;"	m	class:Condition	file:
+__str__	darm.py	/^    def __str__(self):$/;"	m	class:Darm	file:
+__str__	darm.py	/^    def __str__(self):$/;"	m	class:Encoding	file:
+__str__	darm.py	/^    def __str__(self):$/;"	m	class:Instruction	file:
+__str__	darm.py	/^    def __str__(self):$/;"	m	class:Register	file:
+__str__	darm.py	/^    def __str__(self):$/;"	m	class:RegisterList	file:
+__str__	darm.py	/^    def __str__(self):$/;"	m	class:Shift	file:
+_append_imm	darm.c	/^static int _append_imm(char *arg, uint32_t imm)$/;"	f	file:
+_darm_cond_t	darm.h	/^typedef enum _darm_cond_t {$/;"	g
+_darm_dir	darm.py	/^_darm_dir = os.path.dirname(os.path.abspath(__file__))$/;"	v
+_darm_enctype_t	darm-tbl.h	/^typedef enum _darm_enctype_t {$/;"	g
+_darm_instr_t	darm-tbl.h	/^typedef enum _darm_instr_t {$/;"	g
+_darm_option_t	darm.h	/^typedef enum _darm_option_t {$/;"	g
+_darm_reg_t	darm.h	/^typedef enum _darm_reg_t {$/;"	g
+_darm_shift_type_t	darm.h	/^typedef enum _darm_shift_type_t {$/;"	g
+_darm_str_t	darm.h	/^typedef struct _darm_str_t {$/;"	s
+_darm_t	darm.h	/^typedef struct _darm_t {$/;"	s
+_darm_thumb2_disasm	tests/tests.c	/^static int _darm_thumb2_disasm(darm_t *d, uint32_t w)$/;"	f	file:
+_darm_thumb_disasm	tests/tests.c	/^static int _darm_thumb_disasm(darm_t *d, uint32_t w)$/;"	f	file:
+_elf32_header_t	utils/elfdarm.h	/^typedef struct __attribute__((packed)) _elf32_header_t {$/;"	s
+_elf32_pheader_t	utils/elfdarm.h	/^typedef struct _elf32_pheader_t {$/;"	s
+_fields_	darm.py	/^    _fields_ = [$/;"	v	class:_Darm
+_fields_	darm.py	/^    _fields_ = [$/;"	v	class:_DarmStr
+_flags	darm.py	/^    _flags = 'B', 'S', 'E', 'M', 'N', 'U', 'H', 'P', 'R', 'T', 'W', 'I'$/;"	v	class:Darm
+_lib	darm.py	/^    _lib = cdll.LoadLibrary(os.path.join(_darm_dir, 'libdarm.so'))$/;"	v
+_nonzero	darm.py	/^    _nonzero = -1$/;"	v	class:Condition
+_nonzero	darm.py	/^    _nonzero = -1$/;"	v	class:Register
+_nonzero	darm.py	/^    _nonzero = 0$/;"	v	class:Encoding
+_nonzero	darm.py	/^    _nonzero = 0$/;"	v	class:Instruction
+_regs	darm.py	/^    _regs = 'Rd', 'Rn', 'Rm', 'Ra', 'Rt', 'Rt2', 'RdHi', 'RdLo'$/;"	v	class:Darm
+_set_func	darm.py	/^def _set_func(name, restype, *argtypes):$/;"	f
+_utoa	darm.c	/^static int _utoa(unsigned int value, char *out, int base)$/;"	f	file:
+a	darmtbl3.py	/^a       = Bitsize('a', 1, 'Memory Alignment')$/;"	v
+align	darmtbl3.py	/^align   = Bitsize('align', 2, 'Memory Alignment')$/;"	v
+arg	darm.h	/^    char arg[6][32];$/;"	m	struct:_darm_str_t
+armv7	darmgen.py	/^def armv7(*x):$/;"	f
+armv7_disas_cond	armv7.c	/^static int armv7_disas_cond(darm_t *d, uint32_t w)$/;"	f	file:
+armv7_disas_uncond	armv7.c	/^static int armv7_disas_uncond(darm_t *d, uint32_t w)$/;"	f	file:
+armv7_format_strings	armv7-tbl.c	/^const char *armv7_format_strings[479][3] = {$/;"	v
+armv7_instr_labels	armv7-tbl.c	/^darm_instr_t armv7_instr_labels[] = {$/;"	v
+armv7_instr_types	armv7-tbl.c	/^darm_enctype_t armv7_instr_types[] = {$/;"	v
+b0	darm-internal.h	29;"	d
+b00	darm-internal.h	285;"	d
+b000	darm-internal.h	289;"	d
+b0000	darm-internal.h	297;"	d
+b00000	darm-internal.h	313;"	d
+b000000	darm-internal.h	345;"	d
+b000001	darm-internal.h	346;"	d
+b00001	darm-internal.h	314;"	d
+b000010	darm-internal.h	347;"	d
+b000011	darm-internal.h	348;"	d
+b0001	darm-internal.h	298;"	d
+b00010	darm-internal.h	315;"	d
+b000100	darm-internal.h	349;"	d
+b000101	darm-internal.h	350;"	d
+b00011	darm-internal.h	316;"	d
+b000110	darm-internal.h	351;"	d
+b000111	darm-internal.h	352;"	d
+b001	darm-internal.h	290;"	d
+b0010	darm-internal.h	299;"	d
+b00100	darm-internal.h	317;"	d
+b001000	darm-internal.h	353;"	d
+b001001	darm-internal.h	354;"	d
+b00101	darm-internal.h	318;"	d
+b001010	darm-internal.h	355;"	d
+b001011	darm-internal.h	356;"	d
+b0011	darm-internal.h	300;"	d
+b00110	darm-internal.h	319;"	d
+b001100	darm-internal.h	357;"	d
+b001101	darm-internal.h	358;"	d
+b00111	darm-internal.h	320;"	d
+b001110	darm-internal.h	359;"	d
+b001111	darm-internal.h	360;"	d
+b01	darm-internal.h	286;"	d
+b010	darm-internal.h	291;"	d
+b0100	darm-internal.h	301;"	d
+b01000	darm-internal.h	321;"	d
+b010000	darm-internal.h	361;"	d
+b010001	darm-internal.h	362;"	d
+b01001	darm-internal.h	322;"	d
+b010010	darm-internal.h	363;"	d
+b010011	darm-internal.h	364;"	d
+b0101	darm-internal.h	302;"	d
+b01010	darm-internal.h	323;"	d
+b010100	darm-internal.h	365;"	d
+b010101	darm-internal.h	366;"	d
+b01011	darm-internal.h	324;"	d
+b010110	darm-internal.h	367;"	d
+b010111	darm-internal.h	368;"	d
+b011	darm-internal.h	292;"	d
+b0110	darm-internal.h	303;"	d
+b01100	darm-internal.h	325;"	d
+b011000	darm-internal.h	369;"	d
+b011001	darm-internal.h	370;"	d
+b01101	darm-internal.h	326;"	d
+b011010	darm-internal.h	371;"	d
+b011011	darm-internal.h	372;"	d
+b0111	darm-internal.h	304;"	d
+b01110	darm-internal.h	327;"	d
+b011100	darm-internal.h	373;"	d
+b011101	darm-internal.h	374;"	d
+b01111	darm-internal.h	328;"	d
+b011110	darm-internal.h	375;"	d
+b011111	darm-internal.h	376;"	d
+b1	darm-internal.h	30;"	d
+b10	darm-internal.h	287;"	d
+b10	darm-internal.h	31;"	d
+b100	darm-internal.h	293;"	d
+b100	darm-internal.h	33;"	d
+b1000	darm-internal.h	305;"	d
+b1000	darm-internal.h	37;"	d
+b10000	darm-internal.h	329;"	d
+b10000	darm-internal.h	45;"	d
+b100000	darm-internal.h	377;"	d
+b100000	darm-internal.h	61;"	d
+b1000000	darm-internal.h	93;"	d
+b10000000	darm-internal.h	157;"	d
+b10000001	darm-internal.h	158;"	d
+b1000001	darm-internal.h	94;"	d
+b10000010	darm-internal.h	159;"	d
+b10000011	darm-internal.h	160;"	d
+b100001	darm-internal.h	378;"	d
+b100001	darm-internal.h	62;"	d
+b1000010	darm-internal.h	95;"	d
+b10000100	darm-internal.h	161;"	d
+b10000101	darm-internal.h	162;"	d
+b1000011	darm-internal.h	96;"	d
+b10000110	darm-internal.h	163;"	d
+b10000111	darm-internal.h	164;"	d
+b10001	darm-internal.h	330;"	d
+b10001	darm-internal.h	46;"	d
+b100010	darm-internal.h	379;"	d
+b100010	darm-internal.h	63;"	d
+b1000100	darm-internal.h	97;"	d
+b10001000	darm-internal.h	165;"	d
+b10001001	darm-internal.h	166;"	d
+b1000101	darm-internal.h	98;"	d
+b10001010	darm-internal.h	167;"	d
+b10001011	darm-internal.h	168;"	d
+b100011	darm-internal.h	380;"	d
+b100011	darm-internal.h	64;"	d
+b1000110	darm-internal.h	99;"	d
+b10001100	darm-internal.h	169;"	d
+b10001101	darm-internal.h	170;"	d
+b1000111	darm-internal.h	100;"	d
+b10001110	darm-internal.h	171;"	d
+b10001111	darm-internal.h	172;"	d
+b1001	darm-internal.h	306;"	d
+b1001	darm-internal.h	38;"	d
+b10010	darm-internal.h	331;"	d
+b10010	darm-internal.h	47;"	d
+b100100	darm-internal.h	381;"	d
+b100100	darm-internal.h	65;"	d
+b1001000	darm-internal.h	101;"	d
+b10010000	darm-internal.h	173;"	d
+b10010001	darm-internal.h	174;"	d
+b1001001	darm-internal.h	102;"	d
+b10010010	darm-internal.h	175;"	d
+b10010011	darm-internal.h	176;"	d
+b100101	darm-internal.h	382;"	d
+b100101	darm-internal.h	66;"	d
+b1001010	darm-internal.h	103;"	d
+b10010100	darm-internal.h	177;"	d
+b10010101	darm-internal.h	178;"	d
+b1001011	darm-internal.h	104;"	d
+b10010110	darm-internal.h	179;"	d
+b10010111	darm-internal.h	180;"	d
+b10011	darm-internal.h	332;"	d
+b10011	darm-internal.h	48;"	d
+b100110	darm-internal.h	383;"	d
+b100110	darm-internal.h	67;"	d
+b1001100	darm-internal.h	105;"	d
+b10011000	darm-internal.h	181;"	d
+b10011001	darm-internal.h	182;"	d
+b1001101	darm-internal.h	106;"	d
+b10011010	darm-internal.h	183;"	d
+b10011011	darm-internal.h	184;"	d
+b100111	darm-internal.h	384;"	d
+b100111	darm-internal.h	68;"	d
+b1001110	darm-internal.h	107;"	d
+b10011100	darm-internal.h	185;"	d
+b10011101	darm-internal.h	186;"	d
+b1001111	darm-internal.h	108;"	d
+b10011110	darm-internal.h	187;"	d
+b10011111	darm-internal.h	188;"	d
+b101	darm-internal.h	294;"	d
+b101	darm-internal.h	34;"	d
+b1010	darm-internal.h	307;"	d
+b1010	darm-internal.h	39;"	d
+b10100	darm-internal.h	333;"	d
+b10100	darm-internal.h	49;"	d
+b101000	darm-internal.h	385;"	d
+b101000	darm-internal.h	69;"	d
+b1010000	darm-internal.h	109;"	d
+b10100000	darm-internal.h	189;"	d
+b10100001	darm-internal.h	190;"	d
+b1010001	darm-internal.h	110;"	d
+b10100010	darm-internal.h	191;"	d
+b10100011	darm-internal.h	192;"	d
+b101001	darm-internal.h	386;"	d
+b101001	darm-internal.h	70;"	d
+b1010010	darm-internal.h	111;"	d
+b10100100	darm-internal.h	193;"	d
+b10100101	darm-internal.h	194;"	d
+b1010011	darm-internal.h	112;"	d
+b10100110	darm-internal.h	195;"	d
+b10100111	darm-internal.h	196;"	d
+b10101	darm-internal.h	334;"	d
+b10101	darm-internal.h	50;"	d
+b101010	darm-internal.h	387;"	d
+b101010	darm-internal.h	71;"	d
+b1010100	darm-internal.h	113;"	d
+b10101000	darm-internal.h	197;"	d
+b10101001	darm-internal.h	198;"	d
+b1010101	darm-internal.h	114;"	d
+b10101010	darm-internal.h	199;"	d
+b10101011	darm-internal.h	200;"	d
+b101011	darm-internal.h	388;"	d
+b101011	darm-internal.h	72;"	d
+b1010110	darm-internal.h	115;"	d
+b10101100	darm-internal.h	201;"	d
+b10101101	darm-internal.h	202;"	d
+b1010111	darm-internal.h	116;"	d
+b10101110	darm-internal.h	203;"	d
+b10101111	darm-internal.h	204;"	d
+b1011	darm-internal.h	308;"	d
+b1011	darm-internal.h	40;"	d
+b10110	darm-internal.h	335;"	d
+b10110	darm-internal.h	51;"	d
+b101100	darm-internal.h	389;"	d
+b101100	darm-internal.h	73;"	d
+b1011000	darm-internal.h	117;"	d
+b10110000	darm-internal.h	205;"	d
+b10110001	darm-internal.h	206;"	d
+b1011001	darm-internal.h	118;"	d
+b10110010	darm-internal.h	207;"	d
+b10110011	darm-internal.h	208;"	d
+b101101	darm-internal.h	390;"	d
+b101101	darm-internal.h	74;"	d
+b1011010	darm-internal.h	119;"	d
+b10110100	darm-internal.h	209;"	d
+b10110101	darm-internal.h	210;"	d
+b1011011	darm-internal.h	120;"	d
+b10110110	darm-internal.h	211;"	d
+b10110111	darm-internal.h	212;"	d
+b10111	darm-internal.h	336;"	d
+b10111	darm-internal.h	52;"	d
+b101110	darm-internal.h	391;"	d
+b101110	darm-internal.h	75;"	d
+b1011100	darm-internal.h	121;"	d
+b10111000	darm-internal.h	213;"	d
+b10111001	darm-internal.h	214;"	d
+b1011101	darm-internal.h	122;"	d
+b10111010	darm-internal.h	215;"	d
+b10111011	darm-internal.h	216;"	d
+b101111	darm-internal.h	392;"	d
+b101111	darm-internal.h	76;"	d
+b1011110	darm-internal.h	123;"	d
+b10111100	darm-internal.h	217;"	d
+b10111101	darm-internal.h	218;"	d
+b1011111	darm-internal.h	124;"	d
+b10111110	darm-internal.h	219;"	d
+b10111111	darm-internal.h	220;"	d
+b11	darm-internal.h	288;"	d
+b11	darm-internal.h	32;"	d
+b110	darm-internal.h	295;"	d
+b110	darm-internal.h	35;"	d
+b1100	darm-internal.h	309;"	d
+b1100	darm-internal.h	41;"	d
+b11000	darm-internal.h	337;"	d
+b11000	darm-internal.h	53;"	d
+b110000	darm-internal.h	393;"	d
+b110000	darm-internal.h	77;"	d
+b1100000	darm-internal.h	125;"	d
+b11000000	darm-internal.h	221;"	d
+b11000001	darm-internal.h	222;"	d
+b1100001	darm-internal.h	126;"	d
+b11000010	darm-internal.h	223;"	d
+b11000011	darm-internal.h	224;"	d
+b110001	darm-internal.h	394;"	d
+b110001	darm-internal.h	78;"	d
+b1100010	darm-internal.h	127;"	d
+b11000100	darm-internal.h	225;"	d
+b11000101	darm-internal.h	226;"	d
+b1100011	darm-internal.h	128;"	d
+b11000110	darm-internal.h	227;"	d
+b11000111	darm-internal.h	228;"	d
+b11001	darm-internal.h	338;"	d
+b11001	darm-internal.h	54;"	d
+b110010	darm-internal.h	395;"	d
+b110010	darm-internal.h	79;"	d
+b1100100	darm-internal.h	129;"	d
+b11001000	darm-internal.h	229;"	d
+b11001001	darm-internal.h	230;"	d
+b1100101	darm-internal.h	130;"	d
+b11001010	darm-internal.h	231;"	d
+b11001011	darm-internal.h	232;"	d
+b110011	darm-internal.h	396;"	d
+b110011	darm-internal.h	80;"	d
+b1100110	darm-internal.h	131;"	d
+b11001100	darm-internal.h	233;"	d
+b11001101	darm-internal.h	234;"	d
+b1100111	darm-internal.h	132;"	d
+b11001110	darm-internal.h	235;"	d
+b11001111	darm-internal.h	236;"	d
+b1101	darm-internal.h	310;"	d
+b1101	darm-internal.h	42;"	d
+b11010	darm-internal.h	339;"	d
+b11010	darm-internal.h	55;"	d
+b110100	darm-internal.h	397;"	d
+b110100	darm-internal.h	81;"	d
+b1101000	darm-internal.h	133;"	d
+b11010000	darm-internal.h	237;"	d
+b11010001	darm-internal.h	238;"	d
+b1101001	darm-internal.h	134;"	d
+b11010010	darm-internal.h	239;"	d
+b11010011	darm-internal.h	240;"	d
+b110101	darm-internal.h	398;"	d
+b110101	darm-internal.h	82;"	d
+b1101010	darm-internal.h	135;"	d
+b11010100	darm-internal.h	241;"	d
+b11010101	darm-internal.h	242;"	d
+b1101011	darm-internal.h	136;"	d
+b11010110	darm-internal.h	243;"	d
+b11010111	darm-internal.h	244;"	d
+b11011	darm-internal.h	340;"	d
+b11011	darm-internal.h	56;"	d
+b110110	darm-internal.h	399;"	d
+b110110	darm-internal.h	83;"	d
+b1101100	darm-internal.h	137;"	d
+b11011000	darm-internal.h	245;"	d
+b11011001	darm-internal.h	246;"	d
+b1101101	darm-internal.h	138;"	d
+b11011010	darm-internal.h	247;"	d
+b11011011	darm-internal.h	248;"	d
+b110111	darm-internal.h	400;"	d
+b110111	darm-internal.h	84;"	d
+b1101110	darm-internal.h	139;"	d
+b11011100	darm-internal.h	249;"	d
+b11011101	darm-internal.h	250;"	d
+b1101111	darm-internal.h	140;"	d
+b11011110	darm-internal.h	251;"	d
+b11011111	darm-internal.h	252;"	d
+b111	darm-internal.h	296;"	d
+b111	darm-internal.h	36;"	d
+b1110	darm-internal.h	311;"	d
+b1110	darm-internal.h	43;"	d
+b11100	darm-internal.h	341;"	d
+b11100	darm-internal.h	57;"	d
+b111000	darm-internal.h	401;"	d
+b111000	darm-internal.h	85;"	d
+b1110000	darm-internal.h	141;"	d
+b11100000	darm-internal.h	253;"	d
+b11100001	darm-internal.h	254;"	d
+b1110001	darm-internal.h	142;"	d
+b11100010	darm-internal.h	255;"	d
+b11100011	darm-internal.h	256;"	d
+b111001	darm-internal.h	402;"	d
+b111001	darm-internal.h	86;"	d
+b1110010	darm-internal.h	143;"	d
+b11100100	darm-internal.h	257;"	d
+b11100101	darm-internal.h	258;"	d
+b1110011	darm-internal.h	144;"	d
+b11100110	darm-internal.h	259;"	d
+b11100111	darm-internal.h	260;"	d
+b11101	darm-internal.h	342;"	d
+b11101	darm-internal.h	58;"	d
+b111010	darm-internal.h	403;"	d
+b111010	darm-internal.h	87;"	d
+b1110100	darm-internal.h	145;"	d
+b11101000	darm-internal.h	261;"	d
+b11101001	darm-internal.h	262;"	d
+b1110101	darm-internal.h	146;"	d
+b11101010	darm-internal.h	263;"	d
+b11101011	darm-internal.h	264;"	d
+b111011	darm-internal.h	404;"	d
+b111011	darm-internal.h	88;"	d
+b1110110	darm-internal.h	147;"	d
+b11101100	darm-internal.h	265;"	d
+b11101101	darm-internal.h	266;"	d
+b1110111	darm-internal.h	148;"	d
+b11101110	darm-internal.h	267;"	d
+b11101111	darm-internal.h	268;"	d
+b1111	darm-internal.h	312;"	d
+b1111	darm-internal.h	44;"	d
+b11110	darm-internal.h	343;"	d
+b11110	darm-internal.h	59;"	d
+b111100	darm-internal.h	405;"	d
+b111100	darm-internal.h	89;"	d
+b1111000	darm-internal.h	149;"	d
+b11110000	darm-internal.h	269;"	d
+b11110001	darm-internal.h	270;"	d
+b1111001	darm-internal.h	150;"	d
+b11110010	darm-internal.h	271;"	d
+b11110011	darm-internal.h	272;"	d
+b111101	darm-internal.h	406;"	d
+b111101	darm-internal.h	90;"	d
+b1111010	darm-internal.h	151;"	d
+b11110100	darm-internal.h	273;"	d
+b11110101	darm-internal.h	274;"	d
+b1111011	darm-internal.h	152;"	d
+b11110110	darm-internal.h	275;"	d
+b11110111	darm-internal.h	276;"	d
+b11111	darm-internal.h	344;"	d
+b11111	darm-internal.h	60;"	d
+b111110	darm-internal.h	407;"	d
+b111110	darm-internal.h	91;"	d
+b1111100	darm-internal.h	153;"	d
+b11111000	darm-internal.h	277;"	d
+b11111001	darm-internal.h	278;"	d
+b1111101	darm-internal.h	154;"	d
+b11111010	darm-internal.h	279;"	d
+b11111011	darm-internal.h	280;"	d
+b111111	darm-internal.h	408;"	d
+b111111	darm-internal.h	92;"	d
+b1111110	darm-internal.h	155;"	d
+b11111100	darm-internal.h	281;"	d
+b11111101	darm-internal.h	282;"	d
+b1111111	darm-internal.h	156;"	d
+b11111110	darm-internal.h	283;"	d
+b11111111	darm-internal.h	284;"	d
+bitcount	darmgen.py	/^        bitcount = sum(1 if isinstance(x, int) else x.bitsize for x in bits)$/;"	v
+bits	darmgen.py	/^        bits = description[1:]$/;"	v
+bits	darmtbl.py	/^        bits = [1 if type(x) == int else x.bitsize for x in bits]$/;"	v	class:Register
+bits	darmtbl.py	/^        bits = description[1:]$/;"	v	class:Register
+bits	darmtbl3.py	/^        bits = [1 if type(x) == int else x.bitsize for x in bits]$/;"	v
+bits	darmtbl3.py	/^        bits = description[1:]$/;"	v
+cmode	darmtbl3.py	/^cmode   = Bitsize('cmode', 4, 'SIMD Expand Mode')$/;"	v
+cond	darm.h	/^    darm_cond_t     cond;$/;"	m	struct:_darm_t
+cond	darmtbl.py	/^cond          = Immediate('cond', 4, 'Conditional Flags')$/;"	v
+cond	darmtbl2.py	/^cond          = Bitsize('cond', 4, 'Conditional Flags')$/;"	v
+coproc	darm.h	/^    uint8_t         coproc;$/;"	m	struct:_darm_t
+coproc	darmtbl.py	/^coproc        = Immediate('coproc', 4, 'Coprocessor Number')$/;"	v
+coproc	darmtbl2.py	/^coproc        = Bitsize('coproc', 4, 'Coprocessor Number')$/;"	v
+count	darmgen.py	/^    count = len(instruction_names(open('instructions.txt')))$/;"	v
+cr0	darm.h	/^    cr0 = 0, cr1 = 1, cr2 = 2, cr3 = 3, cr4 = 4, cr5 = 5, cr6 = 6, cr7 = 7,$/;"	e	enum:_darm_reg_t
+cr1	darm.h	/^    cr0 = 0, cr1 = 1, cr2 = 2, cr3 = 3, cr4 = 4, cr5 = 5, cr6 = 6, cr7 = 7,$/;"	e	enum:_darm_reg_t
+cr10	darm.h	/^    cr8 = 8, cr9 = 9, cr10 = 10, cr11 = 11, cr12 = 12, cr13 = 13, cr14 = 14,$/;"	e	enum:_darm_reg_t
+cr11	darm.h	/^    cr8 = 8, cr9 = 9, cr10 = 10, cr11 = 11, cr12 = 12, cr13 = 13, cr14 = 14,$/;"	e	enum:_darm_reg_t
+cr12	darm.h	/^    cr8 = 8, cr9 = 9, cr10 = 10, cr11 = 11, cr12 = 12, cr13 = 13, cr14 = 14,$/;"	e	enum:_darm_reg_t
+cr13	darm.h	/^    cr8 = 8, cr9 = 9, cr10 = 10, cr11 = 11, cr12 = 12, cr13 = 13, cr14 = 14,$/;"	e	enum:_darm_reg_t
+cr14	darm.h	/^    cr8 = 8, cr9 = 9, cr10 = 10, cr11 = 11, cr12 = 12, cr13 = 13, cr14 = 14,$/;"	e	enum:_darm_reg_t
+cr15	darm.h	/^    cr15 = 15,$/;"	e	enum:_darm_reg_t
+cr2	darm.h	/^    cr0 = 0, cr1 = 1, cr2 = 2, cr3 = 3, cr4 = 4, cr5 = 5, cr6 = 6, cr7 = 7,$/;"	e	enum:_darm_reg_t
+cr3	darm.h	/^    cr0 = 0, cr1 = 1, cr2 = 2, cr3 = 3, cr4 = 4, cr5 = 5, cr6 = 6, cr7 = 7,$/;"	e	enum:_darm_reg_t
+cr4	darm.h	/^    cr0 = 0, cr1 = 1, cr2 = 2, cr3 = 3, cr4 = 4, cr5 = 5, cr6 = 6, cr7 = 7,$/;"	e	enum:_darm_reg_t
+cr5	darm.h	/^    cr0 = 0, cr1 = 1, cr2 = 2, cr3 = 3, cr4 = 4, cr5 = 5, cr6 = 6, cr7 = 7,$/;"	e	enum:_darm_reg_t
+cr6	darm.h	/^    cr0 = 0, cr1 = 1, cr2 = 2, cr3 = 3, cr4 = 4, cr5 = 5, cr6 = 6, cr7 = 7,$/;"	e	enum:_darm_reg_t
+cr7	darm.h	/^    cr0 = 0, cr1 = 1, cr2 = 2, cr3 = 3, cr4 = 4, cr5 = 5, cr6 = 6, cr7 = 7,$/;"	e	enum:_darm_reg_t
+cr8	darm.h	/^    cr8 = 8, cr9 = 9, cr10 = 10, cr11 = 11, cr12 = 12, cr13 = 13, cr14 = 14,$/;"	e	enum:_darm_reg_t
+cr9	darm.h	/^    cr8 = 8, cr9 = 9, cr10 = 10, cr11 = 11, cr12 = 12, cr13 = 13, cr14 = 14,$/;"	e	enum:_darm_reg_t
+d	darmgen.py	/^d = darmtbl$/;"	v
+d	tests/tests.c	/^    darm_t d;$/;"	m	struct:__anon2	file:
+d2	darmgen.py	/^d2 = darmtbl2$/;"	v
+darm_armv7_disasm	armv7.c	/^int darm_armv7_disasm(darm_t *d, uint32_t w)$/;"	f
+darm_cond_t	darm.h	/^} darm_cond_t;$/;"	t	typeref:enum:_darm_cond_t
+darm_condition_index	armv7.c	/^darm_cond_t darm_condition_index(const char *condition_code)$/;"	f
+darm_condition_meaning_fp	armv7.c	/^const char *darm_condition_meaning_fp(darm_cond_t cond)$/;"	f
+darm_condition_meaning_int	armv7.c	/^const char *darm_condition_meaning_int(darm_cond_t cond)$/;"	f
+darm_condition_name	armv7.c	/^const char *darm_condition_name(darm_cond_t cond, int omit_always_execute)$/;"	f
+darm_disasm	darm.c	/^int darm_disasm(darm_t *d, uint16_t w, uint16_t w2, uint32_t addr)$/;"	f
+darm_dump	darm.c	/^void darm_dump(const darm_t *d)$/;"	f
+darm_enctype_name	armv7.c	/^const char *darm_enctype_name(darm_enctype_t enctype)$/;"	f
+darm_enctype_t	darm-tbl.h	/^} darm_enctype_t;$/;"	t	typeref:enum:_darm_enctype_t
+darm_enctypes	darm-tbl.c	/^const char *darm_enctypes[] = {$/;"	v
+darm_immshift_decode	armv7.c	/^int darm_immshift_decode(const darm_t *d, const char **type,$/;"	f
+darm_init	darm.c	/^void darm_init(darm_t *d)$/;"	f
+darm_instr_t	darm-tbl.h	/^} darm_instr_t;$/;"	t	typeref:enum:_darm_instr_t
+darm_mnemonic_name	armv7.c	/^const char *darm_mnemonic_name(darm_instr_t instr)$/;"	f
+darm_mnemonics	darm-tbl.c	/^const char *darm_mnemonics[] = {$/;"	v
+darm_option_t	darm.h	/^} darm_option_t;$/;"	t	typeref:enum:_darm_option_t
+darm_reg_t	darm.h	/^} darm_reg_t;$/;"	t	typeref:enum:_darm_reg_t
+darm_register_name	armv7.c	/^const char *darm_register_name(darm_reg_t reg)$/;"	f
+darm_registers	darm-tbl.c	/^const char *darm_registers[] = {$/;"	v
+darm_reglist	darm.c	/^int darm_reglist(uint16_t reglist, char *out)$/;"	f
+darm_shift_type_name	armv7.c	/^const char *darm_shift_type_name(darm_shift_type_t shifttype)$/;"	f
+darm_shift_type_t	darm.h	/^} darm_shift_type_t;$/;"	t	typeref:enum:_darm_shift_type_t
+darm_str	darm.c	/^int darm_str(const darm_t *d, darm_str_t *str)$/;"	f
+darm_str2	darm.c	/^int darm_str2(const darm_t *d, darm_str_t *str, int lowercase)$/;"	f
+darm_str_t	darm.h	/^} darm_str_t;$/;"	t	typeref:struct:_darm_str_t
+darm_t	darm.h	/^} darm_t;$/;"	t	typeref:struct:_darm_t
+darm_thumb2_disasm	thumb2.c	/^int darm_thumb2_disasm(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+darm_thumb2_str	thumb2.c	/^char *darm_thumb2_str(darm_t *d)$/;"	f
+darm_thumb_disasm	thumb.c	/^int darm_thumb_disasm(darm_t *d, uint16_t w)$/;"	f
+details	darm.rb	/^  def details$/;"	f	class:Darm
+disasm_armv7	darm.py	/^def disasm_armv7(w):$/;"	f
+disasm_armv7	darm.rb	/^  def disasm_armv7(blob)$/;"	f	class:Darm
+disasm_thumb	darm.py	/^def disasm_thumb(w):$/;"	f
+disasm_thumb	darm.rb	/^  def disasm_thumb(blob)$/;"	f	class:Darm
+disasm_thumb2	darm.py	/^def disasm_thumb2(w):$/;"	f
+disasm_thumb2	darm.rb	/^  def disasm_thumb2(blob)$/;"	f	class:Darm
+e_ehsize	utils/elfdarm.h	/^  uint16_t      e_ehsize;               \/* ELF header size in bytes *\/$/;"	m	struct:_elf32_header_t
+e_entry	utils/elfdarm.h	/^  uint32_t      e_entry;                \/* Entry point virtual address *\/$/;"	m	struct:_elf32_header_t
+e_flags	utils/elfdarm.h	/^  uint32_t      e_flags;                \/* Processor-specific flags *\/$/;"	m	struct:_elf32_header_t
+e_ident	utils/elfdarm.h	/^  uint8_t       e_ident[16];            \/* Magic number and other info *\/$/;"	m	struct:_elf32_header_t
+e_machine	utils/elfdarm.h	/^  uint16_t      e_machine;              \/* Architecture *\/$/;"	m	struct:_elf32_header_t
+e_phentsize	utils/elfdarm.h	/^  uint16_t      e_phentsize;            \/* Program header table entry size *\/$/;"	m	struct:_elf32_header_t
+e_phnum	utils/elfdarm.h	/^  uint16_t      e_phnum;                \/* Program header table entry count *\/$/;"	m	struct:_elf32_header_t
+e_phoff	utils/elfdarm.h	/^  uint32_t      e_phoff;                \/* Program header table file offset *\/$/;"	m	struct:_elf32_header_t
+e_shentsize	utils/elfdarm.h	/^  uint16_t      e_shentsize;            \/* Section header table entry size *\/$/;"	m	struct:_elf32_header_t
+e_shnum	utils/elfdarm.h	/^  uint16_t      e_shnum;                \/* Section header table entry count *\/$/;"	m	struct:_elf32_header_t
+e_shoff	utils/elfdarm.h	/^  uint32_t      e_shoff;                \/* Section header table file offset *\/$/;"	m	struct:_elf32_header_t
+e_shstrndx	utils/elfdarm.h	/^  uint16_t      e_shstrndx;             \/* Section header string table index *\/$/;"	m	struct:_elf32_header_t
+e_type	utils/elfdarm.h	/^  uint16_t      e_type;                 \/* Object file type *\/$/;"	m	struct:_elf32_header_t
+e_version	utils/elfdarm.h	/^  uint32_t      e_version;              \/* Object file version *\/$/;"	m	struct:_elf32_header_t
+elf32_header_t	utils/elfdarm.h	/^} elf32_header_t;$/;"	t	typeref:struct:_elf32_header_t
+elf32_pheader_t	utils/elfdarm.h	/^} elf32_pheader_t;$/;"	t	typeref:struct:_elf32_pheader_t
+enum_table	darmgen.py	/^def enum_table(name, arr):$/;"	f
+firstcond	darm.h	/^    darm_cond_t     firstcond;$/;"	m	struct:_darm_t
+firstcond	darmtbl2.py	/^firstcond     = Bitsize('firstcond', 4, 'First Condition for IT')$/;"	v
+flag	darm.py	/^def flag(v):$/;"	f
+fmtstrs	darmgen.py	/^    fmtstrs = generate_format_strings(darmtbl.ARMv7)$/;"	v
+g_buf	utils/elfdarm.c	/^static const uint8_t *g_buf;$/;"	v	file:
+g_condition_codes	armv7.c	/^} g_condition_codes[] = {$/;"	v	typeref:struct:__anon1	file:
+g_len	utils/elfdarm.c	/^static uint32_t g_len;$/;"	v	file:
+generate_format_strings	darmgen.py	/^def generate_format_strings(arr):$/;"	f
+i	darmtbl2.py	/^i             = Bitsize('imm1', 1, 'Immediate')$/;"	v
+identifier	darmgen.py	/^            identifier = []$/;"	v
+identifier	darmgen.py	/^        identifier = []$/;"	v
+idx	darmgen.py	/^                idx = sum(int(x[y])*2**(7-y) for y in range(8))$/;"	v
+idx	darmgen.py	/^            idx = sum(int(idx_bin[y])*2**(31-y) for y in range(32))$/;"	v
+idx	darmgen.py	/^            idx = sum(int(x[y])*2**(7-y) for y in range(8))$/;"	v
+idx_bin	darmgen.py	/^            idx_bin = ''.join(identifier).replace('X', '0')$/;"	v
+imm	darm.h	/^    uint32_t        imm;$/;"	m	struct:_darm_t
+imm10	darmtbl2.py	/^imm10         = Bitsize('imm10', 10, 'Immediate')$/;"	v
+imm10H	darmtbl2.py	/^imm10H        = Bitsize('imm10H', 10, 'Immediate')$/;"	v
+imm10L	darmtbl2.py	/^imm10L        = Bitsize('imm10L', 10, 'Immediate')$/;"	v
+imm11	darmtbl2.py	/^imm11         = Bitsize('imm11', 11, 'Immediate')$/;"	v
+imm12	darmtbl.py	/^imm12         = Immediate('imm12', 12, 'Immediate')$/;"	v
+imm12	darmtbl2.py	/^imm12         = Bitsize('imm12', 12, 'Immediate')$/;"	v
+imm2	darmtbl2.py	/^imm2          = Bitsize('imm2', 2, 'Immediate')$/;"	v
+imm24	darmtbl.py	/^imm24         = Immediate('imm24', 24, 'Immediate')$/;"	v
+imm24	darmtbl2.py	/^imm24         = Bitsize('imm24', 24, 'Immediate')$/;"	v
+imm3	darmtbl2.py	/^imm3          = Bitsize('imm3', 3, 'Immediate')$/;"	v
+imm4	darmtbl.py	/^imm4          = Immediate('imm4', 4, 'Immediate')$/;"	v
+imm4	darmtbl2.py	/^imm4          = Bitsize('imm4', 4, 'Immediate')$/;"	v
+imm4H	darmtbl.py	/^imm4H         = Immediate('imm4H', 4, 'High Word Register')$/;"	v
+imm4H	darmtbl2.py	/^imm4H         = Bitsize('imm4H', 4, 'High Word Register')$/;"	v
+imm4L	darmtbl.py	/^imm4L         = Immediate('imm4L', 4, 'Low Word Register')$/;"	v
+imm4L	darmtbl2.py	/^imm4L         = Bitsize('imm4L', 4, 'Low Word Register')$/;"	v
+imm5	darmtbl.py	/^imm5          = Immediate('imm5', 5, 'Immediate')$/;"	v
+imm5	darmtbl2.py	/^imm5          = Bitsize('imm5', 5, 'Immediate')$/;"	v
+imm6	darmtbl2.py	/^imm6          = Bitsize('imm6', 6, 'Immediate')$/;"	v
+imm7	darmtbl2.py	/^imm7          = Bitsize('imm7', 7, 'Immediate')$/;"	v
+imm8	darmtbl.py	/^imm8          = Immediate('imm8', 8, 'Immediate')$/;"	v
+imm8	darmtbl2.py	/^imm8          = Bitsize('imm8', 8, 'Immediate')$/;"	v
+index_align	darmtbl3.py	/^index_align = Bitsize('index_align', 4, 'Memory Index Alignment')$/;"	v
+initialize	darm.rb	/^  def initialize$/;"	f	class:Darm
+insns_types	darmgen.py	/^    insns_types = {$/;"	v
+instr	darm.h	/^    darm_instr_t    instr;$/;"	m	struct:_darm_t
+instr	darmgen.py	/^        instr = description[0]$/;"	v
+instr	darmtbl.py	/^        instr = description[0]$/;"	v	class:Register
+instr	darmtbl3.py	/^        instr = description[0]$/;"	v
+instr_flag_type	darm.h	/^    darm_enctype_t  instr_flag_type; \/\/ thumb2 flag type$/;"	m	struct:_darm_t
+instr_imm_type	darm.h	/^    darm_enctype_t  instr_imm_type;  \/\/ thumb2 immediate type$/;"	m	struct:_darm_t
+instr_type	darm.h	/^    darm_enctype_t  instr_type;$/;"	m	struct:_darm_t
+instr_types	darmgen.py	/^    instr_types = [[x[0]] + [insns_types[x[0]] + x[1]] + x[2:6]$/;"	v
+instr_types	darmgen.py	/^    instr_types = [list(x) + [[]] for x in instr_types]$/;"	v
+instr_types	darmgen.py	/^    instr_types = [x[:5] + [instruction_names(x[5])[1:]] for x in instr_types]$/;"	v
+instr_types	darmgen.py	/^instr_types = [$/;"	v
+instrcnt	darmgen.py	/^    instrcnt = len(open('instructions.txt').readlines())$/;"	v
+instruction_name	darmgen.py	/^def instruction_name(x):$/;"	f
+instruction_names	darmgen.py	/^def instruction_names(arr):$/;"	f
+instruction_names_enum	darmgen.py	/^def instruction_names_enum(arr):$/;"	f
+instruction_names_index_table	darmgen.py	/^def instruction_names_index_table(arr, kind):$/;"	f
+instruction_names_index_table_thumb2	darmgen.py	/^def instruction_names_index_table_thumb2(arr, kind):$/;"	f
+instruction_names_table	darmgen.py	/^def instruction_names_table(arr):$/;"	f
+instruction_types_table	darmgen.py	/^def instruction_types_table(arr, kind):$/;"	f
+len_	darmtbl3.py	/^len_    = Bitsize('len', 2, 'Length for Vector Table Lookup')$/;"	v
+lines	darmgen.py	/^    lines = []$/;"	v
+lsb	darm.h	/^    uint32_t        lsb;$/;"	m	struct:_darm_t
+lsb	darmtbl.py	/^lsb           = Immediate('lsb', 5, 'Least Significant Bit')$/;"	v
+lsb	darmtbl2.py	/^lsb           = Bitsize('lsb', 5, 'Least Significant Bit')$/;"	v
+magic_open	darmgen.py	/^def magic_open(fname):$/;"	f
+main	shkang.c	/^int main()$/;"	f
+main	tests/expand.c	/^int main(int argc, char *argv[])$/;"	f
+main	tests/tests.c	/^int main()$/;"	f
+main	utils/elfdarm.c	/^int main(int argc, char *argv[])$/;"	f
+mask	darm.h	/^    uint8_t         mask;$/;"	m	struct:_darm_t
+mask	darmtbl2.py	/^mask          = Bitsize('mask', 4, 'Mask for IT')$/;"	v
+meaning_fp	armv7.c	/^    const char *meaning_fp;$/;"	m	struct:__anon1	file:
+meaning_integer	armv7.c	/^    const char *meaning_integer;$/;"	m	struct:__anon1	file:
+mnemonic	darm.h	/^    char mnemonic[12];$/;"	m	struct:_darm_str_t
+mnemonic_extension	armv7.c	/^    const char *mnemonic_extension;$/;"	m	struct:__anon1	file:
+msb	darm.h	/^    uint32_t        msb;$/;"	m	struct:_darm_t
+msb	darmtbl.py	/^msb           = Immediate('msb', 5, 'Most Significant Bit')$/;"	v
+msb	darmtbl2.py	/^msb           = Bitsize('msb', 5, 'Most Significant Bit')$/;"	v
+msr	darmtbl.py	/^msr           = Immediate('msr', 2, 'Move to Special Register mask')$/;"	v
+msr	darmtbl2.py	/^msr           = Bitsize('msr', 2, 'Move to Special Register mask')$/;"	v
+notype	darmgen.py	/^def notype(*x):$/;"	f
+num	darmgen.py	/^            num = ''.join(y)$/;"	v
+op	darmtbl2.py	/^op            = Bitsize('op', 1, 'Operation for CB{N}Z')$/;"	v
+op	darmtbl3.py	/^op      = Bitsize('op', 1, '1-bit Operation')$/;"	v
+op2	darmtbl3.py	/^op2     = Bitsize('op2', 2, '2-bit Operation')$/;"	v
+opc1	darm.h	/^    uint8_t         opc1;$/;"	m	struct:_darm_t
+opc1	darmtbl.py	/^opc1          = Immediate('opc1', 4, 'Coprocessor Operation Code')$/;"	v
+opc1	darmtbl2.py	/^opc1          = Bitsize('opc1', 4, 'Coprocessor Operation Code')$/;"	v
+opc1	darmtbl3.py	/^opc1    = Bitsize('opc1', 2, 'opc1')$/;"	v
+opc2	darm.h	/^    uint8_t         opc2;$/;"	m	struct:_darm_t
+opc2	darmtbl.py	/^opc2          = Immediate('opc2', 3, 'Coprocessor Information')$/;"	v
+opc2	darmtbl2.py	/^opc2          = Bitsize('opc2', 3, 'Coprocessor Information')$/;"	v
+opc2	darmtbl3.py	/^opc2    = Bitsize('opc2', 3, 'opc2')$/;"	v
+opc2_2	darmtbl3.py	/^opc2_2  = Bitsize('opc2', 2, 'opc2')$/;"	v
+option	darm.h	/^    darm_option_t   option;$/;"	m	struct:_darm_t
+option	darmtbl.py	/^option        = Immediate('option', 4, 'Option for Debug Hint')$/;"	v
+option	darmtbl2.py	/^option        = Bitsize('option', 4, 'Option for Debug Hint')$/;"	v
+p_align	utils/elfdarm.h	/^  uint32_t      p_align;                \/* Segment alignment *\/$/;"	m	struct:_elf32_pheader_t
+p_filesz	utils/elfdarm.h	/^  uint32_t      p_filesz;               \/* Segment size in file *\/$/;"	m	struct:_elf32_pheader_t
+p_flags	utils/elfdarm.h	/^  uint32_t      p_flags;                \/* Segment flags *\/$/;"	m	struct:_elf32_pheader_t
+p_memsz	utils/elfdarm.h	/^  uint32_t      p_memsz;                \/* Segment size in memory *\/$/;"	m	struct:_elf32_pheader_t
+p_offset	utils/elfdarm.h	/^  uint32_t      p_offset;               \/* Segment file offset *\/$/;"	m	struct:_elf32_pheader_t
+p_paddr	utils/elfdarm.h	/^  uint32_t      p_paddr;                \/* Segment physical address *\/$/;"	m	struct:_elf32_pheader_t
+p_type	utils/elfdarm.h	/^  uint32_t      p_type;                 \/* Segment type *\/$/;"	m	struct:_elf32_pheader_t
+p_vaddr	utils/elfdarm.h	/^  uint32_t      p_vaddr;                \/* Segment virtual address *\/$/;"	m	struct:_elf32_pheader_t
+parse_code_section	utils/elfdarm.c	/^static int parse_code_section(uint32_t vaddr, uint32_t offset, uint32_t size)$/;"	f	file:
+parse_elf_header	utils/elfdarm.c	/^static int parse_elf_header(const uint8_t *buf)$/;"	f	file:
+parse_program_header	utils/elfdarm.c	/^static int parse_program_header(const elf32_pheader_t *phdr)$/;"	f	file:
+r	tests/tests.c	/^    int r;$/;"	m	struct:__anon2	file:
+r0	darm.h	/^    r0 = 0, r1 = 1, r2 = 2, r3 = 3, r4 = 4, r5 = 5, r6 = 6, r7 = 7, r8 = 8,$/;"	e	enum:_darm_reg_t
+r1	darm.h	/^    r0 = 0, r1 = 1, r2 = 2, r3 = 3, r4 = 4, r5 = 5, r6 = 6, r7 = 7, r8 = 8,$/;"	e	enum:_darm_reg_t
+r10	darm.h	/^    r9 = 9, r10 = 10, r11 = 11, r12 = 12, r13 = 13, r14 = 14, r15 = 15,$/;"	e	enum:_darm_reg_t
+r11	darm.h	/^    r9 = 9, r10 = 10, r11 = 11, r12 = 12, r13 = 13, r14 = 14, r15 = 15,$/;"	e	enum:_darm_reg_t
+r12	darm.h	/^    r9 = 9, r10 = 10, r11 = 11, r12 = 12, r13 = 13, r14 = 14, r15 = 15,$/;"	e	enum:_darm_reg_t
+r13	darm.h	/^    r9 = 9, r10 = 10, r11 = 11, r12 = 12, r13 = 13, r14 = 14, r15 = 15,$/;"	e	enum:_darm_reg_t
+r14	darm.h	/^    r9 = 9, r10 = 10, r11 = 11, r12 = 12, r13 = 13, r14 = 14, r15 = 15,$/;"	e	enum:_darm_reg_t
+r15	darm.h	/^    r9 = 9, r10 = 10, r11 = 11, r12 = 12, r13 = 13, r14 = 14, r15 = 15,$/;"	e	enum:_darm_reg_t
+r2	darm.h	/^    r0 = 0, r1 = 1, r2 = 2, r3 = 3, r4 = 4, r5 = 5, r6 = 6, r7 = 7, r8 = 8,$/;"	e	enum:_darm_reg_t
+r3	darm.h	/^    r0 = 0, r1 = 1, r2 = 2, r3 = 3, r4 = 4, r5 = 5, r6 = 6, r7 = 7, r8 = 8,$/;"	e	enum:_darm_reg_t
+r4	darm.h	/^    r0 = 0, r1 = 1, r2 = 2, r3 = 3, r4 = 4, r5 = 5, r6 = 6, r7 = 7, r8 = 8,$/;"	e	enum:_darm_reg_t
+r5	darm.h	/^    r0 = 0, r1 = 1, r2 = 2, r3 = 3, r4 = 4, r5 = 5, r6 = 6, r7 = 7, r8 = 8,$/;"	e	enum:_darm_reg_t
+r6	darm.h	/^    r0 = 0, r1 = 1, r2 = 2, r3 = 3, r4 = 4, r5 = 5, r6 = 6, r7 = 7, r8 = 8,$/;"	e	enum:_darm_reg_t
+r7	darm.h	/^    r0 = 0, r1 = 1, r2 = 2, r3 = 3, r4 = 4, r5 = 5, r6 = 6, r7 = 7, r8 = 8,$/;"	e	enum:_darm_reg_t
+r8	darm.h	/^    r0 = 0, r1 = 1, r2 = 2, r3 = 3, r4 = 4, r5 = 5, r6 = 6, r7 = 7, r8 = 8,$/;"	e	enum:_darm_reg_t
+r9	darm.h	/^    r9 = 9, r10 = 10, r11 = 11, r12 = 12, r13 = 13, r14 = 14, r15 = 15,$/;"	e	enum:_darm_reg_t
+reg	darmgen.py	/^    reg = 'r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12 SP LR PC'$/;"	v
+register_list	darm.rb	/^  def register_list$/;"	f	class:Darm
+register_list	darmtbl.py	/^register_list = Immediate('register_list', 16, 'Register List')$/;"	v
+register_list	darmtbl2.py	/^register_list = Bitsize('register_list', 16, 'Register List')$/;"	v
+register_list8	darmtbl2.py	/^register_list8 = Bitsize('register_list8', 8, 'Register List')$/;"	v
+reglist	darm.h	/^    uint16_t        reglist;$/;"	m	struct:_darm_t
+remainder	darmgen.py	/^                    remainder = bits[x:]$/;"	v
+remainder	darmgen.py	/^                remainder = bits[x:]$/;"	v
+remainder	darmgen.py	/^        remainder = []$/;"	v
+rotate	darm.h	/^    uint32_t        rotate;$/;"	m	struct:_darm_t
+rotate	darmtbl.py	/^rotate        = Immediate('rotate', 2, 'Rotation Type')$/;"	v
+rotate	darmtbl2.py	/^rotate        = Bitsize('rotate', 2, 'Rotation Type')$/;"	v
+s	tests/tests.c	/^    const char *s;$/;"	m	struct:__anon2	file:
+sat_imm	darm.h	/^    uint32_t        sat_imm;$/;"	m	struct:_darm_t
+sat_imm4	darmtbl.py	/^sat_imm4      = Immediate('sat_imm4', 4, 'Saturate Immediate')$/;"	v
+sat_imm4	darmtbl2.py	/^sat_imm4      = Bitsize('sat_imm4', 4, 'Saturate Immediate')$/;"	v
+sat_imm5	darmtbl.py	/^sat_imm5      = Immediate('sat_imm5', 5, 'Saturate Immediate')$/;"	v
+sat_imm5	darmtbl2.py	/^sat_imm5      = Bitsize('sat_imm5', 5, 'Saturate Immediate')$/;"	v
+sf	darmtbl3.py	/^sf      = Bitsize('sf', 1, 'Vector Size')$/;"	v
+sh	darmtbl.py	/^sh            = Immediate('sh', 1, 'Immediate Shift Value')$/;"	v
+sh	darmtbl2.py	/^sh            = Bitsize('sh', 1, 'Immediate Shift Value')$/;"	v
+shift	darm.h	/^    char shift[12];$/;"	m	struct:_darm_str_t
+shift	darm.h	/^    uint32_t        shift;$/;"	m	struct:_darm_t
+shift_type	darm.h	/^    darm_shift_type_t shift_type;$/;"	m	struct:_darm_t
+shift_type	darm.rb	/^  def shift_type$/;"	f	class:Darm
+shift_types	armv7.c	/^static const char *shift_types[] = {$/;"	v	file:
+size	darmtbl3.py	/^size    = Bitsize('size', 2, 'VFP Vector Size')$/;"	v
+string_table	darmgen.py	/^def string_table(name, arr):$/;"	f
+sx	darmtbl3.py	/^sx      = Bitsize('sx', 1, 'Bit Size')$/;"	v
+sz	darmtbl3.py	/^sz      = Bitsize('sz', 1, '1-bit VFP Vector Size')$/;"	v
+t4	darmgen.py	/^        None, 'smulw', None, 'smlaw', None, 'smulw', None$/;"	v
+t_gpi	darmgen.py	/^    t_gpi = {$/;"	v
+t_mul	darmgen.py	/^        'smull', 'smlal'$/;"	v
+t_opless	darmgen.py	/^    t_opless = 'nop', 'yield', 'wfe', 'wfi', 'sev', None, None, None$/;"	v
+t_pas	darmgen.py	/^    t_pas = dict(((1 + (idx > 2) + idx) * 2**3 + k, x + v)$/;"	v
+t_pas	darmgen.py	/^    t_pas = {$/;"	v
+t_pas_prefix	darmgen.py	/^    t_pas_prefix = 's', 'q', 'sh', 'u', 'uq', 'uh'$/;"	v
+t_pusr	darmgen.py	/^        'uxtab', 'uxtb', 'uxtah', 'uxth'$/;"	v
+t_shift	darmgen.py	/^    t_shift = {$/;"	v
+t_stack0	darmgen.py	/^    t_stack0 = {$/;"	v
+t_stack1	darmgen.py	/^        None, 'ldrsht'$/;"	v
+t_stack2	darmgen.py	/^        'strd', 'ldrsh'$/;"	v
+t_sync	darmgen.py	/^        'strexh', 'ldrexh'$/;"	v
+t_uncond2	darmgen.py	/^    t_uncond2 = None, 'clrex', None, None, 'dsb', 'dmb', 'isb', None$/;"	v
+tb	darmtbl.py	/^tb            = Immediate('tb', 1, 'Is PKH in TB form or not?')$/;"	v
+tb	darmtbl2.py	/^tb            = Bitsize('tb', 1, 'Is PKH in TB form or not?')$/;"	v
+test_thumb2_functions	tests/tests.c	/^static int test_thumb2_functions()$/;"	f	file:
+tests	tests/tests.c	/^} tests[] = {$/;"	v	typeref:struct:__anon2
+thumb	darmgen.py	/^def thumb(*x):$/;"	f
+thumb2	darmgen.py	/^def thumb2(*x):$/;"	f
+thumb2_branch_misc_ctrl	thumb2-decoder.c	/^darm_instr_t thumb2_branch_misc_ctrl(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_coproc_simd	thumb2-decoder.c	/^darm_instr_t thumb2_coproc_simd(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_data_reg	thumb2-decoder.c	/^darm_instr_t thumb2_data_reg(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_data_shifted_reg	thumb2-decoder.c	/^darm_instr_t thumb2_data_shifted_reg(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_decode_immshift	thumb2.c	/^void thumb2_decode_immshift(darm_t *d, uint8_t type, uint8_t imm5)$/;"	f
+thumb2_decode_instruction	thumb2-decoder.c	/^darm_instr_t thumb2_decode_instruction(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_disasm	thumb2.c	/^static int thumb2_disasm(darm_t *d, uint16_t w, uint16_t w2)$/;"	f	file:
+thumb2_flagChk	darmgen.py	/^def thumb2_flagChk(instr, hasFlags):$/;"	f
+thumb2_flags	darmgen.py	/^def thumb2_flags(*x):$/;"	f
+thumb2_imm	darmgen.py	/^def thumb2_imm(*x):$/;"	f
+thumb2_immChk	darmgen.py	/^def thumb2_immChk(instr, hasImm):$/;"	f
+thumb2_instr_labels	thumb2-tbl.c	/^darm_instr_t thumb2_instr_labels[] = {$/;"	v
+thumb2_instruction_strings	thumb2-tbl.c	/^const char *thumb2_instruction_strings[] = {$/;"	v
+thumb2_load_byte_hints	thumb2-decoder.c	/^darm_instr_t thumb2_load_byte_hints(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_load_halfword_hints	thumb2-decoder.c	/^darm_instr_t thumb2_load_halfword_hints(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_load_store_dual	thumb2-decoder.c	/^darm_instr_t thumb2_load_store_dual(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_load_store_multiple	thumb2-decoder.c	/^darm_instr_t thumb2_load_store_multiple(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_load_word	thumb2-decoder.c	/^darm_instr_t thumb2_load_word(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_long_mult_acc	thumb2-decoder.c	/^darm_instr_t thumb2_long_mult_acc(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_misc_ctrl	thumb2-decoder.c	/^darm_instr_t thumb2_misc_ctrl(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_misc_op	thumb2-decoder.c	/^darm_instr_t thumb2_misc_op(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_modified_immediate	thumb2-decoder.c	/^darm_instr_t thumb2_modified_immediate(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_move_shift	thumb2-decoder.c	/^darm_instr_t thumb2_move_shift(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_mult_acc_diff	thumb2-decoder.c	/^darm_instr_t thumb2_mult_acc_diff(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_nm_decoder	thumb2-decoder.c	/^darm_instr_t thumb2_nm_decoder(darm_t *d, uint16_t w, uint16_t w2,$/;"	f
+thumb2_parallel_signed	thumb2-decoder.c	/^darm_instr_t thumb2_parallel_signed(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_parallel_unsigned	thumb2-decoder.c	/^darm_instr_t thumb2_parallel_unsigned(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_parse_flag	thumb2.c	/^void thumb2_parse_flag(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_parse_imm	thumb2.c	/^void thumb2_parse_imm(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_parse_misc	thumb2.c	/^void thumb2_parse_misc(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_parse_reg	thumb2.c	/^void thumb2_parse_reg(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_plain_immediate	thumb2-decoder.c	/^darm_instr_t thumb2_plain_immediate(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_proc_state	thumb2-decoder.c	/^darm_instr_t thumb2_proc_state(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb2_regChk	darmgen.py	/^def thumb2_regChk(instr, hasRegs):$/;"	f
+thumb2_store_single_item	thumb2-decoder.c	/^darm_instr_t thumb2_store_single_item(darm_t *d, uint16_t w, uint16_t w2)$/;"	f
+thumb_disasm	thumb.c	/^static int thumb_disasm(darm_t *d, uint16_t w)$/;"	f	file:
+thumb_expand_imm	thumb2.c	/^uint32_t thumb_expand_imm(uint16_t imm12)$/;"	f
+thumb_instr_labels	thumb-tbl.c	/^darm_instr_t thumb_instr_labels[] = {$/;"	v
+thumb_instr_types	thumb-tbl.c	/^darm_enctype_t thumb_instr_types[] = {$/;"	v
+thumbs	darmtbl2.py	/^thumbs = [$/;"	v
+to_s	darm.rb	/^  def to_s$/;"	f	class:Darm
+total	darm.h	/^    char total[64];$/;"	m	struct:_darm_str_t
+type_	darmtbl.py	/^type_         = Immediate('type', 2, 'Shift Type')$/;"	v
+type_	darmtbl2.py	/^type_         = Bitsize('type', 2, 'Shift Type')$/;"	v
+type_	darmtbl3.py	/^type_   = Bitsize('type', 4, 'Some Type')$/;"	v
+type_bits_instr_lookup	armv7-tbl.c	/^darm_instr_t type_bits_instr_lookup[] = {$/;"	v
+type_brnchmisc_instr_lookup	armv7-tbl.c	/^darm_instr_t type_brnchmisc_instr_lookup[] = {$/;"	v
+type_encoding_enum	darmgen.py	/^def type_encoding_enum(enumname, arr):$/;"	f
+type_encoding_table	darmgen.py	/^def type_encoding_table(tblname, arr):$/;"	f
+type_extend_instr_lookup	thumb-tbl.c	/^darm_instr_t type_extend_instr_lookup[] = {$/;"	v
+type_gpi_instr_lookup	thumb-tbl.c	/^darm_instr_t type_gpi_instr_lookup[] = {$/;"	v
+type_hints_instr_lookup	thumb-tbl.c	/^darm_instr_t type_hints_instr_lookup[] = {$/;"	v
+type_ignore	darmgen.py	/^        'ARM_SAT', 'ARM_SYNC', 'ARM_PUSR', 'ARM_ADR'$/;"	v
+type_lookup_table	darmgen.py	/^def type_lookup_table(name, *args):$/;"	f
+type_lut	darmgen.py	/^    def type_lut(name, bits):$/;"	f
+type_mul_instr_lookup	armv7-tbl.c	/^darm_instr_t type_mul_instr_lookup[] = {$/;"	v
+type_name	darm.py	/^    def type_name(self):$/;"	m	class:Shift
+type_opless_instr_lookup	armv7-tbl.c	/^darm_instr_t type_opless_instr_lookup[] = {$/;"	v
+type_pas_instr_lookup	armv7-tbl.c	/^darm_instr_t type_pas_instr_lookup[] = {$/;"	v
+type_pusr_instr_lookup	armv7-tbl.c	/^darm_instr_t type_pusr_instr_lookup[] = {$/;"	v
+type_rev_instr_lookup	thumb-tbl.c	/^darm_instr_t type_rev_instr_lookup[] = {$/;"	v
+type_sat_instr_lookup	armv7-tbl.c	/^darm_instr_t type_sat_instr_lookup[] = {$/;"	v
+type_shift_instr_lookup	armv7-tbl.c	/^darm_instr_t type_shift_instr_lookup[] = {$/;"	v
+type_stack0_instr_lookup	armv7-tbl.c	/^darm_instr_t type_stack0_instr_lookup[] = {$/;"	v
+type_stack1_instr_lookup	armv7-tbl.c	/^darm_instr_t type_stack1_instr_lookup[] = {$/;"	v
+type_stack2_instr_lookup	armv7-tbl.c	/^darm_instr_t type_stack2_instr_lookup[] = {$/;"	v
+type_sync_instr_lookup	armv7-tbl.c	/^darm_instr_t type_sync_instr_lookup[] = {$/;"	v
+type_uncond2_instr_lookup	armv7-tbl.c	/^darm_instr_t type_uncond2_instr_lookup[] = {$/;"	v
+typed_table	darmgen.py	/^def typed_table(typ, name, arr):$/;"	f
+w	darm.h	/^    uint32_t        w;$/;"	m	struct:_darm_t
+w	tests/tests.c	/^    uint32_t w;$/;"	m	struct:__anon2	file:
+width	darm.h	/^    uint32_t        width;$/;"	m	struct:_darm_t
+widthm1	darmtbl.py	/^widthm1       = Immediate('widthm1', 5, 'Bit Width Minus One')$/;"	v
+widthm1	darmtbl2.py	/^widthm1       = Bitsize('widthm1', 5, 'Bit Width Minus One')$/;"	v
