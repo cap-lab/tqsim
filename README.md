@@ -16,14 +16,24 @@ To install TQSim on a linux system, do the following steps:
   ```
   make
   ```
-  4. Install the package: make install
+  4. Install the package: 
+  ```
+  make install
+  ```
 
-In order to execute TQSim, it is required to provide the detailed specification of the target core architecture. You can find a sample configuration file *armv7.cfg* at the main directory of the source tree (QEMU_SRC). Set the *ARCH_CONFIG_FILE* environment variable with an export command: export ARCH_CONFIG_FILE=(CUSTOM_DIRECTORY)/armv7.cfg
+In order to execute TQSim, it is required to provide the detailed specification of the target core architecture. You can find a sample configuration file *armv7.cfg* at the main directory of the source tree (QEMU_SRC). Set the *ARCH_CONFIG_FILE* environment variable with an export command: 
+
+```
+export ARCH_CONFIG_FILE=(CUSTOM_DIRECTORY)/armv7.cfg
+```
 
 To launch a test run, do the followings.
 
-change the current directory to (QEMU_SRC)/example cd (QEMU_SRC)/example
-type the command "qemu-arm hello_world" 
+1. change the current directory to (QEMU_SRC)/example:
+```
+cd (QEMU_SRC)/example
+```
+2. type the command "qemu-arm hello_world" 
 
 
 # Note
