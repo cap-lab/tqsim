@@ -1,4 +1,4 @@
-# Timed QEMU (TQEMU)
+# TQSIM (Timed QEMU-based Simulator)
 Timed QEMU (TQEMU) is a fast and generic cycle-approximate simualtor supporting modern superscalar out-of-order processors.
 
 TQEMU is developed by CAPLab, SNU, sponsored by Samsung SAIT.
