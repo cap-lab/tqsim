@@ -1,10 +1,10 @@
 # TQSIM (Timed QEMU-based Simulator)
-Timed QEMU (TQEMU) is a fast and generic cycle-approximate simualtor supporting modern superscalar out-of-order processors.
-TQEMU is developed by CAPLab, SNU, and sponsored by Samsung SAIT.
-You can find more details about Timed QEMU in future literatures from CAPLab, SNU.
+TQSIM is a fast and generic cycle-approximate simualtor supporting modern superscalar out-of-order processors.
+TQSIM is developed by CAPLab, SNU, and sponsored by Samsung SAIT.
+You can find more details about TQSIM in future literatures from CAPLab, SNU. (http://iris.snu.ac.kr/xe/papers)
 
 # Licence
-Timed QEMU (TQEMU) is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 3.
+TQSIM is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 3.
 
 # Installation
 
@@ -12,10 +12,13 @@ To install TQSim on a linux system, do the following steps:
 
   1. Satisfy external dependencies: buildessential, gcc, pkg-config, glib-2.0, libglib2.0-dev, libsdl1.2-dev, zlib1g-dev, libxml2-dev, libpthreadstubs0-dev
   2. Modify tqemu_configure for your environment. In case you want to install the package in another place than the specified user directory ($HOME/tqemu), change it to the desired place.
-  3. Compile the package: make
+  3. Compile the package: 
+  ```
+  make
+  ```
   4. Install the package: make install
 
-In order to execute TQSim, it is required to provide the detailed specification of the target core architecture. You can find a sample configuration file armv7.cfg at the main directory of the source tree (let it (QEMU_SRC)). Set the ARCH_CONFIG_FILE environment variable with an export command: export ARCH_CONFIG_FILE=(CUSTOM_DIRECTORY)/armv7.cfg
+In order to execute TQSim, it is required to provide the detailed specification of the target core architecture. You can find a sample configuration file *armv7.cfg* at the main directory of the source tree (QEMU_SRC). Set the *ARCH_CONFIG_FILE* environment variable with an export command: export ARCH_CONFIG_FILE=(CUSTOM_DIRECTORY)/armv7.cfg
 
 To launch a test run, do the followings.
 
@@ -28,7 +31,7 @@ type the command "qemu-arm hello_world"
 Note that all target binaries are compiled through arm-linux-gnueabi-gcc compiler with "-static" option
 
 # Appendix: Libraries We Use
-The following sets forth attribution notices for third party software that may be contained in portions of the timed QEMU product. We thank the open source community for all of their contributions.
+The following sets forth attribution notices for third party software that may be contained in portions of TQSIM product. We thank the open source community for all of their contributions.
 
 ## QEMU
 The following points clarify the QEMU license:
