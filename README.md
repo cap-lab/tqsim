@@ -16,12 +16,17 @@ To install TQSim on a linux system, do the following steps:
   sudo apt-get install buildessential, gcc, pkg-config, glib-2.0, libglib2.0-dev, libsdl1.2-dev, zlib1g-dev, libxml2-dev, libpthreadstubs0-dev
   ```
   2. Modify *tqsim_configure* to be suitable for your environment. In case you want to install the package in another place than the specified user directory ($HOME/tqsim), change it to the desired place (*TQSIM_BIN* for short).
-  3. Compile the package: 
+  3. Configure the package:
+   
+  ```
+  ./tqsim_configure
+  ```
+  4. Compile the package: 
   
   ```
   make
   ```
-  4. Install the package: 
+  5. Install the package: 
   
   ```
   make install
