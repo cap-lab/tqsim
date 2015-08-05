@@ -61,11 +61,12 @@ Current we only support simulation of arm binaries compiled through arm-linux-gn
 
 servant.shin@gmail.com
 
+```
 Shin-haeng Kang, Ph.D. Candidate 
 Codesign and Parallel Processing Lab
 Department of EECS/CSE
 Seoul National University
-
+```
 
 # Appendix: Libraries We Use
 The following sets forth attribution notices for third party software that may be contained in portions of TQSIM product. We thank the open source community for all of their contributions.
