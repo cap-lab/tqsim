@@ -55,7 +55,7 @@ cd (TQSIM_SRC)/example
 
 # Note
 
-Current we only support simulation of arm binaries compiled through arm-linux-gnueabi-gcc compiler with "-static" option
+Current we only support simulation of arm binaries compiled through arm-linux-gnueabi-gcc compiler with "-static" option. Various guest binaries, including x86, x86-64, MIPS, will be supported in the near future. 
 
 # Contact
 
