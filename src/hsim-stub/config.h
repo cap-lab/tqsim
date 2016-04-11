@@ -10,7 +10,7 @@
 struct sample_config {
 	int length;
 	int default_period;
-	double initial_cpi;
+	double initial_effective_dispatch_width;
 };
 
 struct core_config {

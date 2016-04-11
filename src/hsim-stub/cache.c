@@ -1,6 +1,6 @@
 #include "config-host.h"
 #include "cache.h"
-
+#include "config.h"
 #define __STDC_FORMAT_MACROS
 #include <inttypes.h>
 
@@ -11,8 +11,9 @@ void cache_initialize(Cache_t* cache, const char* name, int nset, int bsize, int
 	int i;
 	cache->num_access = 0;
 	cache->num_miss = 0;
+	cache->num_read_miss = 0;
 	cache->num_miss_star = 0;
-	cache->cycle_lastmiss = -1;
+	cache->last_miss_inst_id = -1;
 
 
 	cache->config.name = (char*) malloc(strlen(name)+1);
@@ -76,10 +77,8 @@ void cache_copy(Cache_set_t **target_set, Cache_set_t **source_set, int nset){
 }
 
 
-int cache_access(uint64_t cur_cycle, Cache_t* cache, enum CacheAccessType type, md_addr_t addr){
+bool cache_access(uint64_t inst_id, Cache_t* cache, enum CacheAccessType type, md_addr_t addr){
 	
-	//find the set by using idx. Do masking...
-//return 0;
 	int i;
 	unsigned int mask =  (1 << (cache->len_idx_bit))-1;
 	unsigned int idx = ((addr >> cache->len_offset_bit) & mask);
@@ -94,11 +93,9 @@ int cache_access(uint64_t cur_cycle, Cache_t* cache, enum CacheAccessType type, 
 	
 	while (target_blk!=NULL){
 		if (target_blk->valid && target_blk->tag == tag){
-			//cout << "HIT!!" << endl;
 			if (cache->config.policy == LRU)
 				cacheset_moveBlkAtFirst(set, target_blk);
-
-			return cache->config.hit_lat;
+				return true;			//cache hit
 		}
 		target_blk = target_blk->next_blk;
 	}
@@ -117,30 +114,21 @@ int cache_access(uint64_t cur_cycle, Cache_t* cache, enum CacheAccessType type, 
 			 
 			break;
 	}
-//	cout << "victim tag: " << hex << target_blk->tag << endl;
 	target_blk->valid = true;
 	target_blk->tag = tag;
-	//cout << "MISS!!" << endl;
-	//
+	if (type == Read){
 
+		if (cache->last_miss_inst_id== -1 || (inst_id - cache->last_miss_inst_id) > perfmodel.core.window_size){ 
+			cache->num_miss_star++;
+		}
+		cache->last_miss_inst_id = inst_id;
+		cache->num_read_miss++;
+	}
 
-	// I don't want to maintain the window in the simulator.
-	// I just want to check the distance between the current instruction and the last miss instruction.
-	
-//	printf("%u\n", (unsigned) cur_cycle);
-	if (cache->cycle_lastmiss==-1 || (cur_cycle - cache->cycle_lastmiss) > cache->config.miss_lat ){ 
-		cache->num_miss_star++;
-		cache->cycle_lastmiss = cur_cycle;
-	}
-	else {
-//		printf("OVERLAP!!!");
-//		cache->cycle_lastmiss = cur_cycle;
-	}
 	cache->num_miss++;
-	//cache->cycle_lastmiss = cur_cycle;
 	cacheset_moveBlkAtFirst(set, target_blk);
 
-	return cache->config.miss_lat;
+	return false;
 	
 }
 
@@ -170,12 +158,13 @@ int mcache_readTraceFile(Cache_t* cache1, Cache_t* cache2, const char* filename)
 
 void cache_print(Cache_t* cache){
 
-		fprintf(stdout, "--------------\n");	
-		fprintf(stdout, "Cache %s\n", cache->config.name);
-		fprintf(stdout, "--------------\n");	
-		fprintf(stdout, "num_access: %" PRIu64 "\n",cache->num_access);
-		fprintf(stdout, "num_miss: %" PRIu64 "\n", cache->num_miss);
-		fprintf(stdout, "num_miss_star: %" PRIu64 "\n", cache->num_miss_star);
+		fprintf(stderr, "--------------\n");	
+		fprintf(stderr, "Cache %s\n", cache->config.name);
+		fprintf(stderr, "--------------\n");	
+		fprintf(stderr, "num_access: %" PRIu64 "\n",cache->num_access);
+		fprintf(stderr, "num_miss: %" PRIu64 "\n", cache->num_miss);
+		fprintf(stderr, "num_read_miss: %" PRIu64 "\n", cache->num_read_miss);
+		fprintf(stderr, "num_miss_star: %" PRIu64 "\n", cache->num_miss_star);
 
 }
 
@@ -274,96 +263,8 @@ void cacheset_printSetTags(Cache_set_t* set){
 	printf("\n");
 }
 
-int cache_access_data(uint64_t cur_cycle, Cache_t* cache, enum CacheAccessType type, md_addr_t addr, uint8_t *data, int size){
-	
-	int i;
-	unsigned int mask =  (1 << (cache->len_idx_bit))-1;
-	unsigned int idx = ((addr >> cache->len_offset_bit) & mask);
-	unsigned int tag =  (addr >> (cache->len_offset_bit + cache->len_idx_bit));
 
-	cache->num_access++;
-
-	Cache_set_t *set = cache->cache_set[idx];
-	Cache_blk_t *target_blk = set->first_blk;
-
-	while (target_blk!=NULL){
-		if (target_blk->valid && target_blk->tag == tag){
-			if (cache->config.policy == LRU)
-				cacheset_moveBlkAtFirst(set, target_blk);
-
-			if (type == Write){
-				memcpy(&(target_blk->data[addr & cache->offset_mask]), data, size);
-				target_blk->dirty = true;
-			}else if (type == Read){                                                                                  
-				memcpy(data, &(target_blk->data[addr & cache->offset_mask]), size);
-			}
-
-			return 0;	//hit
-		}
-		target_blk = target_blk->next_blk;
-	}
-	switch (cache->config.policy){
-		case LRU:
-		case FIFO:
-			target_blk = set->last_blk;
-			break;
-		case Random:
-			srand(time(NULL));
-			int victimIdx = rand() % cache->config.assoc;
-			target_blk = set->first_blk;
-			for (i=0 ; i<victimIdx ; i++){
-				target_blk = target_blk->next_blk;
-			}
-			 
-			break;
-	}
-	target_blk->valid = true;
-	target_blk->tag = tag;
-
-	// I don't want to maintain the window in the simulator.
-	// I just want to check the distance between the current instruction and the last miss instruction.
-	
-//	printf("%u\n", (unsigned) cur_cycle);
-	if (cache->cycle_lastmiss==-1 || (cur_cycle - cache->cycle_lastmiss) > cache->config.miss_lat ){ 
-		cache->num_miss_star++;
-		cache->cycle_lastmiss = cur_cycle;
-	}
-	else {
-//		printf("OVERLAP!!!");
-//		cache->cycle_lastmiss = cur_cycle;
-	}
-	cache->num_miss++;
-	//cache->cycle_lastmiss = cur_cycle;
-	cacheset_moveBlkAtFirst(set, target_blk);
-
-	return 1;	//miss
-	
-}
-
-//precondition: the target blk is reserved.
-int cache_update_data(uint64_t cur_cycle, Cache_t* cache,  md_addr_t addr, uint8_t *data){
-	
-	unsigned int mask =  (1 << (cache->len_idx_bit))-1;
-	unsigned int idx = ((addr >> cache->len_offset_bit) & mask);
-	unsigned int tag =  (addr >> (cache->len_offset_bit + cache->len_idx_bit));
-
-	cache->num_access++;
-	Cache_set_t *set = cache->cache_set[idx];
-	Cache_blk_t *target_blk = set->first_blk;
-	
-	while (target_blk!=NULL){
-		if (target_blk->valid && target_blk->tag == tag){
-			//cout << "HIT!!" << endl;
-			memcpy(target_blk->data, data, cache->config.bsize);
-			return 1;
-		}
-		target_blk = target_blk->next_blk;
-	}
-	return 0;
-}
-
-
-void cache_invalidate_data(Cache_t* cache){
+void cache_invalidate(Cache_t* cache){
 
 	if (cache->cache_set!=NULL){
 		int i;

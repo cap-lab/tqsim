@@ -25,8 +25,6 @@ void decrement_counter(SatCounter *c){
         }
 }
 
-
-
 uint8_t read_counter(SatCounter *c) {
 	return c->counter;
 }

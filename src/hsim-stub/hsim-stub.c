@@ -131,6 +131,7 @@ void HsimEnd(Cycle cycle)
     esim_cpu_cycle = cycle;
     esim_destroy(esim_current_cycles - esim_synced_cycles);
     esim_synced_cycles = esim_current_cycles;
+
 }
 
 
@@ -973,65 +974,30 @@ void comm_destroy(Cycle cycle)
 
 Cycle mem_access(Cycle cycle, Address address, int rw, uint64_t * data, int size, int unreal)
 {
-	int useVcache = false;
-	int isMiss;
 
 	int sizeInByte =  1 << (size - 3);
 
-	//FIXME
-	if (0x30000000 <= address && address < 0x50000000){
-		useVcache = true;
-	}
 
-	useVcache  = 0;
-	if (useVcache)
-		isMiss = cache_access_data(cycle, vcache, rw?Write:Read, address, (uint8_t*)data, sizeInByte);
-    
 	packet my_packet;
-    my_packet.cycle = cycle;
-    my_packet.reserved = core_id;
+	my_packet.cycle = cycle;
+	my_packet.reserved = core_id;
 	my_packet.param.flag = 0;
 
-	if (useVcache && isMiss) {	//read full block
-		    my_packet.address = address & vcache->addr_mask;
-		    my_packet.size = vcache->config.bsize;
-		    my_packet.type = PKT_READ;
-			my_packet.needFeedback = 1;
-//			printf("Vcache miss\n");
+	my_packet.address = address;
+	my_packet.size = sizeInByte;
+	my_packet.type = rw?PKT_WRITE:PKT_READ;
+	if (rw){
+		memcpy(my_packet.data, data, sizeInByte);
 	}
-	else {
-	    my_packet.address = address;
-	    my_packet.size = sizeInByte;
-	    my_packet.type = rw?PKT_WRITE:PKT_READ;
-		if (rw){
-			memcpy(my_packet.data, data, sizeInByte);
-		}
-		if (useVcache && !isMiss){		//vcache hit case
-//			printf("Vcache hit\n");
-			my_packet.needFeedback = 0;
-		}
-		else {							//normal access
-//			printf("Normal access\n");
-			my_packet.needFeedback = 1;
-		}
-	}
+	my_packet.needFeedback = 1;
 
-	//send
-	//printf("sending... %d\n", (int)my_packet.needFeedback);
 	comm_send(&my_packet);
 
 	if (my_packet.needFeedback){
 		comm_recv(&my_packet);
 
-		if (useVcache){
-	//		printf("Cache update\n");
-			cache_update_data(cycle, vcache, my_packet.address, (uint8_t*)my_packet.data); 
-			cache_access_data(cycle, vcache, rw?Write:Read, address, (uint8_t*)data, sizeInByte);
-		}
-		else {
-			if (!rw){
-				memcpy(data, my_packet.data, sizeInByte);
-			}
+		if (!rw){
+			memcpy(data, my_packet.data, sizeInByte);
 		}
 	}
 
@@ -1039,7 +1005,7 @@ Cycle mem_access(Cycle cycle, Address address, int rw, uint64_t * data, int size
 	esim_synced_cycles = esim_current_cycles;
 
 	//CHECK ME
-    return my_packet.param.latency;
+	return my_packet.param.latency;
 }
 
 /*(

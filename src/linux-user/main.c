@@ -1,4 +1,5 @@
 /*
+ *
  *  qemu user main
  *
  *  Copyright (c) 2003-2008 Fabrice Bellard
@@ -3890,6 +3891,7 @@ int main(int argc, char **argv, char **envp)
 
 
 	perfmodel_initialize(argc, argv);
+//	depanal_btrace_start();
 #ifdef CONFIG_HSIM
 	HsimStart();
 #endif

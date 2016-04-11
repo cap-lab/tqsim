@@ -1,5 +1,5 @@
-common-obj-y += hsim-stub.o cache.o cachesim.o bpred_simple.o sat_counter.o bpredsim.o
-common-obj-y += perfmodel.o config.o statistics.o depanal.o
+common-obj-y += hsim-stub.o cache.o cachesim.o bpred_bimod.o sat_counter.o bpredsim.o
+common-obj-y += perfmodel.o config.o statistics.o  
 
 QEMU_CFLAGS+=  -I/usr/include/libxml2  
 LIBS +=  -lxml2 

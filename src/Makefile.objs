@@ -7,7 +7,8 @@ util-obj-y = util/ qobject/ qapi/ qapi-types.o qapi-visit.o qapi-event.o
 # HSIM
 
 common-obj-y += hsim-stub/
-common-obj-y += hsim-stub/darm/
+common-obj-y += hsim-stub/trace_analyzer/
+common-obj-y += hsim-stub/trace_analyzer/darm/
 
 #######################################################################
 # block-obj-y is code used by both qemu system emulation and qemu-img

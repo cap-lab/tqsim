@@ -58,13 +58,16 @@ typedef struct Cache_t{
 	uint64_t num_access;
 
 	uint64_t num_miss;
+	uint64_t num_read_miss;
 	uint64_t num_miss_star;
 
 	unsigned int len_tag_bit;
     unsigned int len_idx_bit;
 	unsigned int len_offset_bit;
-	
-	uint64_t cycle_lastmiss;
+
+
+	uint64_t last_miss_inst_id;
+	uint32_t last_miss_addr;
 
 	uint32_t offset_mask;
 	uint32_t addr_mask;
@@ -82,7 +85,7 @@ void cache_initialize(Cache_t* cache, const char* name, int nset, int bsize, int
 					enum Cache_policy policy, unsigned int hit_lat, unsigned int miss_lat);
 
 void cache_copy(Cache_set_t **target_set, Cache_set_t **source_set, int nset);
-int cache_access(uint64_t cur_cycle, Cache_t* cache, enum CacheAccessType type, md_addr_t addr);
+bool cache_access(uint64_t inst_id, Cache_t* cache, enum CacheAccessType type, md_addr_t addr);
 
 int cache_readTraceFile(Cache_t* cache, const char* filename);
 int mcache_readTraceFile(Cache_t* cache1, Cache_t* cache2, const char* filename);
@@ -90,8 +93,7 @@ int mcache_readTraceFile(Cache_t* cache1, Cache_t* cache2, const char* filename)
 void cache_print(Cache_t* cache);
 void cache_close(Cache_t* cache);
 
-void cache_invalidate_data(Cache_t* cache);
-int cache_access_data(uint64_t cur_cycle, Cache_t* cache, enum CacheAccessType type, md_addr_t addr, uint8_t* blk, int size);
-int cache_update_data(uint64_t cur_cycle, Cache_t* cache, md_addr_t addr, uint8_t* blk);
+
+void cache_invalidate(Cache_t* cache);
 
 #endif

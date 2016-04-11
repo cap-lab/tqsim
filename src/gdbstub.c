@@ -45,7 +45,6 @@
 #include "hsim-stub/cachesim.h"
 #include "hsim-stub/perfmodel.h"
 #include "hsim-stub/bpredsim.h"
-#include "hsim-stub/depanal.h"
 
 
 
@@ -1444,7 +1443,11 @@ void gdb_exit(CPUArchState *env, int code)
   GDBState *s;
   char buf[4];
 
-  depanal_thread_finish();
+
+  sampling_wrapup();	
+//  depanal_thread_finish();
+//  depanal_thread_start(); 
+//  depanal_thread_finish();
 
 #ifndef CONFIG_HSIM
   fprintf(stderr, "------------------------------------------------------\n");
@@ -1453,13 +1456,13 @@ void gdb_exit(CPUArchState *env, int code)
 
   fprintf(stderr, "Total commited inst : %" PRIu64 "\n", num_insts);
   uint64_t estimated_cycle =  perfmodel_getCycle();
-  fprintf(stderr, "%f %" PRIu64 " %" PRIu64"  %" PRIu64 "\n", num_insts * cpi, cachesim_il1Penalty(),  cachesim_ul2Penalty(),  bpredsim_penaltysum() );
-  fprintf(stderr, "Estimated execution cycle : %" PRIu64 "\n", estimated_cycle);
-  fprintf(stderr, "Effective dispatch rate : %f \n", cpi);
-  fprintf(stderr, "Branch mispredict penalty : %" PRIu32 " \n", bpred_penalty);
+//  fprintf(stderr, "%f %" PRIu64 " %" PRIu64"  %" PRIu64 "\n", num_insts * cpi, cachesim_il1Penalty(),  cachesim_ul2Penalty(),  bpredsim_penaltysum() );
+	fprintf(stderr, "Estimated execution cycle : %" PRIu64 "\n", estimated_cycle);
+    fprintf(stderr, "Effective dispatch rate : %f \n", effective_dispatch_width);
+   fprintf(stderr, "Branch mispredict penalty : %" PRIu32 " \n", bpred_penalty);
   fprintf(stderr, "------------------------------------------------------\n");
 #endif
-
+//  depanal_btrace_end();
   perfmodel_end();
 
 #ifdef CONFIG_HSIM 

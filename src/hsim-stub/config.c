@@ -19,8 +19,8 @@ static void print_element_names(xmlNode * a_node)
 					perfmodel.sample.length = atoi((char*)str);
 					str = xmlGetProp(cur_node, (const xmlChar*)"default_period");
 					perfmodel.sample.default_period = atoi((char*)str);
-					str = xmlGetProp(cur_node, (const xmlChar*)"initial_cpi");
-					perfmodel.sample.initial_cpi = atof((char*)str);
+					str = xmlGetProp(cur_node, (const xmlChar*)"initial_effective_dispatch_width");
+					perfmodel.sample.initial_effective_dispatch_width = atof((char*)str);
 					
 					xmlFree(str);
 			}

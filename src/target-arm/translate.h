@@ -120,6 +120,6 @@ static inline void aarch64_cpu_dump_state(CPUState *cs, FILE *f,
 #endif
 
 void arm_gen_test_cc(int cc, TCGLabel *label);
-static inline void gen_bpredaccess(DisasContext *s, int n, target_ulong dest, int is_cond);
+//static inline void gen_bpredaccess(DisasContext *s, int n, target_ulong dest, int is_cond);
 
 #endif /* TARGET_ARM_TRANSLATE_H */

@@ -532,9 +532,9 @@ DEF_HELPER_FLAGS_2(neon_pmull_64_hi, TCG_CALL_NO_RWG_SE, i64, i64, i64)
 //for hsim
 DEF_HELPER_3(cycle_increment, void, env, i32, i32)
 DEF_HELPER_1(cycle_print, void, env)
-DEF_HELPER_1(dcache_access_pure, void,  i32)
-DEF_HELPER_1(icache_access, void,  i32)
-DEF_HELPER_4(bpredsim_access, void, env, i32, i32, i32)
+DEF_HELPER_1(dcache_read_access, void,  i32)
+DEF_HELPER_1(dcache_write_access, void,  i32)
+DEF_HELPER_2(set_branch_inst, void, env, i32)
 DEF_HELPER_4(print_trace, void, env, i32, i32, i32)
 DEF_HELPER_3(inst_increment, void, env, i32, i32)
 DEF_HELPER_2(hsim_print, void, env, i32)
@@ -563,6 +563,7 @@ DEF_HELPER_2(hsim_isshared, i32, env, i32)
 
 #endif
 
+//void sampling_wrapup(void); 
 
 #ifdef TARGET_AARCH64
 #include "helper-a64.h"

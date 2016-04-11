@@ -1,5 +1,4 @@
-/*
- *  ARM translation
+ /*  ARM translation
  *
  *  Copyright (c) 2003 Fabrice Bellard
  *  Copyright (c) 2005-2007 CodeSourcery
@@ -38,6 +37,8 @@
 #include "trace-tcg.h"
 
 #include "hsim-stub/config.h"
+
+#define TQSIM
 
 
 #define ENABLE_ARCH_4T    arm_dc_feature(s, ARM_FEATURE_V4T)
@@ -833,24 +834,12 @@ static const uint8_t table_logic_cc[16] = {
     1, /* mvn */
 };
 
-static inline void gen_bpredaccess(DisasContext *s, int taken, target_ulong dest, int is_cond)
-{
-		TCGv_i32 tmp, tmp2, tmp3; 
-	
-		tmp = tcg_const_i32(s->pc-4);
-		if (taken){
-			tmp2 = tcg_const_i32(dest);
-		}
-		else {
-			tmp2 = tcg_const_i32(s->pc);
-		}
-		tmp3 = tcg_const_i32(is_cond);
-		gen_helper_bpredsim_access(cpu_env, tmp, tmp2, tmp3);
-		tcg_temp_free_i32(tmp);
-		tcg_temp_free_i32(tmp2);
- 		tcg_temp_free_i32(tmp3);
-}	
-
+static inline void gen_set_branch_inst(DisasContext *s, int is_cond){
+	TCGv_i32 tmp; 
+	tmp = tcg_const_i32(is_cond);
+	gen_helper_set_branch_inst(cpu_env, tmp);
+	tcg_temp_free_i32(tmp);
+}
 
 /* Set PC and Thumb state from an immediate address.  */
 static inline void gen_bx_im(DisasContext *s, uint32_t addr)
@@ -864,10 +853,11 @@ static inline void gen_bx_im(DisasContext *s, uint32_t addr)
         tcg_gen_st_i32(tmp, cpu_env, offsetof(CPUARMState, thumb));
         tcg_temp_free_i32(tmp);
     }
+//#ifdef CONFIG_TIMING
+//		gen_bpredaccess(s, (addr&~1)!= cpu_R[15]-4, (addr&~1), cond_jmp);
+//#endif
+
     tcg_gen_movi_i32(cpu_R[15], addr & ~1);
-#ifdef CONFIG_TIMING
-		gen_bpredaccess(s, (addr&~1)!=s->pc, (addr&~1), cond_jmp);
-#endif
 
 }
 
@@ -878,22 +868,6 @@ static inline void gen_bx(DisasContext *s, TCGv_i32 var)
     tcg_gen_andi_i32(cpu_R[15], var, ~1);
     tcg_gen_andi_i32(var, var, 1);
     store_cpu_field(var, thumb);
-
-#ifdef CONFIG_TIMING
-	TCGv_i32 tmp, tmp2, tmp3; 
-	tmp2 = tcg_temp_new_i32();
-	tmp = tcg_const_i32(s->pc-4);
-	tcg_gen_mov_i32(tmp2, cpu_R[15]);
-	tmp3 = tcg_const_i32(cond_jmp);
-		
-	gen_helper_bpredsim_access(cpu_env, tmp, tmp2, tmp3);
-		
-	tcg_temp_free_i32(tmp);
-	tcg_temp_free_i32(tmp2);
-	tcg_temp_free_i32(tmp3);
-
-#endif
-
 }
 
 /* Variant of store_reg which uses branch&exchange logic when storing
@@ -951,14 +925,14 @@ static inline void gen_aa32_st##SUFF(TCGv_i32 val, TCGv_i32 addr, int index) \
 #define DO_GEN_LD(SUFF, OPC)                                             \
 static inline void gen_aa32_ld##SUFF(TCGv_i32 val, TCGv_i32 addr, int index) \
 {                                                                        \
-	gen_helper_dcache_access_pure(addr);								\
+	gen_helper_dcache_read_access(addr);								\
 	tcg_gen_qemu_ld_i32(val, addr, index, OPC);                          \
 }
 
 #define DO_GEN_ST(SUFF, OPC)                                             \
 static inline void gen_aa32_st##SUFF(TCGv_i32 val, TCGv_i32 addr, int index) \
 {                                                                        \
-	gen_helper_dcache_access_pure(addr);								\
+	gen_helper_dcache_write_access(addr);								\
 	tcg_gen_qemu_st_i32(val, addr, index, OPC);                          \
 }
 
@@ -997,13 +971,13 @@ static inline void gen_aa32_st64(TCGv_i64 val, TCGv_i32 addr, int index)
 static inline void gen_aa32_ld64(TCGv_i64 val, TCGv_i32 addr, int index)
 {
 
-	gen_helper_dcache_access_pure(addr);								
+	gen_helper_dcache_read_access(addr);								
 	tcg_gen_qemu_ld_i64(val, addr, index, MO_TEQ);
 }
 
 static inline void gen_aa32_st64(TCGv_i64 val, TCGv_i32 addr, int index)
 {
-	gen_helper_dcache_access_pure(addr);								
+	gen_helper_dcache_write_access(addr);								
 	tcg_gen_qemu_st_i64(val, addr, index, MO_TEQ);
 }
 
@@ -4083,24 +4057,33 @@ static inline void gen_goto_tb(DisasContext *s, int n, target_ulong dest)
 
     tb = s->tb;
 
-
 #ifdef CONFIG_TIMING
-		gen_bpredaccess(s, dest!=s->pc, dest, cond_jmp);
+	gen_set_branch_inst(s, cond_jmp);
 #endif
-
 
     if ((tb->pc & TARGET_PAGE_MASK) == (dest & TARGET_PAGE_MASK)) {
         tcg_gen_goto_tb(n);
         gen_set_pc_im(s, dest);
+#ifdef CONFIG_TIMING
+		gen_set_branch_inst(s, cond_jmp);
+#endif
         tcg_gen_exit_tb((uintptr_t)tb + n);
     } else {
         gen_set_pc_im(s, dest);
+#ifdef CONFIG_TIMING
+		gen_set_branch_inst(s, cond_jmp);
+#endif
         tcg_gen_exit_tb(0);
     }
 }
 
 static inline void gen_jmp (DisasContext *s, uint32_t dest)
 {
+
+//#ifdef CONFIG_TIMING
+//		gen_bpredaccess(s, dest!=s->pc, dest, cond_jmp);
+//#endif
+
     if (unlikely(s->singlestep_enabled || s->ss_active)) {
         /* An indirect jump so that we still trigger the debug exception.  */
         if (s->thumb)
@@ -11163,7 +11146,6 @@ illegal_op:
 undef:
     gen_exception_insn(s, 2, EXCP_UDEF, syn_uncategorized());
 }
-
 /* generate intermediate code in gen_opc_buf and gen_opparam_buf for
    basic block 'tb'. If search_pc is TRUE, also generate PC
    information for each intermediate instruction. */
@@ -11298,6 +11280,8 @@ static inline void gen_intermediate_code_internal(ARMCPU *cpu,
         store_cpu_field(tmp, condexec_bits);
       }
     do {
+
+
 #ifdef CONFIG_USER_ONLY
         /* Intercept jump to the magic kernel page.  */
         if (dc->pc >= 0xffff0000) {
@@ -11341,23 +11325,6 @@ static inline void gen_intermediate_code_internal(ARMCPU *cpu,
             tcg_ctx.gen_opc_icount[lj] = num_insns;
         }
 
-#ifdef CONFIG_TIMING		
-		
-		{
-			TCGv_i32 tmp = tcg_temp_new_i32();
-			TCGv_i32 tmp3 = tcg_temp_new_i32();
-
-			tcg_gen_movi_i32(tmp, dc->pc);
-			tcg_gen_movi_i32(tmp3, dc->thumb | (dc->bswap_code << 1));
-
-			gen_helper_inst_increment(cpu_env, tmp,  tmp3);
-
-			tcg_temp_free_i32(tmp);
-			tcg_temp_free_i32(tmp3);
-		}
-		
-#endif
-
 
 
         if (num_insns + 1 == max_insns && (tb->cflags & CF_LAST_IO))
@@ -11395,6 +11362,23 @@ static inline void gen_intermediate_code_internal(ARMCPU *cpu,
             }
         } else {
             unsigned int insn = arm_ldl_code(env, dc->pc, dc->bswap_code);
+#ifdef CONFIG_TIMING		
+
+			{
+				TCGv_i32 tmp = tcg_temp_new_i32();
+				TCGv_i32 tmp3 = tcg_temp_new_i32();
+
+				tcg_gen_movi_i32(tmp, dc->pc);
+				tcg_gen_movi_i32(tmp3, dc->thumb | (dc->bswap_code << 1));
+
+				gen_helper_inst_increment(cpu_env, tmp,  tmp3);
+
+				tcg_temp_free_i32(tmp);
+				tcg_temp_free_i32(tmp3);
+			}
+
+#endif
+
             dc->pc += 4;
 			cond_jmp = 0;
             disas_arm_insn(dc, insn);
@@ -11493,6 +11477,9 @@ static inline void gen_intermediate_code_internal(ARMCPU *cpu,
         case DISAS_JUMP:
         case DISAS_UPDATE:
             /* indicate that the hash table must be used to find the next TB */
+#ifdef CONFIG_TIMING
+			gen_set_branch_inst(dc, cond_jmp);
+#endif
             tcg_gen_exit_tb(0);
             break;
         case DISAS_TB_JUMP:
