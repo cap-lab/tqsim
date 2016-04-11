@@ -1,4 +1,4 @@
-# QEMU configure log Tue Apr  5 21:47:52 KST 2016
+# QEMU configure log Mon Apr 11 16:16:28 KST 2016
 # Configured with: './configure' '--target-list=arm-linux-user' '--prefix=/home/shkang/tqsim' '--enable-debug' '--enable-guest-base' '--disable-hsim'
 #
 cc -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -c -o config-temp/qemu-conf.o config-temp/qemu-conf.c
@@ -142,8 +142,8 @@ config-temp/qemu-conf.c:2:28: fatal error: sys/capability.h: No such file or dir
                             ^
 compilation terminated.
 cc -fPIE -DPIE -m64 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -Wendif-labels -Wmissing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-all -I/usr/include/libpng12 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
-/tmp/cc9KUHsL.o: In function `main':
-/home/shkang/workspace/tqsim/src/config-temp/qemu-conf.c:5: undefined reference to `pthread_create'
+/tmp/ccwgM1Z9.o: In function `main':
+/home/shkang/workspace/tqsim_github/src/config-temp/qemu-conf.c:5: undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
 cc -fPIE -DPIE -m64 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -Wendif-labels -Wmissing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-all -I/usr/include/libpng12 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -pthread
 cc -fPIE -DPIE -m64 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -Wendif-labels -Wmissing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-all -I/usr/include/libpng12 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -pthread
@@ -211,13 +211,13 @@ config-temp/qemu-conf.c:1:24: fatal error: sys/endian.h: No such file or directo
                         ^
 compilation terminated.
 cc -fPIE -DPIE -m64 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -Wendif-labels -Wmissing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-all -I/usr/include/libpng12 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
-/tmp/cczylSle.o: In function `main':
-/home/shkang/workspace/tqsim/src/config-temp/qemu-conf.c:2: undefined reference to `sin'
+/tmp/cc0cdaPw.o: In function `main':
+/home/shkang/workspace/tqsim_github/src/config-temp/qemu-conf.c:2: undefined reference to `sin'
 collect2: error: ld returned 1 exit status
 cc -fPIE -DPIE -m64 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -Wendif-labels -Wmissing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-all -I/usr/include/libpng12 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lm
 cc -fPIE -DPIE -m64 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -Wendif-labels -Wmissing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-all -I/usr/include/libpng12 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g
-/tmp/cc8faz7j.o: In function `main':
-/home/shkang/workspace/tqsim/src/config-temp/qemu-conf.c:4: undefined reference to `timer_create'
+/tmp/ccZgdFFC.o: In function `main':
+/home/shkang/workspace/tqsim_github/src/config-temp/qemu-conf.c:4: undefined reference to `timer_create'
 collect2: error: ld returned 1 exit status
 cc -fPIE -DPIE -m64 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -Wendif-labels -Wmissing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-all -I/usr/include/libpng12 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -pthread -lrt
 cc -fPIE -DPIE -m64 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -Wendif-labels -Wmissing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-all -I/usr/include/libpng12 -I/usr/include/spice-server -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/spice-1 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -Wl,-z,relro -Wl,-z,now -pie -m64 -g -lspice-server
