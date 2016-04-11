@@ -1,0 +1,1 @@
+common-obj-y +=  armv7.o armv7-tbl.o darm.o darm-tbl.o thumb2.o thumb2-decoder.o thumb2-tbl.o thumb.o thumb-tbl.o

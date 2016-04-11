@@ -1,0 +1,2 @@
+common-obj-y += buffer_manager.o  fu.o  inst.o  inst_queue.o trace_analyzer.o  trace_analyzer_thread_if.o rob.o dep_mat.o 
+
