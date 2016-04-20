@@ -57,6 +57,10 @@ cd (TQSIM_SRC)/example
 
 Current we only support simulation of arm binaries compiled through arm-linux-gnueabi-gcc compiler with "-static" option. Various guest binaries, including x86, x86-64, MIPS, will be supported in the near future. 
 
+# Publication
+
+Shin-haeng Kang, Donghoon Yoo, Soonhoi Ha, "TQSIM: A Fast Cycle-Approximate Processor Simulator Based on QEMU," Journal of Systems Architecture, Apr, 2016, Online published.
+
 # Contact
 
 servant.shin@gmail.com
@@ -67,6 +71,9 @@ Codesign and Parallel Processing Lab
 Department of EECS/CSE
 Seoul National University
 ```
+
+
+
 
 # Appendix: Libraries We Use
 The following sets forth attribution notices for third party software that may be contained in portions of TQSIM product. We thank the open source community for all of their contributions.
