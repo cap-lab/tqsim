@@ -59,7 +59,8 @@ Current we only support simulation of arm binaries compiled through arm-linux-gn
 
 # Publication
 
-Shin-haeng Kang, Donghoon Yoo, and Soonhoi Ha, "TQSIM: A Fast Cycle-Approximate Processor Simulator Based on QEMU," Journal of Systems Architecture, Apr, 2016, Online published. Available: http://www.sciencedirect.com/science/article/pii/S1383762116300297
+  * Shin-haeng Kang, Donghoon Yoo, Soonhoi Ha, TQSIM: A Fast Cycle-Approximate Processor Simulator Based on QEMU, Journal of Systems Architecture, Available online 19 April 2016, ISSN 1383-7621, http://dx.doi.org/10.1016/j.sysarc.2016.04.012.
+(http://www.sciencedirect.com/science/article/pii/S1383762116300297)
 
 # Contact
 
