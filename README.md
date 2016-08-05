@@ -36,7 +36,7 @@ To install TQSim on a linux system, do the following steps:
 In order to execute TQSim, it is required to provide the detailed specification of the target core architecture. You can find a sample configuration file *armv7.cfg* at *TQSIM_SRC*. Set the *TQSIM_ARCH_CONFIG_FILE* environment variable with an export command: 
 
 ```
-export ARCH_CONFIG_FILE=(CUSTOM_DIRECTORY)/armv7.cfg
+export TQSIM_ARCH_CONFIG_FILE=(CUSTOM_DIRECTORY)/armv7.cfg
 ```
 
 To launch a test run, do the followings.
