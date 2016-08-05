@@ -1029,21 +1029,19 @@ void HELPER(inst_increment)(CPUARMState *env, uint32_t pc,  uint32_t flag)
 
 
 //extern unsigned long guest_base;
-
-
 #ifdef CONFIG_HSIM
 #define DO_GEN_HSIM_LD(SIZE,SIZE2,VAR_TYPE)                      	\
 uint32_t HELPER(hsim_ld##SIZE)(CPUARMState *env, uint32_t addr){	\
 	if (memmap_is_shared(addr)){              						    \
 	        uint32_t val = 0;                   					\
-	        int size = log ( SIZE2 )/log(2);               			\
-			int hit = dcache_access(addr, 0); hit = 0;\
-			hsim_access(perfmodel_getSimpleCycle(), addr, 0,(uint64_t*) &val, size, hit);	\
+			hsim_access(perfmodel_getSimpleCycle(), addr, 0,(uint64_t*) &val, SIZE2 , BlockingAccess);	\
 			return (uint32_t)val;                     				\
 	     }                               							\
 	else if(memmap_is_local(addr)) {									\
 		VAR_TYPE val=0;												\
 		val = *( VAR_TYPE *)(guest_base+addr);						\
+		VAR_TYPE dummy = 0;											\
+		hsim_access(perfmodel_getSimpleCycle(), addr, 0, (uint64_t*)&dummy, SIZE2 ,NonBlockingAccess); 	\
 		return val;													\
 	}																\
 	else {															\
@@ -1057,12 +1055,12 @@ uint32_t HELPER(hsim_ld##SIZE)(CPUARMState *env, uint32_t addr){	\
 void HELPER(hsim_st##SIZE)(CPUARMState *env, uint32_t val, uint32_t addr)	\
 {																			\
 	if (memmap_is_shared(addr)){												\
-		int size = log ( SIZE2 )/log(2);									\
-		int hit = dcache_access(addr, 1); hit = 0;\
-		hsim_access(perfmodel_getSimpleCycle(), addr, 1, (uint64_t*)&val, size, hit); 			\
+		hsim_access(perfmodel_getSimpleCycle(), addr, 1, (uint64_t*)&val, SIZE2 , BlockingAccess); 			\
 	}																		\
 	else if (memmap_is_local(addr)){											\
 		*( VAR_TYPE *)(guest_base+addr) = val;								\
+		VAR_TYPE dummy = 0;													\
+		hsim_access(perfmodel_getSimpleCycle(), addr, 1, (uint64_t*)&dummy, SIZE2 , NonBlockingAccess);				\
 	}																		\
 	else {																	\
 		fprintf(stderr, "illegal access at pc(%x) to %x\n", (unsigned) env->regs[15], (unsigned)addr);	\
@@ -1070,6 +1068,8 @@ void HELPER(hsim_st##SIZE)(CPUARMState *env, uint32_t val, uint32_t addr)	\
 		exit(-1);															\
 	}																		\
 }
+
+
 
 DO_GEN_HSIM_LD(8u,8,uint8_t)
 DO_GEN_HSIM_LD(8s,8,int8_t)
@@ -1082,15 +1082,16 @@ DO_GEN_HSIM_ST(16,16,int16_t)
 DO_GEN_HSIM_ST(32,32,int32_t)
 
 uint64_t HELPER(hsim_ld64)(CPUARMState *env, uint32_t addr){	
+	
 		if (memmap_is_shared(addr)){                   
 			uint64_t val = 0;                  
-			int hit = dcache_access(addr, 0);hit =0;
-			hsim_access(perfmodel_getSimpleCycle(), addr, 0, &val, 6, hit);  
-	
+			hsim_access(perfmodel_getSimpleCycle(), addr, 0, &val, 64, BlockingAccess);  
 			return val;                     
 		}                               
 		else if (memmap_is_local(addr)){                                  
-			uint64_t val=  *( uint64_t *)(guest_base+addr);                      
+			uint64_t val=  *( uint64_t *)(guest_base+addr);  
+			uint64_t dummy = 0;
+			hsim_access(perfmodel_getSimpleCycle(), addr, 0, &dummy, 64, NonBlockingAccess);
 			return val;                                                 
 		} 
 		else {
@@ -1104,19 +1105,21 @@ uint64_t HELPER(hsim_ld64)(CPUARMState *env, uint32_t addr){
 void HELPER(hsim_st64)(CPUARMState *env, uint64_t val, uint32_t addr)	
 {	
 	if (memmap_is_shared(addr)){
-
-		int hit = dcache_access(addr, 1);hit = 0;
-		hsim_access(perfmodel_getSimpleCycle(), addr, 1, &val, 6, hit);  
+		hsim_access(perfmodel_getSimpleCycle(), addr, 1, &val, 64, BlockingAccess);  
 	
 	}                                                                       
 	else if (memmap_is_local(addr)){                                                                   
-		*( uint64_t *)(guest_base+addr) = val;                              
+		*( uint64_t *)(guest_base+addr) = val;
+		uint64_t dummy = 0;
+		hsim_access(perfmodel_getSimpleCycle(), addr, 1, &dummy, 64, NonBlockingAccess);
+	
 	}                     
 	else {
 		fprintf(stderr, "illegal access at pc(%x) to %x\n", (unsigned) env->regs[15], (unsigned)addr);	\
 		exit(-1);			
 	}
 }
+
 
 uint32_t HELPER(hsim_isshared)(CPUARMState *env, uint32_t addr){
 	uint32_t ret;
