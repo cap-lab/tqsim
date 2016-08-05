@@ -1,7 +1,7 @@
 # TQSIM (Timed QEMU-based Simulator)
 We present TQSIM, an open source, fast, and cycle-approximate simulation tool built on QEMU to support simulation of generic modern superscalar out-of-order processors. TQSIM is developed by Codesign and Parallel Processing Laboratory(CAPLab), Seoul National University, and sponsored by Samsung Advanced Institute of Technology (SAIT).
 
-You can find more details about TQSIM in future literatures from CAPLab. (will be available at  http://iris.snu.ac.kr/xe/papers)
+You can find more details about TQSIM in the literature published in Journal of System Architecture (http://www.sciencedirect.com/science/article/pii/S1383762116300297).
 
 # Licence
 TQSIM is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 3.
@@ -33,10 +33,10 @@ To install TQSim on a linux system, do the following steps:
   make install
   ```
 
-In order to execute TQSim, it is required to provide the detailed specification of the target core architecture. You can find a sample configuration file *armv7.cfg* at *TQSIM_SRC*. Set the *ARCH_CONFIG_FILE* environment variable with an export command: 
+In order to execute TQSim, it is required to provide the detailed specification of the target core architecture. You can find a sample configuration file *armv7.cfg* at *TQSIM_SRC*. Set the *TQSIM_ARCH_CONFIG_FILE* environment variable with an export command: 
 
 ```
-export ARCH_CONFIG_FILE=(CUSTOM_DIRECTORY)/armv7.cfg
+export TQSIM_ARCH_CONFIG_FILE=(CUSTOM_DIRECTORY)/armv7.cfg
 ```
 
 To launch a test run, do the followings.
