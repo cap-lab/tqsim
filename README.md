@@ -1,8 +1,6 @@
 # TQSIM (Timed QEMU-based Simulator)
 We present TQSIM, an open source, fast, and cycle-approximate simulation tool built on QEMU to support simulation of generic modern superscalar out-of-order processors. TQSIM is developed by Codesign and Parallel Processing Laboratory(CAPLab), Seoul National University, and sponsored by Samsung Advanced Institute of Technology (SAIT).
 
-You can find more details about TQSIM in future literatures from CAPLab. (will be available at  http://iris.snu.ac.kr/xe/papers)
-
 # Licence
 TQSIM is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 3.
 
