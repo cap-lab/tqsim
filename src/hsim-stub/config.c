@@ -27,10 +27,10 @@ static void print_element_names(xmlNode * a_node)
 
 			//core
 			if ((!xmlStrcmp(cur_node->name, (const xmlChar *)"core"))) {
-					xmlChar *str = xmlGetProp(cur_node, (const xmlChar*)"dispatch_width");
-					perfmodel.core.dispatch_width = atoi((char*)str);
-					str = xmlGetProp(cur_node, (const xmlChar*)"issue_width");
-					perfmodel.core.issue_width = atoi((char*)str);
+					xmlChar *str = xmlGetProp(cur_node, (const xmlChar*)"frontend_width");
+					perfmodel.core.frontend_width = atoi((char*)str);
+					str = xmlGetProp(cur_node, (const xmlChar*)"backend_width");
+					perfmodel.core.backend_width = atoi((char*)str);
 					str = xmlGetProp(cur_node, (const xmlChar*)"window_size");
 					perfmodel.core.window_size = atoi((char*)str);
 					xmlFree(str);

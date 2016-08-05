@@ -132,8 +132,6 @@ void perfmodel_update(uint64_t _cycle, int _bpred_penalty){
 	effective_dispatch_width =  num_sampling / sum_effective_dispatch_width;
 	if (num_total_branch)
 		bpred_penalty = sum_bpred_penalty / num_total_branch;
-
-
 }
 
 void perfmodel_logging(void){
@@ -157,7 +155,7 @@ void perfmodel_logging(void){
 
 void perfmodel_end(void){
 //	printf("Final IPC : %f (trace_analyzer) %f \n", (double)sum_ipc / num_ipc, (double)num_insts / perfmodel_getCycle());
-	perfmodel_logging();
+//	perfmodel_logging();
 	free(command);
 	cachesim_end();
 	bpredsim_end();

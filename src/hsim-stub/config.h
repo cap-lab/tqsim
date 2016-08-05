@@ -11,8 +11,8 @@ struct sample_config {
 };
 
 struct core_config {
-	int dispatch_width;
-	int issue_width;
+	int frontend_width;
+	int backend_width;
 	int window_size;
 };
 

@@ -170,6 +170,7 @@ void cache_print(Cache_t* cache){
 
 void cache_close(Cache_t* cache){
 
+	cache_print(cache);
 	if (cache->cache_set!=NULL){
 		int i;
       	for (i=0 ; i<cache->config.nset ; i++){

@@ -19,12 +19,10 @@ static const int reg_dependency_check = 1;
 static const int queue_availablity_check = 1;
 static const int default_wb_latency = 2;		//after issue stage
 
-static const int num_simple_alu = 2;
-
 static int dispatch_width = 3;
-static const int issue_width = 8;
-static const int wb_width = 8;
-static const int commit_width = 8;
+static int issue_width = 8;
+static int wb_width = 8;
+static int commit_width = 8;
 static const int front_pipeline_depth = 12;
 static int rob_capacity = 60;
 
@@ -35,7 +33,7 @@ static int latency_l1_miss;
 static int latency_l2_miss;
 static bool verbose =false;
 static bool verbose_pipeline = false;
-
+static uint64_t first_issue_cycle = 0;
 
 
 static int rob_full_event = 0;
@@ -74,6 +72,7 @@ FILE *fp;
 /* statistics */
 
 static  int num_fetched_insts = 0;
+static int num_issued_insts = 0;
 static  int num_committed_insts = 0;
 static  int num_mispred_insts = 0;
 static  double avg_mispred_penalty = 0;
@@ -134,8 +133,8 @@ void init_all_queues(void){
 
 void init_all_FUs(void){
 
-	init_FU (&(fu[SimpleALU]), SimpleALU, num_simple_alu, num_simple_alu);
-	init_FU (&(fu[ComplexALU]), ComplexALU, 1, 3);
+	init_FU (&(fu[SimpleALU]), SimpleALU, perfmodel.numfu.intalu, perfmodel.numfu.intalu);
+	init_FU (&(fu[ComplexALU]), ComplexALU, perfmodel.numfu.intmultdiv, perfmodel.numfu.intmultdiv*3);
 	init_FU (&(fu[FPUnit]), FPUnit, 2, 10);
 	init_FU (&(fu[LoadUnit]), LoadUnit, 1,1);
 	init_FU (&(fu[StoreUnit]), StoreUnit, 1,3);
@@ -174,7 +173,11 @@ void reflesh_all_FUs(void){
 
 void init_trace_analyzer(void){
 	rob_capacity = perfmodel.core.window_size;
-	dispatch_width = perfmodel.core.dispatch_width;
+	dispatch_width = perfmodel.core.frontend_width;
+	issue_width = perfmodel.core.backend_width;
+	wb_width = perfmodel.core.backend_width;
+	commit_width = perfmodel.core.backend_width;
+
 	latency_l1_hit = perfmodel.il1.latency;
 	latency_l1_miss = perfmodel.ul2.latency;
 	latency_l2_miss = perfmodel.mem.latency;
@@ -196,6 +199,7 @@ void init_trace_statistics(void){
 	}
 
 	num_fetched_insts = 0;
+	num_issued_insts = 0;
 	num_committed_insts = 0;
 	num_dispatched_insts = 0;
 	num_mispred_insts = 0;
@@ -232,7 +236,7 @@ void dispatch_inst(Inst *inst){
 	num_dispatched_insts_cycle++;
 	inst->state = Dispatch;
 	if (verbose)
-		printf("%s dispatched\n", print_inst(strbuf, inst));
+		fprintf(stderr,"%s dispatched\n", print_inst(strbuf, inst));
 }
 
 void dispatch_insts(InstQueue *trace_buffer){
@@ -395,7 +399,7 @@ bool has_dependency(Inst *inst_b){
 			char buf1[50];
 			char buf2[50];
 			if (verbose)
-				printf("%s is waiting for %s \n", print_inst(buf1, inst_b), print_inst(buf2, inst_a));
+				fprintf(stderr,"%s is waiting for %s \n", print_inst(buf1, inst_b), print_inst(buf2, inst_a));
 			return true;
 		}
 		if (cur_idx == rob.start_idx){
@@ -435,20 +439,22 @@ void issue_insts(void){
 				FUType target_fu = inst_type_fu_type_map[inst_elem->inst->type];
 				bool success = try_FU(&fu[target_fu]);
 				if (success){
+					if (!first_issue_cycle) first_issue_cycle = cur_cycle;
 					remove_from_list(&IQ, inst_elem, true);
 					inst->issued_cycle = cur_cycle;
 					inst->state = Issue;
 					int latency =  inst_type[inst->type].latency;
 					inst->remaining_latency = latency;	
+					num_issued_insts++;
 					num_issued_insts_cycle++;
 					push_back_inst(&FUBuffer, inst);
 					w--;
 					if (verbose)
-						printf("%s Issued (latency %d) \n", print_inst(strbuf, inst), inst->remaining_latency);
+						fprintf(stderr,"%s Issued (latency %d) \n", print_inst(strbuf, inst), inst->remaining_latency);
 				}
 				else {
 					if (verbose)
-						printf("%s cannot Issued (lack of functional unit) \n", print_inst(strbuf, inst));
+						fprintf(stderr,"%s cannot Issued (lack of functional unit) \n", print_inst(strbuf, inst));
 
 				}
 			}
@@ -490,7 +496,7 @@ void writeback_inst(Inst *inst){
 	if (inst->state == Complete){
 		inst->remaining_latency --;
 		if (verbose)
-			printf("%s Writebacking (latency %d) \n", print_inst(strbuf, inst), inst->remaining_latency);
+			fprintf(stderr,"%s Writebacking (latency %d) \n", print_inst(strbuf, inst), inst->remaining_latency);
 
 
 	}
@@ -518,7 +524,7 @@ void execute_inst(Inst *inst){
 	num_executed_insts_cycle++;
 	inst->remaining_latency--;
 	if (verbose)
-		printf("%s Issued (latency %d) \n", print_inst(strbuf, inst), inst->remaining_latency);
+		fprintf(stderr,"%s Issued (latency %d) \n", print_inst(strbuf, inst), inst->remaining_latency);
 
 	if (inst->remaining_latency <= 0){
 		inst->state = Complete;
@@ -527,7 +533,7 @@ void execute_inst(Inst *inst){
 		FUType target_fu = inst_type_fu_type_map[inst->type];
 		release_FU(&fu[target_fu]);
 		if (verbose)
-			printf("%s Completed\n", print_inst(strbuf, inst));
+			fprintf(stderr,"%s Completed\n", print_inst(strbuf, inst));
 	}
 	if ( inst->type == Branch && inst->state == Complete && inst->bpred_mispred){
 		int penalty = (front_pipeline_depth + cur_cycle - inst->dispatched_cycle);
@@ -553,7 +559,7 @@ void commit_insts(void){
 			if (inst->state == Complete && inst->remaining_latency == 0){				
 				inst->committed_cycle = cur_cycle;
 				if (verbose){
-					printf("%s Committed %" PRIu64 " cycles\n", print_inst(strbuf, inst), cur_cycle - inst->dispatched_cycle + front_pipeline_depth);
+					fprintf(stderr,"%s Committed %" PRIu64 " cycles\n", print_inst(strbuf, inst), cur_cycle - inst->dispatched_cycle + front_pipeline_depth);
 				}
 				if (inst->ldq_elem){
 					remove_from_list(&LDQ, inst->ldq_elem, true);
@@ -566,7 +572,7 @@ void commit_insts(void){
 				rob_remove_inst(&rob);
 				num_inst_type[inst->type]++;
 				if (verbose_pipeline){
-					printf("%s] %" PRIu64 " %" PRIu64" %" PRIu64" %" PRIu64 "\n", print_inst(strbuf, inst), inst->dispatched_cycle, inst->issued_cycle, inst->completed_cycle, inst->committed_cycle);
+					fprintf(stderr,"%s] %" PRIu64 " %" PRIu64" %" PRIu64" %" PRIu64 "\n", print_inst(strbuf, inst), inst->dispatched_cycle, inst->issued_cycle, inst->completed_cycle, inst->committed_cycle);
 				}
 				free(inst);
 				num_committed_insts++;
@@ -584,12 +590,12 @@ void commit_insts(void){
 }
 
 void print_buffer_status(void){
-	//vprintf("Remaining Trace Buffer = %d\n", get_current_queue_size(&TraceBuffer));
-	printf("Remaining IQ = %d\n", get_current_queue_size(&IQ));
-	//printf("Remaining ROB = %d\n", get_current_queue_size(&ROB));
-	printf("Remaining FUBuffer = %d\n", get_current_queue_size(&FUBuffer));
-	printf("Remaining LDQ = %d\n", get_current_queue_size(&LDQ));
-	printf("Remaining STQ = %d\n", get_current_queue_size(&STQ));
+	//vfprintf(stderr,"Remaining Trace Buffer = %d\n", get_current_queue_size(&TraceBuffer));
+	fprintf(stderr,"Remaining IQ = %d\n", get_current_queue_size(&IQ));
+	//fprintf(stderr,"Remaining ROB = %d\n", get_current_queue_size(&ROB));
+	fprintf(stderr,"Remaining FUBuffer = %d\n", get_current_queue_size(&FUBuffer));
+	fprintf(stderr,"Remaining LDQ = %d\n", get_current_queue_size(&LDQ));
+	fprintf(stderr,"Remaining STQ = %d\n", get_current_queue_size(&STQ));
 }
 
 
@@ -704,13 +710,12 @@ void trace_analysis(InstQueue *trace_buffer, int max_cycle, uint64_t* last_cycle
 	reset_all_FUs();
 //	print_buffer_status();
 	num_fetched_insts = get_current_queue_size(trace_buffer);
-//	printf("Remaining Trace Buffer = %d\n", get_current_queue_size(trace_buffer));
+//	ffprintf(stderr,stderr, "Remaining Trace Buffer = %d\n", get_current_queue_size(trace_buffer));
 
 	while (true){
-
 		num_issued_insts_cycle = num_dispatched_insts_cycle = num_executed_insts_cycle = num_committed_insts_cycle = 0;
 		if (verbose)
-			printf("%" PRIu64 " cycle\n",   cur_cycle);
+			fprintf(stderr,"%" PRIu64 " cycle\n",   cur_cycle);
 		if (max_cycle && cycle >= max_cycle){
 			break;
 		}
@@ -723,9 +728,21 @@ void trace_analysis(InstQueue *trace_buffer, int max_cycle, uint64_t* last_cycle
 		cycle++;
 		cur_cycle++;
 
-		if (!actual_last_cycle && num_dispatched_insts == num_fetched_insts){
-			actual_last_cycle = cur_cycle;
+
+		if (!actual_last_cycle){
+
+			if (dispatch_width == 1 && issue_width == 1){
+				if (num_issued_insts == num_fetched_insts){
+					actual_last_cycle = cur_cycle - first_issue_cycle;
+				}
+			}
+			else {
+				if (num_dispatched_insts == num_fetched_insts){
+					actual_last_cycle = cur_cycle;
+				}
+			}
 		}
+
 		if (num_committed_insts == num_fetched_insts){
 			break;
 		}
@@ -733,10 +750,12 @@ void trace_analysis(InstQueue *trace_buffer, int max_cycle, uint64_t* last_cycle
 	}
 //	print_buffer_status();
 	*last_cycle = actual_last_cycle;
+	fprintf(stderr, "last cycle: %" PRIu64, *last_cycle);
 	*bpred_penalty = avg_mispred_penalty;
-//	printf("%d %d\n", num_fetched_insts, num_committed_insts);
-//	printf("Remaining Trace Buffer = %d\n", get_current_queue_size(trace_buffer));
+//	ffprintf(stderr,stderr, "**%d %d\n", actual_last_cycle, avg_mispred_penalty);
+//	fprintf(stderr,"%d %d\n", num_fetched_insts, num_committed_insts);
+//	fprintf(stderr,"Remaining Trace Buffer = %d\n", get_current_queue_size(trace_buffer));
 
 
-//	printf("%f %d %d\n",get_available_rate_FU(&fu[0]), fu[0].num_use, num_fetched_insts ); 
+//	fprintf(stderr,"%f %d %d\n",get_available_rate_FU(&fu[0]), fu[0].num_use, num_fetched_insts ); 
 }

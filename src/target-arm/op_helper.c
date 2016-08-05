@@ -905,7 +905,6 @@ static inline uint32_t dcache_access(uint32_t addr, uint32_t is_write){
 }
 
 void HELPER(dcache_read_access)(uint32_t addr){
-
 	dcache_access(addr, 0);
 }
 
@@ -942,12 +941,10 @@ void HELPER(print_trace)(CPUARMState *env, uint32_t start, uint32_t len, uint32_
 
 void perfmodel_sample_wrapup(void){
 #ifdef CONFIG_TIMING
-	
 #ifdef CONFIG_SAMPLING
 	if (is_sampled){
 		uint64_t cycle = 0;
 		int bpred_penalty = 0;
-
 	  	perfmodel_sample_end();
 		trace_analyzer_thread_start(&TraceBuffer);
 		trace_analyzer_thread_end(&cycle, &bpred_penalty);
@@ -981,11 +978,12 @@ void HELPER(inst_increment)(CPUARMState *env, uint32_t pc,  uint32_t flag)
 	CacheMissType miss_type = L1Hit;
 	if (previous_pc != fetchbufferalignpc(pc)){
 		miss_type = icache_access(pc);
-		if (miss_type == L1Miss){
+#ifdef CONFIG_HSIM
+		if (miss_type != L1Hit){
 			uint64_t dummy = 0;
 			hsim_access(perfmodel_getSimpleCycle(), pc, 0, &dummy, 8*64, InstAccess /* skip L1 cache */);     
-
 		}
+#endif
 		previous_pc = fetchbufferalignpc(pc); 
 	}
 
@@ -1011,7 +1009,6 @@ void HELPER(inst_increment)(CPUARMState *env, uint32_t pc,  uint32_t flag)
 		perfmodel_update(cycle, bpred_penalty);	
 		is_sampled = 1;						
 		perfmodel_sample_start();
-		//init_trace_buffer(&TraceBuffer);
 	}			
 
 	//sampling
