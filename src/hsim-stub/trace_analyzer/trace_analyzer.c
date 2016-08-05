@@ -750,7 +750,7 @@ void trace_analysis(InstQueue *trace_buffer, int max_cycle, uint64_t* last_cycle
 	}
 //	print_buffer_status();
 	*last_cycle = actual_last_cycle;
-	fprintf(stderr, "last cycle: %" PRIu64, *last_cycle);
+//	fprintf(stderr, "last cycle: %" PRIu64, *last_cycle);
 	*bpred_penalty = avg_mispred_penalty;
 //	ffprintf(stderr,stderr, "**%d %d\n", actual_last_cycle, avg_mispred_penalty);
 //	fprintf(stderr,"%d %d\n", num_fetched_insts, num_committed_insts);
