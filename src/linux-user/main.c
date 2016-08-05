@@ -35,7 +35,7 @@
 #include "qemu/envlist.h"
 #include "elf.h"
 
-#include "hsim-stub/hsim-stub.h"
+#include "hsim-stub/hsim_stub.h"
 #include "hsim-stub/perfmodel.h"
 
 char *exec_path;
@@ -3893,7 +3893,7 @@ int main(int argc, char **argv, char **envp)
 	perfmodel_initialize(argc, argv);
 //	depanal_btrace_start();
 #ifdef CONFIG_HSIM
-	HsimStart();
+	hsim_start();
 #endif
 
 

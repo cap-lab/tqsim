@@ -20,6 +20,10 @@ uint64_t cachesim_il1_num_miss(void);
 uint64_t cachesim_dl1_num_miss(void);
 uint64_t cachesim_ul2_num_miss(void);
 
+uint64_t cachesim_il1_num_access(void);
+uint64_t cachesim_dl1_num_access(void);
+uint64_t cachesim_ul2_num_access(void);
+
 int cachesim_il1_miss_latency(void);
 int cachesim_dl1_miss_latency(void);
 int cachesim_ul2_miss_latency(void);

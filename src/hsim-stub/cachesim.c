@@ -108,6 +108,26 @@ uint64_t cachesim_ul2_num_miss(void){
 	return 0;
 }
 
+uint64_t cachesim_il1_num_access(void){
+	if (il1_cache){
+		return il1_cache->num_access;
+	}
+	return 0;
+}
+uint64_t cachesim_dl1_num_access(void){
+	if (dl1_cache){
+		return dl1_cache->num_access;
+	}
+	return 0;
+
+}
+uint64_t cachesim_ul2_num_access(void){
+	if (ul2_cache){
+		return ul2_cache->num_access;
+	}
+	return 0;
+}
+
 
 int cachesim_il1_hit_latency(void){
 	if (il1_cache){

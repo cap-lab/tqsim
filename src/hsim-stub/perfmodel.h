@@ -16,7 +16,7 @@ uint64_t perfmodel_getSimpleCycle(void);
 
 void perfmodel_sample_start(void);
 void perfmodel_sample_end(void);
-
+void perfmodel_sample_wrapup(void);
 void perfmodel_update(uint64_t cycle, int bpred_penalty);
 
 void perfmodel_logging(void);

@@ -1,8 +1,5 @@
 #define CONFIG_TIMING
-
-#ifndef CONFIG_HSIM
 #define CONFIG_SAMPLING
-#endif
 
 #ifndef PERFMODEL_CONFIG_H
 #define PERFMODEL_CONFIG_H

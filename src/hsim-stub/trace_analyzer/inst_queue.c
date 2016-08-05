@@ -12,7 +12,7 @@ void init_inst_elem_pool(void){
 		init_inst_elem(inst_elem, NULL);	
 		push_back_inst_elem(&inst_elem_pool, inst_elem);
     }
-	printf("Instruction element pool (%d entries, %X) is initialized ...\n", inst_elem_pool.size, inst_elem_pool.oldest_inst_elem);
+//	printf("Instruction element pool (%d entries, %X) is initialized ...\n", inst_elem_pool.size, (unsigned int)inst_elem_pool.oldest_inst_elem);
 }
 
 
@@ -172,10 +172,10 @@ void push_front_inst(InstQueue *queue, Inst *inst){
 		}
 		queue->oldest_inst_elem = elem;
   		queue->size++;
- 		return elem;
+// 		return elem;
 	}
 	else {
-		return NULL;
+//		return NULL;
 	}
 
 }

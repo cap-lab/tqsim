@@ -28,6 +28,7 @@ void find_regs_dependency(Inst *inst_b);
 bool has_dependency(Inst *inst);
 
 void find_mems_dependency(Inst *inst_b);
+void set_writeback_latency(Inst *inst);
 
 
 

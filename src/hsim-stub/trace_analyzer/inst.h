@@ -61,7 +61,7 @@ typedef struct _Inst {
 
 	bool decoded;
 	int rob_idx;
-	char* str;
+	const char* str;
 	//bool is_regs_analysis;
 
 } Inst;

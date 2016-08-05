@@ -22,7 +22,8 @@
 #include "exec/cpu_ldst.h"
 
 
-#include "hsim-stub/hsim-stub.h"
+#include "hsim-stub/hsim_stub.h"
+#include "hsim-stub/hsim_mmap.h"
 #include "hsim-stub/cachesim.h"
 #include "hsim-stub/bpredsim.h"
 #include "hsim-stub/perfmodel.h"
@@ -939,17 +940,20 @@ void HELPER(print_trace)(CPUARMState *env, uint32_t start, uint32_t len, uint32_
 
 
 
-void sampling_wrapup(void){
+void perfmodel_sample_wrapup(void){
 #ifdef CONFIG_TIMING
-	uint64_t cycle = 0;
-	int bpred_penalty = 0;
-
+	
+#ifdef CONFIG_SAMPLING
 	if (is_sampled){
+		uint64_t cycle = 0;
+		int bpred_penalty = 0;
+
 	  	perfmodel_sample_end();
 		trace_analyzer_thread_start(&TraceBuffer);
 		trace_analyzer_thread_end(&cycle, &bpred_penalty);
 		perfmodel_update(cycle, bpred_penalty);	
 	}
+#endif
 #endif
 }
 
@@ -961,7 +965,6 @@ void HELPER(inst_increment)(CPUARMState *env, uint32_t pc,  uint32_t flag)
 	int bpred_penalty = 0;
 
 	if (is_branch){
-	//	printf("%X %X %X\n", cur_PC, pc, is_cond);
 #ifdef CONFIG_SAMPLING
 		int correct = bpredsim_access(cur_PC, pc, is_cond);
 		if (is_sampled && is_cond){
@@ -978,6 +981,11 @@ void HELPER(inst_increment)(CPUARMState *env, uint32_t pc,  uint32_t flag)
 	CacheMissType miss_type = L1Hit;
 	if (previous_pc != fetchbufferalignpc(pc)){
 		miss_type = icache_access(pc);
+		if (miss_type == L1Miss){
+			uint64_t dummy = 0;
+			hsim_access(perfmodel_getSimpleCycle(), pc, 0, &dummy, 8*64, InstAccess /* skip L1 cache */);     
+
+		}
 		previous_pc = fetchbufferalignpc(pc); 
 	}
 
@@ -1015,7 +1023,7 @@ void HELPER(inst_increment)(CPUARMState *env, uint32_t pc,  uint32_t flag)
 #endif
 	num_insts++;
 #ifdef CONFIG_HSIM
-	hsim_notice(perfmodel_getCycle());
+	hsim_notice(perfmodel_getSimpleCycle());
 #endif
 }
 
@@ -1026,14 +1034,14 @@ void HELPER(inst_increment)(CPUARMState *env, uint32_t pc,  uint32_t flag)
 #ifdef CONFIG_HSIM
 #define DO_GEN_HSIM_LD(SIZE,SIZE2,VAR_TYPE)                      	\
 uint32_t HELPER(hsim_ld##SIZE)(CPUARMState *env, uint32_t addr){	\
-	if (mem_is_shared(addr)){              						    \
+	if (memmap_is_shared(addr)){              						    \
 	        uint32_t val = 0;                   					\
 	        int size = log ( SIZE2 )/log(2);               			\
 			int hit = dcache_access(addr, 0); hit = 0;\
-			hsim_access(perfmodel_getCycle(), addr, 0,(uint64_t*) &val, size, hit);	\
+			hsim_access(perfmodel_getSimpleCycle(), addr, 0,(uint64_t*) &val, size, hit);	\
 			return (uint32_t)val;                     				\
 	     }                               							\
-	else if(mem_is_local(addr)) {									\
+	else if(memmap_is_local(addr)) {									\
 		VAR_TYPE val=0;												\
 		val = *( VAR_TYPE *)(guest_base+addr);						\
 		return val;													\
@@ -1048,12 +1056,12 @@ uint32_t HELPER(hsim_ld##SIZE)(CPUARMState *env, uint32_t addr){	\
 #define DO_GEN_HSIM_ST(SIZE,SIZE2,VAR_TYPE)                         	    \
 void HELPER(hsim_st##SIZE)(CPUARMState *env, uint32_t val, uint32_t addr)	\
 {																			\
-	if (mem_is_shared(addr)){												\
+	if (memmap_is_shared(addr)){												\
 		int size = log ( SIZE2 )/log(2);									\
 		int hit = dcache_access(addr, 1); hit = 0;\
-		hsim_access(perfmodel_getCycle(), addr, 1, (uint64_t*)&val, size, hit); 			\
+		hsim_access(perfmodel_getSimpleCycle(), addr, 1, (uint64_t*)&val, size, hit); 			\
 	}																		\
-	else if (mem_is_local(addr)){											\
+	else if (memmap_is_local(addr)){											\
 		*( VAR_TYPE *)(guest_base+addr) = val;								\
 	}																		\
 	else {																	\
@@ -1074,14 +1082,14 @@ DO_GEN_HSIM_ST(16,16,int16_t)
 DO_GEN_HSIM_ST(32,32,int32_t)
 
 uint64_t HELPER(hsim_ld64)(CPUARMState *env, uint32_t addr){	
-		if (mem_is_shared(addr)){                   
+		if (memmap_is_shared(addr)){                   
 			uint64_t val = 0;                  
 			int hit = dcache_access(addr, 0);hit =0;
-			hsim_access(perfmodel_getCycle(), addr, 0, &val, 6, hit);  
+			hsim_access(perfmodel_getSimpleCycle(), addr, 0, &val, 6, hit);  
 	
 			return val;                     
 		}                               
-		else if (mem_is_local(addr)){                                  
+		else if (memmap_is_local(addr)){                                  
 			uint64_t val=  *( uint64_t *)(guest_base+addr);                      
 			return val;                                                 
 		} 
@@ -1095,13 +1103,13 @@ uint64_t HELPER(hsim_ld64)(CPUARMState *env, uint32_t addr){
 
 void HELPER(hsim_st64)(CPUARMState *env, uint64_t val, uint32_t addr)	
 {	
-	if (mem_is_shared(addr)){
+	if (memmap_is_shared(addr)){
 
 		int hit = dcache_access(addr, 1);hit = 0;
-		hsim_access(perfmodel_getCycle(), addr, 1, &val, 6, hit);  
+		hsim_access(perfmodel_getSimpleCycle(), addr, 1, &val, 6, hit);  
 	
 	}                                                                       
-	else if (mem_is_local(addr)){                                                                   
+	else if (memmap_is_local(addr)){                                                                   
 		*( uint64_t *)(guest_base+addr) = val;                              
 	}                     
 	else {
@@ -1112,7 +1120,7 @@ void HELPER(hsim_st64)(CPUARMState *env, uint64_t val, uint32_t addr)
 
 uint32_t HELPER(hsim_isshared)(CPUARMState *env, uint32_t addr){
 	uint32_t ret;
-	if (mem_is_shared(addr))
+	if (memmap_is_shared(addr))
 		ret = 1;
 	else
 		ret = 0;

@@ -1,7 +1,5 @@
 #include "inst.h"
 
-static bool verbose = false;
-
 void init_inst(Inst *inst, uint32_t seq, uint32_t pc, uint32_t code){
     inst->seq = seq;
     inst->pc = pc;
@@ -150,7 +148,6 @@ void decode_inst(Inst *inst){
 		return;
 
 	darm_t d;
-	darm_str_t str;
 	darm_armv7_disasm (&d, inst->code);
 
 	if (d.cond == C_UNCOND || d.cond == C_INVLD || d.cond == C_AL){
@@ -363,11 +360,11 @@ char *print_inst(char *buf, Inst *inst){
 	darm_str2 (&d, &str, 1);
 
 	if (inst->str){
-	    sprintf(buf, "[%d] %s ", inst->seq, inst->str);
+	    sprintf(buf, "[%" PRIu64 "] %s ", inst->seq, inst->str);
 	}
 
 	else {
-	    sprintf(buf, "[%d] %s ", inst->seq, str.total);
+	    sprintf(buf, "[%" PRIu64 "] %s ", inst->seq, str.total);
 	}
 /*
 	strcat(buf, "/src ");

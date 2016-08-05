@@ -320,9 +320,6 @@ bool can_forward(Inst *inst){
 void find_regs_dependency(Inst *inst_b){
 	int cur_idx = inst_b->rob_idx;
 	int i,j;
-	//you are the oldest on
-	char buf1[250];
-	char buf2[250];
 
 	if (cur_idx == rob.start_idx){
 		return;	
@@ -337,8 +334,6 @@ void find_regs_dependency(Inst *inst_b){
 			}
 			for (j = 0; j < inst_a->num_dst_reg; j++)	{
 				if (inst_b->src_reg[i] == inst_a->dst_reg[j])	{
-					char buf1[250];
-					char buf2[250];
 					set_dependency(&rob, inst_a, inst_b);
 					inst_b->src_reg[i] = -1;
 					count--;
@@ -356,9 +351,6 @@ void find_mems_dependency(Inst *inst_b){
 	int cur_idx = inst_b->rob_idx;
 	int i,j;
 	uint32_t mask = ~(0);
-	//you are the oldest on
-	char buf1[250];
-	char buf2[250];
 
 	if (cur_idx == rob.start_idx){
 		return;	
@@ -389,7 +381,6 @@ void find_mems_dependency(Inst *inst_b){
 
 bool has_dependency(Inst *inst_b){
 
-	Inst *p_inst = NULL;
 	int cur_idx = inst_b->rob_idx;
 
 	//you are the oldest one
@@ -562,7 +553,7 @@ void commit_insts(void){
 			if (inst->state == Complete && inst->remaining_latency == 0){				
 				inst->committed_cycle = cur_cycle;
 				if (verbose){
-					printf("%s Committed %d cycles\n", print_inst(strbuf, inst), cur_cycle - inst->dispatched_cycle + front_pipeline_depth);
+					printf("%s Committed %" PRIu64 " cycles\n", print_inst(strbuf, inst), cur_cycle - inst->dispatched_cycle + front_pipeline_depth);
 				}
 				if (inst->ldq_elem){
 					remove_from_list(&LDQ, inst->ldq_elem, true);
@@ -575,7 +566,7 @@ void commit_insts(void){
 				rob_remove_inst(&rob);
 				num_inst_type[inst->type]++;
 				if (verbose_pipeline){
-					printf("%s] %d %d %d %d\n", print_inst(strbuf, inst), inst->dispatched_cycle, inst->issued_cycle, inst->completed_cycle, inst->committed_cycle);
+					printf("%s] %" PRIu64 " %" PRIu64" %" PRIu64" %" PRIu64 "\n", print_inst(strbuf, inst), inst->dispatched_cycle, inst->issued_cycle, inst->completed_cycle, inst->committed_cycle);
 				}
 				free(inst);
 				num_committed_insts++;
@@ -719,7 +710,7 @@ void trace_analysis(InstQueue *trace_buffer, int max_cycle, uint64_t* last_cycle
 
 		num_issued_insts_cycle = num_dispatched_insts_cycle = num_executed_insts_cycle = num_committed_insts_cycle = 0;
 		if (verbose)
-			printf("%d cycle\n",   cur_cycle);
+			printf("%" PRIu64 " cycle\n",   cur_cycle);
 		if (max_cycle && cycle >= max_cycle){
 			break;
 		}

@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 #include "trace_analyzer/trace_analyzer.h"
-
+#include "trace_analyzer/buffer_manager.h"
 //static FILE *perfmodel_log;
 
 double sum_effective_dispatch_width;
@@ -29,7 +29,7 @@ void perfmodel_initialize(int argc, char ** argv){
 #ifdef CONFIG_HSIM
 	load_configfile(getenv("HSIM_ARCH_CONFIG_FILE"));
 #else
-	load_configfile(getenv("ARCH_CONFIG_FILE"));
+	load_configfile(getenv("TQSIM_ARCH_CONFIG_FILE"));
 #endif
 
 	start_time = clock();
@@ -109,19 +109,15 @@ void perfmodel_sample_end(void){
 	if (enable_save_files){
 		destroy_trace_file();
 	}
-
 }
+
+
 
 void perfmodel_update(uint64_t _cycle, int _bpred_penalty){
 
 	int l_num_insts =   sample_stat.num_insts;
 	int l_num_mispred =  sample_stat.num_mispred;
-
-
-	int penalty_sum = 0;
 	double D = (double)l_num_insts / (_cycle);
-	//printf("%f\n", D);
-
 	sum_ipc += D;
 	num_ipc ++;
 

@@ -1,7 +1,7 @@
 DEF_HELPER_FLAGS_1(clz, TCG_CALL_NO_RWG_SE, i32, i32)
 DEF_HELPER_FLAGS_1(sxtb16, TCG_CALL_NO_RWG_SE, i32, i32)
 DEF_HELPER_FLAGS_1(uxtb16, TCG_CALL_NO_RWG_SE, i32, i32)
-
+	
 DEF_HELPER_3(add_setq, i32, env, i32, i32)
 DEF_HELPER_3(add_saturate, i32, env, i32, i32)
 DEF_HELPER_3(sub_saturate, i32, env, i32, i32)
@@ -563,8 +563,8 @@ DEF_HELPER_2(hsim_isshared, i32, env, i32)
 
 #endif
 
-//void sampling_wrapup(void); 
 
 #ifdef TARGET_AARCH64
 #include "helper-a64.h"
 #endif
+

@@ -41,7 +41,7 @@
 #include "qemu/sockets.h"
 #include "sysemu/kvm.h"
 
-#include "hsim-stub/hsim-stub.h"
+#include "hsim-stub/hsim_stub.h"
 #include "hsim-stub/cachesim.h"
 #include "hsim-stub/perfmodel.h"
 #include "hsim-stub/bpredsim.h"
@@ -1444,12 +1444,12 @@ void gdb_exit(CPUArchState *env, int code)
   char buf[4];
 
 
-  sampling_wrapup();	
+  perfmodel_sample_wrapup();	
 //  depanal_thread_finish();
 //  depanal_thread_start(); 
 //  depanal_thread_finish();
 
-#ifndef CONFIG_HSIM
+//#ifndef CONFIG_HSIM
   fprintf(stderr, "------------------------------------------------------\n");
   fprintf(stderr, "-----------------Statistics---------------------------\n");
   fprintf(stderr, "------------------------------------------------------\n");
@@ -1461,12 +1461,12 @@ void gdb_exit(CPUArchState *env, int code)
     fprintf(stderr, "Effective dispatch rate : %f \n", effective_dispatch_width);
    fprintf(stderr, "Branch mispredict penalty : %" PRIu32 " \n", bpred_penalty);
   fprintf(stderr, "------------------------------------------------------\n");
-#endif
+//#endif
 //  depanal_btrace_end();
   perfmodel_end();
 
 #ifdef CONFIG_HSIM 
-  HsimEnd(perfmodel_getCycle());
+  hsim_end(perfmodel_getSimpleCycle());
 #endif
 
   s = gdbserver_state;
