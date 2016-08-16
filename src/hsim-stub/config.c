@@ -31,8 +31,11 @@ static void print_element_names(xmlNode * a_node)
 					perfmodel.core.frontend_width = atoi((char*)str);
 					str = xmlGetProp(cur_node, (const xmlChar*)"backend_width");
 					perfmodel.core.backend_width = atoi((char*)str);
-					str = xmlGetProp(cur_node, (const xmlChar*)"window_size");
-					perfmodel.core.window_size = atoi((char*)str);
+					str = xmlGetProp(cur_node, (const xmlChar*)"rob_size");
+					perfmodel.core.rob_size = atoi((char*)str);
+					str = xmlGetProp(cur_node, (const xmlChar*)"iq_size");
+					perfmodel.core.iq_size = atoi((char*)str);
+
 					xmlFree(str);
 			}
 

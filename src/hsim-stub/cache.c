@@ -118,7 +118,7 @@ bool cache_access(uint64_t inst_id, Cache_t* cache, enum CacheAccessType type, m
 	target_blk->tag = tag;
 	if (type == Read){
 
-		if (cache->last_miss_inst_id== -1 || (inst_id - cache->last_miss_inst_id) > perfmodel.core.window_size){ 
+		if (cache->last_miss_inst_id== -1 || (inst_id - cache->last_miss_inst_id) > perfmodel.core.rob_size){ 
 			cache->num_miss_star++;
 		}
 		cache->last_miss_inst_id = inst_id;

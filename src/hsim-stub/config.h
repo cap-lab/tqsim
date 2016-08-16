@@ -13,7 +13,8 @@ struct sample_config {
 struct core_config {
 	int frontend_width;
 	int backend_width;
-	int window_size;
+	int rob_size;
+	int iq_size;
 };
 
 struct numfu_config{

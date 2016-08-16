@@ -46,10 +46,7 @@ static int dl1_outstanding_request = 0;
 static int ul2_outstanding_request = 0;
 
 static InstQueue IQ;
-
 static ROB rob;
-
-//static InstQueue ROB;
 static InstQueue LDQ;
 static InstQueue STQ;
 static InstQueue FUBuffer;
@@ -116,7 +113,7 @@ void init_all_queues(void){
 	
 	rob_init(&rob, rob_capacity);
 	if (queue_availablity_check){
-		init_inst_queue (&IQ, 48);
+		init_inst_queue (&IQ, perfmodel.core.iq_size);
 		init_inst_queue (&LDQ, 16);
 		init_inst_queue (&STQ, 16);
 		init_inst_queue (&FUBuffer, 0);  
@@ -172,7 +169,7 @@ void reflesh_all_FUs(void){
 
 
 void init_trace_analyzer(void){
-	rob_capacity = perfmodel.core.window_size;
+	rob_capacity = perfmodel.core.rob_size;
 	dispatch_width = perfmodel.core.frontend_width;
 	issue_width = perfmodel.core.backend_width;
 	wb_width = perfmodel.core.backend_width;
