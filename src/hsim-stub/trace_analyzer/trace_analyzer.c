@@ -727,17 +727,18 @@ void trace_analysis(InstQueue *trace_buffer, int max_cycle, uint64_t* last_cycle
 
 
 		if (!actual_last_cycle){
-
+/*
 			if (dispatch_width == 1 && issue_width == 1){
 				if (num_issued_insts == num_fetched_insts){
 					actual_last_cycle = cur_cycle - first_issue_cycle;
 				}
 			}
 			else {
+			*/
 				if (num_dispatched_insts == num_fetched_insts){
 					actual_last_cycle = cur_cycle;
 				}
-			}
+			//}
 		}
 
 		if (num_committed_insts == num_fetched_insts){
