@@ -855,7 +855,7 @@ uint32_t HELPER(ror_cc)(CPUARMState *env, uint32_t x, uint32_t i)
 
 
 void HELPER(cycle_increment)(CPUARMState *env, uint32_t cycle, uint32_t pc){
-	cachesim_iaccess(perfmodel_getCycle(), pc);
+	cachesim_iaccess(perfmodel_getSimpleCycle(), pc);
 }
 
 

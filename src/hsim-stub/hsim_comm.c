@@ -177,9 +177,10 @@ void comm_recv_data(uint8_t *buf, int size){
 	};
 	sp_read(sharedBuffer, buf, size);
 }
-
+#include <inttypes.h>
 void comm_send(Packet * pPacket)
 {
+
 	int fd = 0;
 	switch (comm_mode) {
 		case pipe_comm_mode:
@@ -220,6 +221,8 @@ void comm_sync(uint64_t cycle)
 	myPacket.type = packet_elapsed;
 	myPacket.address = 0;
 	myPacket.cycle = cycle;
+
+
 	comm_send(&myPacket);
 }
 
@@ -236,10 +239,9 @@ void comm_close(uint64_t cycle)
 	uint64_t *dst = (uint64_t*)sys_registers;
 	dst[0] = num_insts;
 	sys_registers[NUM_SYS_REG-1] = syscall_exit;
-//	memcpy(myPacket.data, reg, sizeof(uint32_t)*NUM_SYS_REG);
-	comm_send(&myPacket);
-	
 
+	comm_send(&myPacket);
+	comm_recv(&myPacket);
 	switch (comm_mode) {
 		case pipe_comm_mode:
 			close(comm_pipe_snd);

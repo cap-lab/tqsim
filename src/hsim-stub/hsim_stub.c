@@ -129,22 +129,25 @@ void comm_read_env(void)
 		fclose(fp);
 	}
 	// mapping to core
+	/*
 	{
 		int alloc_proc = 0;
 		int num_total_proc =  sysconf(_SC_NPROCESSORS_ONLN);
 		alloc_proc = (core_id% (num_total_proc-1))+1;
 		set_affinity(alloc_proc);
-	}
+	}*/
 }
 uint64_t mem_access(uint64_t cycle, Address address, int rw, uint64_t * data, int size, AccessType atype)
 {
-//	if (address<0x30000000)
-//		return 0;
+	if (address<0x30000000)
+		return 0;
 	
 	int size_in_byte =  size / 8;
 	if (size_in_byte > 8) size_in_byte = 8;		//FIXME. instruction cache miss
 	Packet my_packet;
 	my_packet.cycle = cycle;
+
+
 	my_packet.address = address;
 	my_packet.size = size_in_byte;
 	my_packet.type = rw?packet_write:packet_read;
@@ -275,13 +278,24 @@ uint64_t hsim_internal_access(uint64_t cycle, Address address, int rw, uint64_t 
 
 uint64_t hsim_access(uint64_t cur_cycle, Address address, int rw, uint64_t * data,  int size, AccessType atype)
 {
+	//printf("%" PRIu64 ", %" PRIu64 ", %" PRIu64  "\n", cur_cycle, tqsim_last_sync_cycles, cur_cycle -tqsim_last_sync_cycles);
+		
 	tqsim_cpu_cycle = cur_cycle;
+	uint64_t delta_cycle; 
+	if (tqsim_cpu_cycle > tqsim_last_sync_cycles){
+		 delta_cycle = tqsim_cpu_cycle - tqsim_last_sync_cycles;
+	}
+	else {
+		delta_cycle = 0;
+	}
+
+
 	MemoryType memory_type = memmap_get_type(address);
 	if (memory_type == MEM_SHARED_C || memory_type == MEM_SHARED_NC || memory_type == MEM_VIRTUAL || memory_type == MEM_SCRATCHPAD) {
-		mem_access(tqsim_cpu_cycle - tqsim_last_sync_cycles, address, rw, data, size, atype);
+		mem_access(delta_cycle, address, rw, data, size, atype);
 	}
 	else if (memory_type == MEM_INTERNAL) {
-		hsim_internal_access(tqsim_cpu_cycle - tqsim_last_sync_cycles, address, rw, data, size, atype);
+		hsim_internal_access(delta_cycle, address, rw, data, size, atype);
 	}
 	else {
 		printf("unknown mem type %d\n", memory_type);
@@ -293,10 +307,12 @@ uint64_t hsim_access(uint64_t cur_cycle, Address address, int rw, uint64_t * dat
 void hsim_notice(uint64_t cur_cycle)
 {
 	tqsim_cpu_cycle = cur_cycle;
-	if (tqsim_cpu_cycle - tqsim_last_sync_cycles > comm_notice_period) {
-		comm_sync(tqsim_cpu_cycle - tqsim_last_sync_cycles);
+	uint64_t delta_cycle = tqsim_cpu_cycle - tqsim_last_sync_cycles;
+	if (tqsim_cpu_cycle > tqsim_last_sync_cycles && delta_cycle > comm_notice_period) {
+		comm_sync(delta_cycle);
 		tqsim_last_sync_cycles = tqsim_cpu_cycle;
 	}
+	
 }
 
 
