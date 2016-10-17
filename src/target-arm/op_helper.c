@@ -1025,7 +1025,6 @@ void HELPER(inst_increment)(CPUARMState *env, uint32_t pc,  uint32_t flag)
 }
 
 
-//extern unsigned long guest_base;
 #ifdef CONFIG_HSIM
 #define DO_GEN_HSIM_LD(SIZE,SIZE2,VAR_TYPE)                      	\
 uint32_t HELPER(hsim_ld##SIZE)(CPUARMState *env, uint32_t addr){	\
@@ -1065,7 +1064,6 @@ void HELPER(hsim_st##SIZE)(CPUARMState *env, uint32_t val, uint32_t addr)	\
 		exit(-1);															\
 	}																		\
 }
-
 
 
 DO_GEN_HSIM_LD(8u,8,uint8_t)

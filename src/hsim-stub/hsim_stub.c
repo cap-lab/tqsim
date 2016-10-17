@@ -139,7 +139,7 @@ void comm_read_env(void)
 }
 uint64_t mem_access(uint64_t cycle, Address address, int rw, uint64_t * data, int size, AccessType atype)
 {
-	if (address<0x30000000)
+	if (address<0x30000000 && atype != InstAccess)
 		return 0;
 	
 	int size_in_byte =  size / 8;
@@ -165,7 +165,6 @@ uint64_t mem_access(uint64_t cycle, Address address, int rw, uint64_t * data, in
 	}
 	return 0;
 }
-
 extern unsigned long guest_base;
 
 uint64_t hsim_internal_access(uint64_t cycle, Address address, int rw, uint64_t * data,  int size, AccessType atype)
@@ -286,9 +285,8 @@ uint64_t hsim_access(uint64_t cur_cycle, Address address, int rw, uint64_t * dat
 		 delta_cycle = tqsim_cpu_cycle - tqsim_last_sync_cycles;
 	}
 	else {
-		delta_cycle = 0;
+		delta_cycle = 1;
 	}
-
 
 	MemoryType memory_type = memmap_get_type(address);
 	if (memory_type == MEM_SHARED_C || memory_type == MEM_SHARED_NC || memory_type == MEM_VIRTUAL || memory_type == MEM_SCRATCHPAD) {
