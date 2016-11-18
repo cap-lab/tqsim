@@ -88,7 +88,6 @@ bool cache_access(uint64_t inst_id, Cache_t* cache, enum CacheAccessType type, m
 	
 
 	Cache_set_t *set = cache->cache_set[idx];
-
 	Cache_blk_t *target_blk = set->first_blk;
 	
 	while (target_blk!=NULL){

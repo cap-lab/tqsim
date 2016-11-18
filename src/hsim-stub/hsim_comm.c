@@ -17,6 +17,7 @@
 #include "hsim_syscall.h"
 #include "spm_buffer.h"
 #include "packet_buffer.h"
+#include "cachesim.h"
 
 hsim_comm_mode comm_mode;
 
@@ -238,6 +239,7 @@ void comm_close(uint64_t cycle)
 	
 	uint64_t *dst = (uint64_t*)sys_registers;
 	dst[0] = num_insts;
+//	dst[1] = cachesim_il1_num_access() + cachesim_dl1_num_access(); 
 	sys_registers[NUM_SYS_REG-1] = syscall_exit;
 
 	comm_send(&myPacket);

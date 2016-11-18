@@ -1036,8 +1036,9 @@ uint32_t HELPER(hsim_ld##SIZE)(CPUARMState *env, uint32_t addr){	\
 	else if(memmap_is_local(addr)) {									\
 		VAR_TYPE val=0;												\
 		val = *( VAR_TYPE *)(guest_base+addr);						\
+		if(! dcache_access(addr,0)) {	\
 		VAR_TYPE dummy = 0;											\
-		hsim_access(perfmodel_getSimpleCycle(), addr, 0, (uint64_t*)&dummy, SIZE2 ,NonBlockingAccess); 	\
+		hsim_access(perfmodel_getSimpleCycle(), addr, 0, (uint64_t*)&dummy, SIZE2 ,NonBlockingAccess); 	}\
 		return val;													\
 	}																\
 	else {															\
@@ -1055,8 +1056,9 @@ void HELPER(hsim_st##SIZE)(CPUARMState *env, uint32_t val, uint32_t addr)	\
 	}																		\
 	else if (memmap_is_local(addr)){											\
 		*( VAR_TYPE *)(guest_base+addr) = val;								\
+		if(! dcache_access(addr, 1)) {	\
 		VAR_TYPE dummy = 0;													\
-		hsim_access(perfmodel_getSimpleCycle(), addr, 1, (uint64_t*)&dummy, SIZE2 , NonBlockingAccess);				\
+		hsim_access(perfmodel_getSimpleCycle(), addr, 1, (uint64_t*)&dummy, SIZE2 , NonBlockingAccess);		}		\
 	}																		\
 	else {																	\
 		fprintf(stderr, "illegal access at pc(%x) to %x\n", (unsigned) env->regs[15], (unsigned)addr);	\
@@ -1085,8 +1087,10 @@ uint64_t HELPER(hsim_ld64)(CPUARMState *env, uint32_t addr){
 		}                               
 		else if (memmap_is_local(addr)){                                  
 			uint64_t val=  *( uint64_t *)(guest_base+addr);  
+			if(! dcache_access(addr, 0)) {	
 			uint64_t dummy = 0;
 			hsim_access(perfmodel_getSimpleCycle(), addr, 0, &dummy, 64, NonBlockingAccess);
+			}
 			return val;                                                 
 		} 
 		else {
@@ -1105,8 +1109,10 @@ void HELPER(hsim_st64)(CPUARMState *env, uint64_t val, uint32_t addr)
 	}                                                                       
 	else if (memmap_is_local(addr)){                                                                   
 		*( uint64_t *)(guest_base+addr) = val;
+		if(! dcache_access(addr, 1)) {	
 		uint64_t dummy = 0;
 		hsim_access(perfmodel_getSimpleCycle(), addr, 1, &dummy, 64, NonBlockingAccess);
+		}
 	
 	}                     
 	else {

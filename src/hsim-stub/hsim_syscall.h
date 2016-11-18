@@ -33,7 +33,9 @@ typedef enum {
 	syscall_connect, syscall_disconnect, syscall_is_connected, syscall_load_template,
 	syscall_test_and_set,
 	syscall_set_dvfs_level, syscall_get_dvfs_level,
-	syscall_barrier_init, syscall_barrier
+	syscall_barrier_init, syscall_barrier,
+	syscall_debug,
+	syscall_hw_lock, syscall_hw_unlock
 } hsim_syscall;
 
 #ifdef __cplusplus
