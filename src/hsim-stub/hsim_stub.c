@@ -129,16 +129,18 @@ void comm_read_env(void)
 		fclose(fp);
 	}
 	// mapping to core
-	/*
 	{
 		int alloc_proc = 0;
 		int num_total_proc =  sysconf(_SC_NPROCESSORS_ONLN);
-		alloc_proc = (core_id% (num_total_proc-1))+1;
+		alloc_proc = (core_id+1)% num_total_proc;
 		set_affinity(alloc_proc);
-	}*/
+	}
 }
 uint64_t mem_access(uint64_t cycle, Address address, int rw, uint64_t * data, int size, AccessType atype)
 {
+//	if (address < 0x30000000)
+//		return;
+
 	int size_in_byte =  size / 8;
 	if (size_in_byte > 8) size_in_byte = 8;		//FIXME. instruction cache miss
 	Packet my_packet;
